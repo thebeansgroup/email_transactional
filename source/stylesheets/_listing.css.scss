@@ -1,0 +1,27 @@
+/**
+  * Listing
+  */
+
+
+tr.listing {
+  border-bottom: 1px solid #E4E4E4;
+  & > td { padding-top: 10px; }
+
+  td.listing__text,
+  td.listing__button {
+    padding-top: 30px;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  table[class="body"] .columns td.listing__text {
+    width: 75% !important;
+  }
+
+  table[class="body"] .columns td.listing__text,
+  table[class="body"] .columns td.listing__button {
+    padding-top: 10px;
+  }
+}
+

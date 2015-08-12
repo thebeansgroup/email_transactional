@@ -1,0 +1,54 @@
+/**
+  * Header
+  */
+
+table.header {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  background-color: #6CD45B;
+  
+  h1, h2, h3, h4, h5, h6, p, td {  
+    color: #fff; 
+  }
+
+  .header__standfirst {
+    margin-bottom: 30px;
+  }
+
+  .header__collapse {
+    padding: 0;
+  }
+}
+
+
+/**
+  * Deals
+  */
+
+table.header.deals {
+  background-color: #FC8907;
+}
+
+
+/**
+  * Campaign
+  */
+
+table.header.campaign {
+  padding: 0;
+}
+
+
+/**
+  * Campaign
+  */
+
+table.header.alert {
+  padding: 0;
+  background-color: #FFF;
+  h1, h2, h3, h4, h5, h6, p, td {  
+    color: #222; 
+  }
+
+
+}

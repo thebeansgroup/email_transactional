@@ -1,0 +1,57 @@
+
+/**
+  * Global styles and helpers
+  */
+
+body, .body {
+  background-color: #EFF0EB;
+  background-image: image-url('background.jpg');
+  background-repeat: repeat-x;
+}
+
+.main-content {
+  background-color: #fff;
+  background-image: image-url('content__foot-bg.jpg');
+  background-repeat: repeat-x;
+  background-position: bottom left;
+  border-left: 2px solid #DADADA;
+  border-right: 2px solid #DADADA;
+
+  padding-bottom: 30px;
+}
+
+
+.footer-content {
+    padding: 0 100px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  table[class="body"] .footer-content {
+    padding: 0;
+  }
+
+}
+
+/**
+  * Text helper
+  */
+
+
+.txt-right { text-align: right; }
+.txt-left { text-align: left; }
+.txt-center { text-align: center; }
+
+
+/**
+  * Links
+  */
+
+a.strong {
+  font-weight: bold;
+}
+
+a.neutral {
+  font-weight: bold;
+  color: #777;
+}

@@ -1,0 +1,22 @@
+/**
+ * Default banners
+ */
+
+table.banner {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/**
+ * CTA banners
+ */
+
+.banner--cta {
+  background-color: #90D231;
+
+  h1,h2,h3,h4,h5,p {
+    color: #fff;
+  }
+}
+
+
