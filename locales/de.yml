@@ -1,0 +1,19 @@
+---
+en-GB:
+  footer:
+    office: "Registered Office: 1 Vincent Square, London, SW1 2PN | Registered as a company in England and Wales, number: 5486885 | VAT Registration Number: 873 0262 33. Copyright 2014 Student Beans all rights reserved."
+    privacy:
+      important: "Wir nehmen den Schutz personenbezogener Daten sehr ernst."
+      policy: "Informieren Sie sich über unsere Datenschutzbestimmungen"
+    reason: 
+      default: "Diese Nachricht wurde von Student Beans gesendet. Du hast diese E-Mail bekommen, weil du eine bestehende Beziehung mit Student Beans hast."
+
+  reverification:
+    title: "%{user}, dein Studentenstatus läuft in kürze aus!"
+    body: "Wenn du weiterhin unseren Studentenrabatt anwenden möchtest, folge bitte dem Link unten um deinen Studentenstatus um ein weiteres Jahr zu verlängern."
+    button:
+      text: "Studentstatus verlängern"
+    problems:
+      text: "Aufgeschmissen?"
+      link:
+        text: "Wende dich an unseren Kundenservice."
