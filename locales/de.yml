@@ -1,19 +1,19 @@
 ---
 de:
   footer:
-    office: "Registered Office:1 Vincent Square, London, SW1 2PN | Registered as a company in England and Wales, number: 5486885 | VAT Registration Number: 873 0262 33. Copyright 2014 Student Beans all rights reserved."
+    office: "Registered Office: 1 Vincent Square, London, SW1 2PN | Registered as a company in England and Wales, number: 5486885 | VAT Registration Number: 873 0262 33. Copyright 2014 Student Beans all rights reserved."
     privacy:
-      important: "Privacy is important to us."
-      policy: "View our privacy policy"
+      important: "Wir nehmen den Schutz personenbezogener Daten sehr ernst."
+      policy: "Informieren Sie sich über unsere Datenschutzbestimmungen"
     reason: 
-      default: "This message was sent by Student Beans. You are receiving this email because you have an existing relationship with Student Beans."
+      default: "Diese Nachricht wurde von Student Beans gesendet. Du hast diese E-Mail bekommen, weil du eine bestehende Beziehung mit Student Beans hast."
 
   reverification:
-    title: "%{user}, Your student status is about to expire!"
-    body: "If you want to keep on saving, simply hit the buton below and we'll renew your student status giving you access to exclusive discounts for another year."
+    title: "%{user}, dein Studentenstatus läuft in kürze aus!"
+    body: "Wenn du weiterhin unseren Studentenrabatt anwenden möchtest, folge bitte dem Link unten um deinen Studentenstatus um ein weiteres Jahr zu verlängern."
     button:
-      text: "Renew Student Status"
+      text: "Studentstatus verlängern"
     problems:
-      text: "Are you having problems?"
+      text: "Aufgeschmissen?"
       link:
-        text: "Go to support"
+        text: "Wende dich an unseren Kundenservice."
