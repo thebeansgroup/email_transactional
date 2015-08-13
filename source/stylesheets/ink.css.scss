@@ -339,7 +339,7 @@ img.center {
 /* Typography */
 
 body, table.body, h1, h2, h3, h4, h5, h6, p, td { 
-  color: #777;
+  color: #222;
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
   font-weight: normal; 
   padding:0; 
@@ -358,13 +358,13 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: $margin*2;
 }
 
-h1 {font-size: 40px;}
-h2 {font-size: 36px;}
+h1 {font-size: 36px;}
+h2 {font-size: 24px;}
 h3,
 h4,
 h5 {font-size: 18px;}
 h6 {font-size: 16px;}
-body, table.body, p, td {font-size: 14px;line-height:19px;}
+body, table.body, p, td {font-size: 16px;line-height:22px;}
 
 p.lead, p.lede, p.leed {
   font-size: 17px;
@@ -447,7 +447,9 @@ h6 a:visited {
 
 /* Buttons */
 
-$button-color: #222;
+$button-color: #5FC159;
+$button-color-hover: #52A94D;
+$button-text-color: #FFF;
 
 table.button,
 table.tiny-button,
@@ -468,7 +470,8 @@ table.large-button td {
   text-align: center;
   background: transparent;
   border: 3px solid $button-color;
-  color: $button-color;
+  background-color: $button-color;
+  color: $button-text-color;
   padding: 8px 0;
 
   .icon {
@@ -504,11 +507,14 @@ table.large-button td a {
   font-weight: bold;
   text-decoration: none;
   font-family: Helvetica, Arial, sans-serif;
-  color: $button-color;
+  background-color: $button-color;
+  color: $button-text-color;
   font-size: 16px;
+  letter-spacing: 1px;
 
   &:hover {
-    color: $button-color;
+    background-color: $button-color-hover;
+    color: $button-text-color;
   }
 }
 
@@ -545,7 +551,11 @@ table.tiny-button:hover td,
 table.small-button:hover td,
 table.medium-button:hover td,
 table.large-button:hover td {
-  background: transparent !important;
+  background: $button-color-hover !important;
+  
+  a{ 
+    background: $button-color-hover !important;
+  }
 }
 
 table.button:hover td a,
@@ -563,7 +573,7 @@ table.medium-button td a:visited,
 table.large-button:hover td a,
 table.large-button:active td a,
 table.large-button td a:visited {
-  color: #90D231 !important; 
+  color: $button-text-color !important; 
 }
 
 table.secondary td {
