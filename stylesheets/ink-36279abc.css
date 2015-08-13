@@ -1,0 +1,1036 @@
+/**********************************************
+* Ink v1.0.5 - Copyright 2013 ZURB Inc        *
+**********************************************/
+/* Client-specific Styles & Reset */
+/* line 11, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+body {
+  width: 100% !important;
+  min-width: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  margin: 0;
+  padding: 0; }
+
+/* line 20, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+#outlook a {
+  padding: 0; }
+
+/* line 25, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+.ExternalClass {
+  width: 100%; }
+
+/* line 29, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div {
+  line-height: 100%; }
+
+/* line 38, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+#backgroundTable {
+  margin: 0;
+  padding: 0;
+  width: 100% !important;
+  line-height: 100% !important; }
+
+/* line 45, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+img {
+  outline: none;
+  text-decoration: none;
+  -ms-interpolation-mode: bicubic;
+  max-width: 100%;
+  float: left;
+  clear: both;
+  display: block; }
+
+/* line 56, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+center {
+  width: 100%;
+  min-width: 580px; }
+
+/* line 61, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+a img {
+  border: none; }
+
+/* line 65, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+p {
+  margin: 0 0 0 20px; }
+
+/* line 69, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table {
+  border-spacing: 0;
+  border-collapse: collapse; }
+
+/* line 74, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+td {
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  border-collapse: collapse !important; }
+
+/* line 82, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table, tr, td {
+  padding: 0;
+  vertical-align: top;
+  text-align: left; }
+
+/* line 88, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+hr {
+  color: #d9d9d9;
+  background-color: #d9d9d9;
+  height: 1px;
+  border: none; }
+
+/* Responsive Grid */
+/* line 97, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.body {
+  height: 100%;
+  width: 100%; }
+
+/* line 102, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.container {
+  width: 580px;
+  margin: 0 auto;
+  text-align: inherit; }
+
+/* line 108, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.row {
+  padding: 0px;
+  width: 100%;
+  position: relative; }
+  /* line 113, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  table.row.group {
+    padding: 20px 0 0; }
+  /* line 114, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  table.row.last {
+    padding-bottom: 40px; }
+
+/* line 117, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.container table.row {
+  display: block; }
+
+/* line 121, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+td.wrapper {
+  padding: 10px 39px 0px 0px;
+  position: relative; }
+  /* line 125, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  td.wrapper.collapse-right {
+    padding-right: 0; }
+  /* line 126, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  td.wrapper.collapse-left {
+    padding-left: 0; }
+  /* line 127, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  td.wrapper.collapse-top {
+    padding-top: 0; }
+
+/* line 130, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.columns,
+table.column {
+  margin: 0 auto; }
+
+/* line 135, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.columns td,
+table.column td {
+  padding: 0px 0px 10px; }
+  /* line 139, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  table.columns td.collapse-bottom,
+  table.column td.collapse-bottom {
+    padding-bottom: 0; }
+
+/* line 142, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.columns td.sub-columns,
+table.column td.sub-columns,
+table.columns td.sub-column,
+table.column td.sub-column {
+  padding-right: 50px; }
+
+/* line 149, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+td.sub-column, td.sub-columns {
+  min-width: 0px; }
+
+/* line 153, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.row td.last,
+table.container td.last {
+  padding-right: 0px; }
+
+/* line 158, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.one {
+  width: 30px; }
+
+/* line 159, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.two {
+  width: 80px; }
+
+/* line 160, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.three {
+  width: 130px; }
+
+/* line 161, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.four {
+  width: 180px; }
+
+/* line 162, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.five {
+  width: 230px; }
+
+/* line 163, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.six {
+  width: 280px; }
+
+/* line 164, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.seven {
+  width: 330px; }
+
+/* line 165, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.eight {
+  width: 380px; }
+
+/* line 166, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.nine {
+  width: 430px; }
+
+/* line 167, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.ten {
+  width: 480px; }
+
+/* line 168, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.eleven {
+  width: 530px; }
+
+/* line 169, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.twelve {
+  width: 580px; }
+
+/* line 171, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.one center {
+  min-width: 30px; }
+
+/* line 172, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.two center {
+  min-width: 80px; }
+
+/* line 173, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.three center {
+  min-width: 130px; }
+
+/* line 174, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.four center {
+  min-width: 180px; }
+
+/* line 175, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.five center {
+  min-width: 230px; }
+
+/* line 176, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.six center {
+  min-width: 280px; }
+
+/* line 177, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.seven center {
+  min-width: 330px; }
+
+/* line 178, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.eight center {
+  min-width: 380px; }
+
+/* line 179, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.nine center {
+  min-width: 430px; }
+
+/* line 180, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.ten center {
+  min-width: 480px; }
+
+/* line 181, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.eleven center {
+  min-width: 530px; }
+
+/* line 182, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.twelve center {
+  min-width: 580px; }
+
+/* line 184, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.one .panel center {
+  min-width: 10px; }
+
+/* line 185, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.two .panel center {
+  min-width: 60px; }
+
+/* line 186, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.three .panel center {
+  min-width: 110px; }
+
+/* line 187, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.four .panel center {
+  min-width: 160px; }
+
+/* line 188, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.five .panel center {
+  min-width: 210px; }
+
+/* line 189, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.six .panel center {
+  min-width: 260px; }
+
+/* line 190, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.seven .panel center {
+  min-width: 310px; }
+
+/* line 191, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.eight .panel center {
+  min-width: 360px; }
+
+/* line 192, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.nine .panel center {
+  min-width: 410px; }
+
+/* line 193, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.ten .panel center {
+  min-width: 460px; }
+
+/* line 194, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.eleven .panel center {
+  min-width: 510px; }
+
+/* line 195, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.twelve .panel center {
+  min-width: 560px; }
+
+/* line 197, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+.body .columns td.one,
+.body .column td.one {
+  width: 8.333333%; }
+
+/* line 199, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+.body .columns td.two,
+.body .column td.two {
+  width: 16.666666%; }
+
+/* line 201, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+.body .columns td.three,
+.body .column td.three {
+  width: 25%; }
+
+/* line 203, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+.body .columns td.four,
+.body .column td.four {
+  width: 33.333333%; }
+
+/* line 205, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+.body .columns td.five,
+.body .column td.five {
+  width: 41.666666%; }
+
+/* line 207, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+.body .columns td.six,
+.body .column td.six {
+  width: 50%; }
+
+/* line 209, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+.body .columns td.seven,
+.body .column td.seven {
+  width: 58.333333%; }
+
+/* line 211, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+.body .columns td.eight,
+.body .column td.eight {
+  width: 66.666666%; }
+
+/* line 213, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+.body .columns td.nine,
+.body .column td.nine {
+  width: 75%; }
+
+/* line 215, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+.body .columns td.ten,
+.body .column td.ten {
+  width: 83.333333%; }
+
+/* line 217, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+.body .columns td.eleven,
+.body .column td.eleven {
+  width: 91.666666%; }
+
+/* line 219, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+.body .columns td.twelve,
+.body .column td.twelve {
+  width: 100%; }
+
+/* line 222, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+td.offset-by-one {
+  padding-left: 50px; }
+
+/* line 223, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+td.offset-by-two {
+  padding-left: 100px; }
+
+/* line 224, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+td.offset-by-three {
+  padding-left: 150px; }
+
+/* line 225, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+td.offset-by-four {
+  padding-left: 200px; }
+
+/* line 226, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+td.offset-by-five {
+  padding-left: 250px; }
+
+/* line 227, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+td.offset-by-six {
+  padding-left: 300px; }
+
+/* line 228, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+td.offset-by-seven {
+  padding-left: 350px; }
+
+/* line 229, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+td.offset-by-eight {
+  padding-left: 400px; }
+
+/* line 230, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+td.offset-by-nine {
+  padding-left: 450px; }
+
+/* line 231, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+td.offset-by-ten {
+  padding-left: 500px; }
+
+/* line 232, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+td.offset-by-eleven {
+  padding-left: 550px; }
+
+/* line 234, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+td.expander {
+  visibility: hidden;
+  width: 0px;
+  padding: 0 !important; }
+
+/* line 240, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.columns .text-pad,
+table.column .text-pad {
+  padding-left: 50px;
+  padding-right: 50px; }
+
+/* line 246, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.columns .left-text-pad,
+table.columns .text-pad-left,
+table.column .left-text-pad,
+table.column .text-pad-left {
+  padding-left: 50px; }
+
+/* line 253, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.columns .right-text-pad,
+table.columns .text-pad-right,
+table.column .right-text-pad,
+table.column .text-pad-right {
+  padding-right: 50px; }
+
+/* Block Grid */
+/* line 263, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+.block-grid {
+  width: 100%;
+  max-width: 580px; }
+
+/* line 268, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+.block-grid td {
+  display: inline-block;
+  padding: 50px 37.5px 50px 50px; }
+
+/* line 273, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+.two-up td {
+  width: 220px; }
+
+/* line 277, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+.three-up td {
+  width: 130px; }
+
+/* line 281, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+.four-up td {
+  width: 90px; }
+
+/* line 285, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+.five-up td {
+  width: 63px; }
+
+/* line 289, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+.six-up td {
+  width: 40px; }
+
+/* line 293, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+.seven-up td {
+  width: 62px; }
+
+/* line 297, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+.eight-up td {
+  width: 52px; }
+
+/* Alignment & Visibility Classes */
+/* line 303, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.center, td.center {
+  text-align: center; }
+
+/* line 307, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+h1.center,
+h2.center,
+h3.center,
+h4.center,
+h5.center,
+h6.center {
+  text-align: center; }
+
+/* line 316, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+span.center {
+  display: block;
+  width: 100%;
+  text-align: center; }
+
+/* line 322, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+img.right {
+  float: right; }
+
+/* line 326, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+img.center {
+  margin: 0 auto;
+  float: none; }
+
+/* line 331, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+.show-for-small,
+.hide-for-desktop {
+  display: block;
+  max-height: 0px;
+  overflow: hidden;
+  max-width: 0px; }
+
+/* Typography */
+/* line 341, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+body, table.body, h1, h2, h3, h4, h5, h6, p, td {
+  color: #222;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  line-height: 1.3; }
+
+/* line 351, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #222;
+  word-break: normal;
+  font-weight: bold; }
+
+/* line 357, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+.title-margin {
+  padding-bottom: 20px; }
+
+/* line 361, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+h1 {
+  font-size: 36px; }
+
+/* line 362, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+h2 {
+  font-size: 24px; }
+
+/* line 363, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+h3,
+h4,
+h5 {
+  font-size: 18px; }
+
+/* line 366, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+h6 {
+  font-size: 16px; }
+
+/* line 367, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+body, table.body, p, td {
+  font-size: 16px;
+  line-height: 22px; }
+
+/* line 369, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+p.lead, p.lede, p.leed {
+  font-size: 17px;
+  line-height: 25px; }
+
+/* line 374, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+p.sign-off {
+  font-size: 20px;
+  font-weight: bold;
+  color: #222; }
+
+/* line 380, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+p {
+  margin-bottom: 20px; }
+
+/* line 384, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+small {
+  font-size: 12px; }
+
+/* line 388, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+a {
+  color: #2B7CCB;
+  text-decoration: none; }
+
+/* line 393, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+a:hover {
+  color: #2B7CCB !important; }
+
+/* line 397, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+a:active {
+  color: #2B7CCB !important; }
+
+/* line 401, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+a:visited {
+  color: #2ba6cb !important; }
+
+/* line 405, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: #2ba6cb; }
+
+/* line 414, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+h1 a:active,
+h2 a:active,
+h3 a:active,
+h4 a:active,
+h5 a:active,
+h6 a:active {
+  color: #2ba6cb !important; }
+
+/* line 423, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited,
+h6 a:visited {
+  color: #2ba6cb !important; }
+
+/* Panels */
+/* line 434, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+.panel {
+  background: #f2f2f2;
+  border: 1px solid #d9d9d9;
+  padding: 10px !important; }
+
+/* line 440, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+.sub-grid table {
+  width: 100%; }
+
+/* line 444, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+.sub-grid td.sub-columns {
+  padding-bottom: 0; }
+
+/* Buttons */
+/* line 454, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.button,
+table.tiny-button,
+table.small-button,
+table.medium-button,
+table.large-button {
+  width: 100%;
+  overflow: hidden; }
+
+/* line 463, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.button td,
+table.tiny-button td,
+table.small-button td,
+table.medium-button td,
+table.large-button td {
+  display: block;
+  width: auto !important;
+  text-align: center;
+  background: transparent;
+  border: 3px solid #5FC159;
+  background-color: #5FC159;
+  color: #FFF;
+  padding: 8px 0; }
+  /* line 477, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  table.button td .icon,
+  table.tiny-button td .icon,
+  table.small-button td .icon,
+  table.medium-button td .icon,
+  table.large-button td .icon {
+    clear: none;
+    float: none;
+    display: inline;
+    margin-right: 5px;
+    margin-bottom: -1px; }
+
+/* line 486, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.tiny-button td {
+  padding: 5px 0 4px; }
+
+/* line 490, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.small-button td {
+  padding: 8px 0 7px; }
+
+/* line 494, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.medium-button td {
+  padding: 12px 0 10px; }
+
+/* line 498, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.large-button td {
+  padding: 21px 0 18px; }
+
+/* line 502, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.button td a,
+table.tiny-button td a,
+table.small-button td a,
+table.medium-button td a,
+table.large-button td a {
+  font-weight: bold;
+  text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #5FC159;
+  color: #FFF;
+  font-size: 16px;
+  letter-spacing: 1px; }
+  /* line 515, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  table.button td a:hover,
+  table.tiny-button td a:hover,
+  table.small-button td a:hover,
+  table.medium-button td a:hover,
+  table.large-button td a:hover {
+    background-color: #52A94D;
+    color: #FFF; }
+
+/* line 521, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.tiny-button td a {
+  font-size: 12px; }
+
+/* line 525, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.small-button td a {
+  font-size: 16px; }
+
+/* line 529, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.medium-button td a {
+  font-size: 20px; }
+
+/* line 533, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.large-button td a {
+  font-size: 24px; }
+
+/* line 537, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.button:hover td,
+table.button:visited td,
+table.button:active td {
+  background: #2795b6 !important; }
+
+/* line 543, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.button:hover td a,
+table.button:visited td a,
+table.button:active td a {
+  color: #90D231 !important; }
+
+/* line 549, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.button:hover td,
+table.tiny-button:hover td,
+table.small-button:hover td,
+table.medium-button:hover td,
+table.large-button:hover td {
+  background: #52A94D !important; }
+  /* line 556, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  table.button:hover td a,
+  table.tiny-button:hover td a,
+  table.small-button:hover td a,
+  table.medium-button:hover td a,
+  table.large-button:hover td a {
+    background: #52A94D !important; }
+
+/* line 561, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.button:hover td a,
+table.button:active td a,
+table.button td a:visited,
+table.tiny-button:hover td a,
+table.tiny-button:active td a,
+table.tiny-button td a:visited,
+table.small-button:hover td a,
+table.small-button:active td a,
+table.small-button td a:visited,
+table.medium-button:hover td a,
+table.medium-button:active td a,
+table.medium-button td a:visited,
+table.large-button:hover td a,
+table.large-button:active td a,
+table.large-button td a:visited {
+  color: #FFF !important; }
+
+/* line 579, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.secondary td {
+  background: #e9e9e9;
+  border-color: #d0d0d0;
+  color: #555; }
+
+/* line 585, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.secondary td a {
+  color: #555; }
+
+/* line 589, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.secondary:hover td {
+  background: #d0d0d0 !important;
+  color: #555; }
+
+/* line 594, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.secondary:hover td a,
+table.secondary td a:visited,
+table.secondary:active td a {
+  color: #555 !important; }
+
+/* line 600, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.white td a,
+table.white:hover td a,
+table.white td a:visited,
+table.white:active td a {
+  color: #fff !important; }
+
+/* line 607, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.white td {
+  border-color: #FFF; }
+
+/* line 611, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.white:hover td {
+  border-color: #222 !important; }
+
+/* line 616, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.success td a,
+table.success:hover td a,
+table.success td a:visited,
+table.success:active td a {
+  color: #fff !important; }
+
+/* line 623, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.success td {
+  background: #009E49;
+  border-color: #009E49; }
+
+/* line 628, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.success:hover td {
+  background: #457a1a !important; }
+
+/* line 632, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.alert td {
+  background: #c60f13;
+  border-color: #970b0e; }
+
+/* line 637, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.alert:hover td {
+  background: #970b0e !important; }
+
+/* line 641, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.radius td {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px; }
+
+/* line 647, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+table.round td {
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius: 500px; }
+
+/* Outlook First */
+/* line 655, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+body.outlook p {
+  display: inline !important; }
+
+/*  Media Queries */
+@media only screen and (max-width: 600px) {
+  /* line 663, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  table[class="body"] img {
+    width: auto !important;
+    height: auto !important; }
+
+  /* line 668, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  table[class="body"] center {
+    min-width: 0 !important; }
+
+  /* line 672, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  table[class="body"] .container {
+    width: 95% !important; }
+
+  /* line 676, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  table[class="body"] .row {
+    width: 100% !important;
+    display: block !important; }
+
+  /* line 681, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  table[class="body"] .wrapper {
+    display: block !important;
+    padding-right: 0 !important; }
+
+  /* line 686, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  table[class="body"] .columns,
+  table[class="body"] .column {
+    table-layout: fixed !important;
+    float: none !important;
+    width: 100% !important;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    display: block !important; }
+
+  /* line 696, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  table[class="body"] .wrapper {
+    padding: 10px 19px 0 0; }
+
+  /* line 700, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  table[class="body"] .wrapper.first .columns,
+  table[class="body"] .wrapper.first .column {
+    display: table !important; }
+
+  /* line 705, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  table[class="body"] table.columns td,
+  table[class="body"] table.column td {
+    width: 100% !important; }
+
+  /* line 710, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  table[class="body"] .columns td.one,
+  table[class="body"] .column td.one {
+    width: 8.333333% !important; }
+
+  /* line 712, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  table[class="body"] .columns td.two,
+  table[class="body"] .column td.two {
+    width: 16.666666% !important; }
+
+  /* line 714, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  table[class="body"] .columns td.three,
+  table[class="body"] .column td.three {
+    width: 25% !important; }
+
+  /* line 716, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  table[class="body"] .columns td.four,
+  table[class="body"] .column td.four {
+    width: 33.333333% !important; }
+
+  /* line 718, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  table[class="body"] .columns td.five,
+  table[class="body"] .column td.five {
+    width: 41.666666% !important; }
+
+  /* line 720, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  table[class="body"] .columns td.six,
+  table[class="body"] .column td.six {
+    width: 50% !important; }
+
+  /* line 722, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  table[class="body"] .columns td.seven,
+  table[class="body"] .column td.seven {
+    width: 58.333333% !important; }
+
+  /* line 724, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  table[class="body"] .columns td.eight,
+  table[class="body"] .column td.eight {
+    width: 66.666666% !important; }
+
+  /* line 726, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  table[class="body"] .columns td.nine,
+  table[class="body"] .column td.nine {
+    width: 75% !important; }
+
+  /* line 728, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  table[class="body"] .columns td.ten,
+  table[class="body"] .column td.ten {
+    width: 83.333333% !important; }
+
+  /* line 730, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  table[class="body"] .columns td.eleven,
+  table[class="body"] .column td.eleven {
+    width: 91.666666% !important; }
+
+  /* line 732, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  table[class="body"] .columns td.twelve,
+  table[class="body"] .column td.twelve {
+    width: 100% !important; }
+
+  /* line 735, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  table[class="body"] td.offset-by-one,
+  table[class="body"] td.offset-by-two,
+  table[class="body"] td.offset-by-three,
+  table[class="body"] td.offset-by-four,
+  table[class="body"] td.offset-by-five,
+  table[class="body"] td.offset-by-six,
+  table[class="body"] td.offset-by-seven,
+  table[class="body"] td.offset-by-eight,
+  table[class="body"] td.offset-by-nine,
+  table[class="body"] td.offset-by-ten,
+  table[class="body"] td.offset-by-eleven {
+    padding-left: 0 !important; }
+
+  /* line 749, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  table[class="body"] td.wrapper.collapse-right {
+    padding-right: 19px !important; }
+
+  /* line 753, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  table[class="body"] table.columns td.expander {
+    width: 1px !important; }
+
+  /* line 758, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  table[class="body"] table.columns .text-pad,
+  table[class="body"] table.column .text-pad {
+    padding-left: 30px;
+    padding-right: 30px; }
+  /* line 764, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  table[class="body"] table.columns .left-text-pad,
+  table[class="body"] table.columns .text-pad-left,
+  table[class="body"] table.column .left-text-pad,
+  table[class="body"] table.column .text-pad-left {
+    padding-left: 30px; }
+  /* line 771, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  table[class="body"] table.columns .right-text-pad,
+  table[class="body"] table.columns .text-pad-right,
+  table[class="body"] table.column .right-text-pad,
+  table[class="body"] table.column .text-pad-right {
+    padding-right: 30px; }
+  /* line 778, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  table[class="body"] table.columns td.sub-columns,
+  table[class="body"] table.column td.sub-columns,
+  table[class="body"] table.columns td.sub-column,
+  table[class="body"] table.column td.sub-column {
+    padding-right: 30px; }
+
+  /* line 788, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  table[class="body"] table.button,
+  table[class="body"] table.tiny-button,
+  table[class="body"] table.small-button,
+  table[class="body"] table.medium-button,
+  table[class="body"] table.large-button {
+    overflow: visible; }
+
+  /* line 796, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  table[class="body"] .right-text-pad,
+  table[class="body"] .text-pad-right {
+    padding-left: 30px !important; }
+
+  /* line 801, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  table[class="body"] .left-text-pad,
+  table[class="body"] .text-pad-left {
+    padding-right: 30px !important; }
+
+  /* line 806, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  table[class="body"] .hide-for-small,
+  table[class="body"] .show-for-desktop {
+    display: none !important; }
+
+  /* line 811, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+  table[class="body"] .show-for-small,
+  table[class="body"] .hide-for-desktop {
+    display: inherit !important;
+    max-height: none !important;
+    overflow: inherit !important;
+    max-width: none !important; }
+    /* line 818, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+    table[class="body"] .show-for-small.block,
+    table[class="body"] .hide-for-desktop.block {
+      display: block !important; }
+    /* line 819, /Users/ad/src/email_transactional/source/stylesheets/ink.css.scss */
+    table[class="body"] .show-for-small.cell,
+    table[class="body"] .hide-for-desktop.cell {
+      display: table-cell !important; } }
