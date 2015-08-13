@@ -52,6 +52,31 @@ def parse(doc)
   html.to_html
 end
 
+def directoryBuilder
+  html = "<html><body><ul>"; 
+  Dir.glob(build_dir + "/emails/*/" ).each do |folder|
+    html += "<li><a href='#{folder.sub('build/', '')}'>#{folder.sub('build/emails', '')}</a></li>"
+
+    # sub
+    subhtml = "<html><body><ul>"
+    Dir.glob(folder + "/*.html" ).each do |file|
+      relPath = file.split('/')[-1]
+      subhtml += "<li><a href='#{relPath}'>#{relPath}</a></li>"
+    end
+    subhtml += "</ul></body></html>"
+    puts folder + "index.html"
+    File.open( folder + "index.html"  , "w+") do |content|
+      content.puts subhtml
+    end
+    # /sub
+
+  end
+  html += "</ul></body></html>"
+  File.open( "build/index.html"  , "w+") do |content|
+    content.puts html
+  end
+end
+
 class InlineCSS < Middleman::Extension  
   def initialize(app, options_hash={}, &block)
     super
@@ -74,6 +99,9 @@ class InlineCSS < Middleman::Extension
 
         File.delete( Dir.getwd + File::SEPARATOR + source_file)
       end
+
+      directoryBuilder
+
     end
   end
 end  
@@ -85,7 +113,7 @@ end
 
 configure :build do
   activate :inline_css
-  activate :i18n, :path => "emails/:locale/"
+  activate :i18n, :path => "emails/:locale/", :mount_at_root => false
   # Enable cache buster
   activate :asset_hash
   # Use relative URLs
