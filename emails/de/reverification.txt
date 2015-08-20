@@ -1,0 +1,33 @@
+( https://www.facebook.com/studentbeans )
+
+( https://twitter.com/studentbeans )
+
+---------------------------------------------------------
+[[[%= user %]]], dein Studentenstatus läuft in kürze aus!
+---------------------------------------------------------
+
+Wenn du weiterhin unseren Studentenrabatt
+anwenden möchtest, folge bitte dem Link unten um deinen
+Studentenstatus um ein weiteres Jahr zu verlängern.
+
+Studentstatus verlängern (
+%5B%5B%5B%=%20renew_link%20%%5D%5D%5D )
+
+Aufgeschmissen? Wende dich an unseren
+Kundenservice. ( http://studentbeans.helpscoutdocs.com/ )
+
+Diese Nachricht wurde von Student Beans
+gesendet. Du hast diese E-Mail bekommen, weil du eine bestehende
+Beziehung mit Student Beans hast.
+Wir nehmen den Schutz personenbezogener Daten
+sehr ernst. Informieren Sie sich über unsere
+Datenschutzbestimmungen ( https://www.studentbeans.com/info/privacy )
+
+( https://www.facebook.com/studentbeans )
+
+( https://twitter.com/studentbeans )
+
+Registered Office: 1 Vincent Square, London, SW1
+2PN | Registered as a company in England and Wales, number:
+5486885 | VAT Registration Number: 873 0262 33. Copyright 2014
+Student Beans all rights reserved.
