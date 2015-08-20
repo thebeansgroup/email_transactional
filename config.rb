@@ -9,6 +9,10 @@ configure :development do
   activate :i18n
 end
 
+# CONSTANTS
+TMPL_OPEN_TAG  = "[[["
+TMPL_CLOSE_TAG = "]]]"
+
 # Methods defined in the helpers block are available in templates
 helpers do
   def image_url(source)
@@ -16,7 +20,7 @@ helpers do
   end
 
   def tagify(name)
-    "<%= " + name + " %>".html_safe
+    TMPL_OPEN_TAG + "%= " + name + " %" + TMPL_CLOSE_TAG.html_safe
   end
 end
 
@@ -49,7 +53,10 @@ def parse(doc)
   html.search("[align='none']").each do |el|
     el.attributes["align"].remove
   end
-  html.to_html
+  html_str = html.to_html
+  html_str = html_str.sub(TMPL_OPEN_TAG, '<')
+  html_str = html_str.sub(TMPL_CLOSE_TAG, '>')
+  html_str
 end
 
 def directoryBuilder
@@ -83,15 +90,19 @@ class InlineCSS < Middleman::Extension
     app.after_build do |builder|
       
       Dir.glob(build_dir + File::SEPARATOR + '**/*.html').each do |source_file|
-        
         if source_file.start_with? 'build/partials'
           premailer = Premailer.new(source_file, verbose: true, css: 'http://localhost:4567/stylesheets/all.css', remove_classes: false, adapter: 'nokogiri')
         else
           premailer = Premailer.new(source_file, verbose: true, remove_classes: false, adapter: 'nokogiri')
         end
         destination_file = source_file.gsub('.html', '--inline-css.html')
+        destination_txt_file = source_file.gsub('.html', '.txt')
 
         puts "Inlining file: #{source_file} to #{destination_file}"
+
+        File.open(destination_txt_file, "w") do |content|
+          content.puts  premailer.to_plain_text
+        end
 
         File.open(destination_file, "w") do |content|
           content.puts  parse(premailer.to_inline_css)
