@@ -1,0 +1,48 @@
+<table class="container inline-banner bordered">
+<tr>
+  <td>
+    <table class="row">
+      <tr>
+        <td class="wrapper">
+
+          <table class="six columns hide-for-small">
+            <tbody>
+              <tr>
+                <td class="collapse-bottom">
+
+                 <center>
+                    <img width="243" height="179" src="<%= image_url('app_screen.png') %>" class="inline-banner__image">
+                  </center>
+
+                </td>
+                <td class="expander"></td>
+              </tr>
+            </tbody>
+          </table>
+
+        </td>
+
+        <td class="wrapper last">
+
+          <table class="six columns">
+            <tbody>
+              <tr>
+                <td class="">
+                  <br/>
+                  <br/>
+                  <%= markdown t('app_ad.description') %>
+                  <a href="<%= appstore_href %>" class="inline-img"><img src="<%= image_url('app_appstore_button.png') %>" width="114" height="38" /></a>
+                  <a href="<%= googleplay_href %>" class="inline-img"><img src="<%= image_url('app_googleplay_button.png') %>" width="114" height="38" /></a>
+                </td>
+                <td class="expander"></td>
+              </tr>
+            </tbody>
+          </table>
+
+        </td>
+
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>

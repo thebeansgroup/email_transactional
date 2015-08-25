@@ -1,0 +1,18 @@
+<table class="row">
+  <tr>
+      <td class="wrapper last">
+        <table class="twelve columns">
+          <tr>
+            <td class="">
+              <div class="text-pad">
+                <% if !t( page_name + '.top_title', :default => '').empty? %><h1 class="txt-center title-margin"><%= t( page_name + '.top_title')  %></h1><% end %>
+                <p class="txt-center"><%= t( page_name + '.top_description.line_1')  %></p>
+                <p class="txt-center"><%= t( page_name + '.top_description.line_2')  %></p>
+              </div>
+            </td>
+            <td class="expander"></td>
+          </tr>
+        </table>
+      </td>
+  </tr>
+</table>

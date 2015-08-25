@@ -1,6 +1,6 @@
 $margin: 10px;
-$gutter: 50px;
-$mobile-gutter: 30px;
+$gutter: 30px;
+$mobile-gutter: 10px;
 
 /**********************************************
 * Ink v1.0.5 - Copyright 2013 ZURB Inc        *
@@ -267,7 +267,7 @@ $block-grid-width: 580px;
 
 .block-grid td {
   display: inline-block;
-  padding:$gutter $gutter*0.75 $gutter $gutter;
+  padding:$gutter $gutter*0.3 $gutter $gutter;
 }
 
 .two-up td {
@@ -279,7 +279,7 @@ $block-grid-width: 580px;
 }
 
 .four-up td {
-  width:90px;
+  width:100px;
 }
 
 .five-up td {
@@ -317,6 +317,12 @@ span.center {
   display: block;
   width: 100%;
   text-align: center;
+}
+
+a.inline-img img { 
+  display: inline;
+  float: none;
+
 }
 
 img.right {
@@ -358,12 +364,12 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: $margin*2;
 }
 
-h1 {font-size: 36px;}
-h2 {font-size: 24px;}
-h3,
+h1, .h1 {font-size: 24px;}
+h2, .h2 {font-size: 24px;}
+h3, .h3,
 h4,
-h5 {font-size: 18px;}
-h6 {font-size: 16px;}
+h5, .h5 {font-size: 18px;}
+h6, .h6 {font-size: 16px;}
 body, table.body, p, td {font-size: 16px;line-height:22px;}
 
 p.lead, p.lede, p.leed {
@@ -575,6 +581,53 @@ table.large-button:active td a,
 table.large-button td a:visited {
   color: $button-text-color !important; 
 }
+
+@mixin button-color($txt, $bg, $bg-hover) {
+  td {
+    border-color: $bg;
+    background-color: $bg;
+    color: $txt;
+
+    a {
+      background-color: $bg;
+      color: $txt;
+
+      &:hover {
+        background-color: $bg-hover !important;
+        color: $txt;
+      }
+    }
+  }
+
+  &:hover td,
+  &:visited td,
+  &:active td {
+    background: $bg-hover !important;
+    a {
+      background: $bg-hover !important;
+    }
+  }
+}
+
+
+$twitter-color: #19D1F2;
+$twitter-color-hover: darken( $twitter-color, 10);
+$facebook-color: #324681;
+$facebook-color-hover: darken( $facebook-color, 10);
+$social-text-color: #fff;
+
+table.twitter-button {
+  @include button-color($social-text-color, $twitter-color, $twitter-color-hover);
+}
+
+table.facebook-button {
+  @include button-color($social-text-color, $facebook-color, $facebook-color-hover);
+}
+
+table.blue-button {
+  @include button-color(#fff, #251B82, darken(#251B82, 10));
+}
+
 
 table.secondary td {
   background: #e9e9e9;
