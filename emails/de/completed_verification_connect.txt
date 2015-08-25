@@ -1,0 +1,130 @@
+( https://www.facebook.com/studentbeans )
+
+( https://twitter.com/studentbeans )
+
+------------------------------------------------------------
+translation missing: de.completed_verification_connect.title
+------------------------------------------------------------
+
+translation missing:
+de.completed_verification_connect.body
+
+translation missing:
+de.completed_verification_connect.discount_name (
+%5B%5B%5B%=%20discount_link%20%%5D%5D%5D )
+
+translation missing:
+de.completed_verification_connect.top_description.line_1
+
+translation missing:
+de.completed_verification_connect.top_description.line_2
+
+( #link )
+
+[[[%= dis_company_1 %]]]
+------------------------
+
+translation missing:
+de.verification.discount.company
+
+( #link )
+
+( #link )
+
+[[[%= dis_company_2 %]]]
+------------------------
+
+translation missing:
+de.verification.discount.company
+
+( #link )
+
+( #link )
+
+[[[%= dis_company_3 %]]]
+------------------------
+
+translation missing:
+de.verification.discount.company
+
+( #link )
+
+( #link )
+
+[[[%= dis_company_4 %]]]
+------------------------
+
+translation missing:
+de.verification.discount.company
+
+( #link )
+
+( #link )
+
+[[[%= dis_company_5 %]]]
+------------------------
+
+translation missing:
+de.verification.discount.company
+
+( #link )
+
+( #link )
+
+[[[%= dis_company_6 %]]]
+------------------------
+
+translation missing:
+de.verification.discount.company
+
+( #link )
+
+[[[%= company_name_1 %]]] (
+%5B%5B%5B%=%20company_link_1%20%%5D%5D%5D )
+
+[[[%= company_name_2 %]]] (
+%5B%5B%5B%=%20company_link_2%20%%5D%5D%5D )
+
+[[[%= company_name_3 %]]] (
+%5B%5B%5B%=%20company_link_3%20%%5D%5D%5D )
+
+[[[%= company_name_4 %]]] (
+%5B%5B%5B%=%20company_link_4%20%%5D%5D%5D )
+
+translation missing:
+de.completed_verification_connect.email_description
+
+translation missing:
+de.completed_verification_connect.footer_button (
+%5B%5B%5B%=%20renew_link%20%%5D%5D%5D )
+
+translation missing: de.app_ad.description
+
+( )
+( )
+
+TRANSLATION MISSING: DE.SOCIAL_AD.TITLE
+---------------------------------------
+
+translation missing:
+de.social_ad.description
+
+FACEBOOK ( https://www.facebook.com/studentbeans )
+
+TWITTER ( https://twitter.com/studentbeans )
+
+Diese Nachricht wurde von Student Beans
+gesendet. Du hast diese E-Mail bekommen, weil du eine bestehende
+Beziehung mit Student Beans hast.
+Wir nehmen den Schutz personenbezogener Daten
+sehr ernst. Informieren Sie sich über unsere
+Datenschutzbestimmungen ( https://www.studentbeans.com/info/privacy )
+
+( https://www.facebook.com/studentbeans )
+
+( https://twitter.com/studentbeans )
+
+Registered Office: 1 Vincent Square, London, SW1
+2PN | Registered as a company in England and Wales, number:
+5486885 | VAT Registration Number: 873 0262 33. Copyright 2014
+Student Beans all rights reserved.
