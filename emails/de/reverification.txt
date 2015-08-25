@@ -2,16 +2,16 @@
 
 ( https://twitter.com/studentbeans )
 
----------------------------------------------------------
-[[[%= user %]]], dein Studentenstatus läuft in kürze aus!
----------------------------------------------------------
+----------------------------------------------------
+[[[user]]], dein Studentenstatus läuft in kürze aus!
+----------------------------------------------------
 
 Wenn du weiterhin unseren Studentenrabatt
 anwenden möchtest, folge bitte dem Link unten um deinen
 Studentenstatus um ein weiteres Jahr zu verlängern.
 
 Studentstatus verlängern (
-%5B%5B%5B%=%20renew_link%20%%5D%5D%5D )
+%5B%5B%5Brenew_link%5D%5D%5D )
 
 Aufgeschmissen? Wende dich an unseren
 Kundenservice. ( http://studentbeans.helpscoutdocs.com/ )

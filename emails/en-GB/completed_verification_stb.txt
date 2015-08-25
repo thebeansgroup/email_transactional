@@ -13,69 +13,69 @@ Let me introduce you to some of our favourites…
 
 ( #link )
 
-[[[%= dis_company_1 %]]]
-------------------------
+[[[dis_company_1]]]
+-------------------
 
-at [[[%= dis_company_1 %]]]
-
-( #link )
-
-( #link )
-
-[[[%= dis_company_2 %]]]
-------------------------
-
-at [[[%= dis_company_2 %]]]
+at [[[dis_company_1]]]
 
 ( #link )
 
 ( #link )
 
-[[[%= dis_company_3 %]]]
-------------------------
+[[[dis_company_2]]]
+-------------------
 
-at [[[%= dis_company_3 %]]]
-
-( #link )
-
-( #link )
-
-[[[%= dis_company_4 %]]]
-------------------------
-
-at [[[%= dis_company_4 %]]]
+at [[[dis_company_2]]]
 
 ( #link )
 
 ( #link )
 
-[[[%= dis_company_5 %]]]
-------------------------
+[[[dis_company_3]]]
+-------------------
 
-at [[[%= dis_company_5 %]]]
+at [[[dis_company_3]]]
+
+( #link )
+
+( #link )
+
+[[[dis_company_4]]]
+-------------------
+
+at [[[dis_company_4]]]
 
 ( #link )
 
 ( #link )
 
-[[[%= dis_company_6 %]]]
-------------------------
+[[[dis_company_5]]]
+-------------------
 
-at [[[%= dis_company_6 %]]]
+at [[[dis_company_5]]]
 
 ( #link )
 
-[[[%= company_name_1 %]]] (
-%5B%5B%5B%=%20company_link_1%20%%5D%5D%5D )
+( #link )
 
-[[[%= company_name_2 %]]] (
-%5B%5B%5B%=%20company_link_2%20%%5D%5D%5D )
+[[[dis_company_6]]]
+-------------------
 
-[[[%= company_name_3 %]]] (
-%5B%5B%5B%=%20company_link_3%20%%5D%5D%5D )
+at [[[dis_company_6]]]
 
-[[[%= company_name_4 %]]] (
-%5B%5B%5B%=%20company_link_4%20%%5D%5D%5D )
+( #link )
+
+[[[company_name_1]]] (
+%5B%5B%5Bcompany_link_1%5D%5D%5D )
+
+[[[company_name_2]]] (
+%5B%5B%5Bcompany_link_2%5D%5D%5D )
+
+[[[company_name_3]]] (
+%5B%5B%5Bcompany_link_3%5D%5D%5D )
+
+[[[company_name_4]]] (
+%5B%5B%5Bcompany_link_4%5D%5D%5D )
 
 We'll email you every tuesday with the best
 student discounts and deals of the week. Alternatively, keep

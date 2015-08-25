@@ -2,9 +2,9 @@
 
 ( https://twitter.com/studentbeans )
 
-*************************************************
-Hey [[[%= user %]]], you're missing out big time!
-*************************************************
+********************************************
+Hey [[[user]]], you're missing out big time!
+********************************************
 
 You haven’t verified as a student yet! This
 means you are missing out on all the exclusive student discounts.
@@ -14,51 +14,51 @@ from local and nationwide brands…
 
 ( #link )
 
-[[[%= dis_company_1 %]]]
-------------------------
+[[[dis_company_1]]]
+-------------------
 
-at [[[%= dis_company_1 %]]]
-
-( #link )
-
-( #link )
-
-[[[%= dis_company_2 %]]]
-------------------------
-
-at [[[%= dis_company_2 %]]]
+at [[[dis_company_1]]]
 
 ( #link )
 
 ( #link )
 
-[[[%= dis_company_3 %]]]
-------------------------
+[[[dis_company_2]]]
+-------------------
 
-at [[[%= dis_company_3 %]]]
+at [[[dis_company_2]]]
+
+( #link )
+
+( #link )
+
+[[[dis_company_3]]]
+-------------------
+
+at [[[dis_company_3]]]
 
 ( #link )
 
 ( #link )
 
-[[[%= dis_company_4 %]]]
-------------------------
+[[[dis_company_4]]]
+-------------------
 
-at [[[%= dis_company_4 %]]]
+at [[[dis_company_4]]]
 
 ( #link )
 
-[[[%= company_name_1 %]]] (
-%5B%5B%5B%=%20company_link_1%20%%5D%5D%5D )
+[[[company_name_1]]] (
+%5B%5B%5Bcompany_link_1%5D%5D%5D )
 
-[[[%= company_name_2 %]]] (
-%5B%5B%5B%=%20company_link_2%20%%5D%5D%5D )
+[[[company_name_2]]] (
+%5B%5B%5Bcompany_link_2%5D%5D%5D )
 
-[[[%= company_name_3 %]]] (
-%5B%5B%5B%=%20company_link_3%20%%5D%5D%5D )
+[[[company_name_3]]] (
+%5B%5B%5Bcompany_link_3%5D%5D%5D )
 
-[[[%= company_name_4 %]]] (
-%5B%5B%5B%=%20company_link_4%20%%5D%5D%5D )
+[[[company_name_4]]] (
+%5B%5B%5Bcompany_link_4%5D%5D%5D )
 
 All you need to do is Login ( /login-link )
 to your account and verify your student status.

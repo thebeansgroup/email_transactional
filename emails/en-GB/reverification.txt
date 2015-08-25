@@ -2,16 +2,16 @@
 
 ( https://twitter.com/studentbeans )
 
---------------------------------------------------------
-[[[%= user %]]], Your student status is about to expire!
---------------------------------------------------------
+---------------------------------------------------
+[[[user]]], Your student status is about to expire!
+---------------------------------------------------
 
 If you want to keep on saving, simply hit the
 buton below and we'll renew your student status giving you access
 to exclusive discounts for another year.
 
 Renew Student Status (
-%5B%5B%5B%=%20renew_link%20%%5D%5D%5D )
+%5B%5B%5Brenew_link%5D%5D%5D )
 
 Are you having problems? Go to support ( http://studentbeans.helpscoutdocs.com/ )
 

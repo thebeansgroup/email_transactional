@@ -2,9 +2,9 @@
 
 ( https://twitter.com/studentbeans )
 
-********************
-Hey [[[%= user %]]],
-********************
+***************
+Hey [[[user]]],
+***************
 
 You haven’t verified as a student yet! This
 means you are missing out on all the exclusive student discounts.
