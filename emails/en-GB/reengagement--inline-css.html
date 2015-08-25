@@ -54,21 +54,25 @@
   
 <br>
 <table class="container main-content feature">
-
   <tr>
     <td>
+
+
       <table class="row">
         <tr>
 
-          <td class="wrapper header alert last">
+          <td class="wrapper header last">
             <table class="twelve columns">
               <tr>
                 <td class="header__collapse">
                   <div class="text-pad">
+
                     <br>
+                    <h1 class="h3 title-margin">Hey <%= user %>, you're missing out big time!</h1>
+                    <p>You haven’t verified as a student yet! This means you are missing out on all the exclusive student discounts.</p>
 
-                    <h2 class="txt-center title-margin"><%= user %>, Your student status is about to expire!</h2>
-                    <p class="txt-center">If you want to keep on saving, simply hit the buton below and we'll renew your student status giving you access to exclusive discounts for another year.</p>
+<p><a href="/login-link">Complete your registration</a> and access discounts from local and nationwide brands…</p>
+
 
                   </div>
                 </td>
@@ -79,47 +83,138 @@
           </td>
         </tr>
       </table>
-    </td>
-  </tr>
 
+      <table class="row">
   <tr>
-    <td class="wrapper offset-by-two">
-      <table class="eight columns" style="margin: 0">
-        <tr>
-          <td class="">
+      <td class="wrapper ">
+        <table class="six columns">
+          <tr>
+            <td class="left-text-pad">
 
-            <div class="text-pad">
-              <table class="button">
-                <tr>
-                  <td>
-                    <a href="%5B%5B%5B%=%20renew_link%20%%5D%5D%5D">Renew Student Status</a>
-                  </td>
-                </tr>
-              </table>
-              <br>
-            </div>
+                <!-- Deal block  -->
+                <a href="#link"><img width="270" height="152" src="%5B%5B%5B%=%20dis_image_1%20%%5D%5D%5D" class="center" alt=""></a>
+                <div class="discount">
+                  <a href="#link">
+                    <h3 class="discount__title">[[[%= dis_company_1 %]]]</h3>
+                    <p class="discount__company">at [[[%= dis_company_1 %]]]</p>
+                  </a>
+                </div>
+                <!-- / Deal block  -->
 
-          </td>
-          <td class="expander"></td>
-        </tr>
-      </table>
-    </td>
+            </td>
+            <td class="expander"></td>
+          </tr>
+        </table>
+      </td>
+      <td class="wrapper last">
+        <table class="six columns">
+          <tr>
+            <td class="right-text-pad">
+
+                <!-- Deal block  -->
+                <a href="#link"><img width="270" height="152" src="%5B%5B%5B%=%20dis_image_2%20%%5D%5D%5D" class="center" alt=""></a>
+                <div class="discount">
+                  <a href="#link">
+                    <h3 class="discount__title">[[[%= dis_company_2 %]]]</h3>
+                    <p class="discount__company">at [[[%= dis_company_2 %]]]</p>
+                  </a>
+                </div>
+                <!-- / Deal block  -->
+
+            </td>
+            <td class="expander"></td>
+          </tr>
+        </table>
+      </td>
   </tr>
+  <tr>
+      <td class="wrapper ">
+        <table class="six columns">
+          <tr>
+            <td class="left-text-pad">
 
+                <!-- Deal block  -->
+                <a href="#link"><img width="270" height="152" src="%5B%5B%5B%=%20dis_image_3%20%%5D%5D%5D" class="center" alt=""></a>
+                <div class="discount">
+                  <a href="#link">
+                    <h3 class="discount__title">[[[%= dis_company_3 %]]]</h3>
+                    <p class="discount__company">at [[[%= dis_company_3 %]]]</p>
+                  </a>
+                </div>
+                <!-- / Deal block  -->
+
+            </td>
+            <td class="expander"></td>
+          </tr>
+        </table>
+      </td>
+      <td class="wrapper last">
+        <table class="six columns">
+          <tr>
+            <td class="right-text-pad">
+
+                <!-- Deal block  -->
+                <a href="#link"><img width="270" height="152" src="%5B%5B%5B%=%20dis_image_4%20%%5D%5D%5D" class="center" alt=""></a>
+                <div class="discount">
+                  <a href="#link">
+                    <h3 class="discount__title">[[[%= dis_company_4 %]]]</h3>
+                    <p class="discount__company">at [[[%= dis_company_4 %]]]</p>
+                  </a>
+                </div>
+                <!-- / Deal block  -->
+
+            </td>
+            <td class="expander"></td>
+          </tr>
+        </table>
+      </td>
+  </tr>
+</table>
+ 
+      <table class="row">
   <tr>
     <td>
+      <table class="block-grid four-up">
+        <tr>
+          <td>
+            <a href="%5B%5B%5B%=%20company_link_1%20%%5D%5D%5D" class="brand-logo"><img src="%5B%5B%5B%=%20company_image_1%20%%5D%5D%5D" width="90" height="90" alt="[[[%= company_name_1 %]]]"></a>
+          </td>
+<td>
+            <a href="%5B%5B%5B%=%20company_link_2%20%%5D%5D%5D" class="brand-logo"><img src="%5B%5B%5B%=%20company_image_2%20%%5D%5D%5D" width="90" height="90" alt="[[[%= company_name_2 %]]]"></a>
+          </td>
+<td>
+            <a href="%5B%5B%5B%=%20company_link_3%20%%5D%5D%5D" class="brand-logo"><img src="%5B%5B%5B%=%20company_image_3%20%%5D%5D%5D" width="90" height="90" alt="[[[%= company_name_3 %]]]"></a>
+          </td>
+<td>
+            <a href="%5B%5B%5B%=%20company_link_4%20%%5D%5D%5D" class="brand-logo"><img src="%5B%5B%5B%=%20company_image_4%20%%5D%5D%5D" width="90" height="90" alt="[[[%= company_name_4 %]]]"></a>
+          </td>
+        </tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
+  
+
+
       <table class="row">
         <tr>
 
-          <td class="wrapper header alert last">
+          <td class="wrapper header last">
             <table class="twelve columns">
               <tr>
                 <td class="header__collapse">
                   <div class="text-pad">
 
-                    <p class="txt-center"><strong>Are you having problems?</strong> <a href="http://studentbeans.helpscoutdocs.com/">Go to support</a></p>
+                    <p>All you need to do is <a href="/login-link">Login</a> to your account and verify your student status.</p>
 
-                    <br><br>
+<p><strong>Having problems?</strong> <a href="email@email.com">Shoot us an email</a> and we will be happy to help.</p>
+
+<p>All the best,</p>
+
+<p>The Bean Team</p>
+
+
                   </div>
                 </td>
 <td class="expander"></td>
@@ -129,9 +224,12 @@
           </td>
         </tr>
       </table>
+
+      <br><br>
     </td>
   </tr>
 
+  
 </table>
 <table class="row meta">
   <tr>

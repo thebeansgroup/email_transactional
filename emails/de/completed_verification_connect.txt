@@ -2,30 +2,28 @@
 
 ( https://twitter.com/studentbeans )
 
-------------------------------------------------------------
-translation missing: de.completed_verification_connect.title
-------------------------------------------------------------
+-----------------------------------------------------------------
+Hey [[[%= user %]]], Welcome to Student Beans. Your Topman
+discount is ready…
+-----------------------------------------------------------------
 
-translation missing:
-de.completed_verification_connect.body
+Just follow the link below when you are ready
+to use the discount
 
-translation missing:
-de.completed_verification_connect.discount_name (
+[[[%= discount_name %]]] → (
 %5B%5B%5B%=%20discount_link%20%%5D%5D%5D )
 
-translation missing:
-de.completed_verification_connect.top_description.line_1
+You now have access to over 10,000 discounts and
+deals that are exclusive to students!
 
-translation missing:
-de.completed_verification_connect.top_description.line_2
+Let me introduce you to some of our favourites…
 
 ( #link )
 
 [[[%= dis_company_1 %]]]
 ------------------------
 
-translation missing:
-de.verification.discount.company
+at [[[%= dis_company_1 %]]]
 
 ( #link )
 
@@ -34,8 +32,7 @@ de.verification.discount.company
 [[[%= dis_company_2 %]]]
 ------------------------
 
-translation missing:
-de.verification.discount.company
+at [[[%= dis_company_2 %]]]
 
 ( #link )
 
@@ -44,8 +41,7 @@ de.verification.discount.company
 [[[%= dis_company_3 %]]]
 ------------------------
 
-translation missing:
-de.verification.discount.company
+at [[[%= dis_company_3 %]]]
 
 ( #link )
 
@@ -54,8 +50,7 @@ de.verification.discount.company
 [[[%= dis_company_4 %]]]
 ------------------------
 
-translation missing:
-de.verification.discount.company
+at [[[%= dis_company_4 %]]]
 
 ( #link )
 
@@ -64,8 +59,7 @@ de.verification.discount.company
 [[[%= dis_company_5 %]]]
 ------------------------
 
-translation missing:
-de.verification.discount.company
+at [[[%= dis_company_5 %]]]
 
 ( #link )
 
@@ -74,8 +68,7 @@ de.verification.discount.company
 [[[%= dis_company_6 %]]]
 ------------------------
 
-translation missing:
-de.verification.discount.company
+at [[[%= dis_company_6 %]]]
 
 ( #link )
 
@@ -91,23 +84,25 @@ de.verification.discount.company
 [[[%= company_name_4 %]]] (
 %5B%5B%5B%=%20company_link_4%20%%5D%5D%5D )
 
-translation missing:
-de.completed_verification_connect.email_description
+We'll email you every tuesday with the best
+student discounts and deals of the week. Alternatively, keep
+updated by following us on Facebook ( http://facebook.com ) or
+Twitter ( http://twitter.com ). Hungry for more?
 
-translation missing:
-de.completed_verification_connect.footer_button (
+Browse our discounts (
 %5B%5B%5B%=%20renew_link%20%%5D%5D%5D )
 
-translation missing: de.app_ad.description
+Save time & money by redeeming offers in our
+app
 
 ( )
 ( )
 
-TRANSLATION MISSING: DE.SOCIAL_AD.TITLE
----------------------------------------
+BE THE FIRST TO HEAR ABOUT NEW DEALS
+------------------------------------
 
-translation missing:
-de.social_ad.description
+Follow us on facebook or twitter so
+you don't miss out on any of our exclusive deals discounts.
 
 FACEBOOK ( https://www.facebook.com/studentbeans )
 
