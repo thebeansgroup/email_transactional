@@ -20,7 +20,7 @@ helpers do
   end
 
   def tagify(name)
-    TMPL_OPEN_TAG + "%= " + name + " %" + TMPL_CLOSE_TAG.html_safe
+    TMPL_OPEN_TAG + name + TMPL_CLOSE_TAG.html_safe
   end
 
   def markdown(text)
@@ -60,9 +60,9 @@ require 'premailer'
 require 'nokogiri'
 
 def parse(doc)
-  puts "parse"
   html = Nokogiri::HTML  doc
   head  = html.search("head")
+  puts head
   html.search("style").each do |el|
     head.children.last.add_previous_sibling el
     # el.remove
@@ -77,8 +77,11 @@ def parse(doc)
     el.attributes["align"].remove
   end
   html_str = html.to_html
-  html_str = html_str.sub(TMPL_OPEN_TAG, '<')
-  html_str = html_str.sub(TMPL_CLOSE_TAG, '>')
+  puts html_str
+  html_str = html_str.gsub(TMPL_OPEN_TAG, '<% ')
+  html_str = html_str.gsub( ERB::Util.url_encode(TMPL_OPEN_TAG), '<% ')
+  html_str = html_str.gsub(TMPL_CLOSE_TAG, ' %>')
+  html_str = html_str.gsub( ERB::Util.url_encode(TMPL_CLOSE_TAG), ' %>')
   html_str
 end
 
@@ -113,23 +116,25 @@ class InlineCSS < Middleman::Extension
     app.after_build do |builder|
       
       Dir.glob(build_dir + File::SEPARATOR + '**/*.html').each do |source_file|
-        if source_file.start_with? 'build/partials'
-          premailer = Premailer.new(source_file, verbose: true, css: 'http://localhost:4567/stylesheets/all.css', remove_classes: false, adapter: 'nokogiri')
-        else
-          premailer = Premailer.new(source_file, verbose: true, remove_classes: false, adapter: 'nokogiri')
-        end
+        # if source_file.start_with? 'build/partials'
+        # premailer = Premailer.new(source_file, verbose: true, css: 'http://localhost:4567/stylesheets/all.css', remove_classes: false, adapter: 'nokogiri')
+        # else
+        premailer = Premailer.new(source_file, verbose: true, remove_classes: false, adapter: 'nokogiri')
+        # end
         destination_file = source_file.gsub('.html', '--inline-css.html')
         destination_txt_file = source_file.gsub('.html', '.txt')
 
         puts "Inlining file: #{source_file} to #{destination_file}"
 
-        File.open(destination_txt_file, "w") do |content|
-          content.puts  premailer.to_plain_text
-        end
+        # unless source_file.start_with? 'build/partials'
+          File.open(destination_txt_file, "w") do |content|
+            content.puts  premailer.to_plain_text
+          end
 
-        File.open(destination_file, "w") do |content|
-          content.puts  parse(premailer.to_inline_css)
-        end
+          File.open(destination_file, "w") do |content|
+            content.puts  parse(premailer.to_inline_css)
+          end
+        # end
 
         File.delete( Dir.getwd + File::SEPARATOR + source_file)
       end
@@ -137,6 +142,7 @@ class InlineCSS < Middleman::Extension
       directoryBuilder
 
     end
+    
   end
 end  
 ::Middleman::Extensions.register(:inline_css, InlineCSS)
@@ -146,8 +152,8 @@ end
 # ====================================================
 
 configure :build do
-  activate :inline_css
   activate :i18n, :path => "emails/:locale/", :mount_at_root => false
+  activate :inline_css
   # Enable cache buster
   activate :asset_hash
   # Use relative URLs
