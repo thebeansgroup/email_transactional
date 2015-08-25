@@ -5,21 +5,31 @@
 
 body, .body {
   background-color: #EFF0EB;
-  background-image: url('http://cdn.ymaservices.com/email_transactional/background.jpg?v=0000001');
+  background-image: url('http://cdn.ymaservices.com/email_transactional/background.jpg?v=0000002');
   background-repeat: repeat-x;
 }
 
 .main-content {
   background-color: #fff;
+  border: 2px solid #DADADA;
+}
+
+.main-content.feature {
+  background-color: #fff;
   background-image: url('http://cdn.ymaservices.com/email_transactional/content__foot-bg.jpg?v=0000001');
   background-repeat: repeat-x;
   background-position: bottom left;
-  border-left: 2px solid #DADADA;
-  border-right: 2px solid #DADADA;
+  border-top-style: none;
+  border-bottom-style: none;
 
+  padding-top: 0px;
   padding-bottom: 30px;
 }
 
+.main-content.feature-image {
+  border-top-style: none;
+  border-bottom-style: none;
+}
 
 .footer-content {
     padding: 0 100px;

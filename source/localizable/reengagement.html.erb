@@ -1,0 +1,65 @@
+---
+facebook_href: "https://www.facebook.com/studentbeans"
+twitter_href: "https://twitter.com/studentbeans"
+---
+
+<%= partial "partials/global/header" %>  
+<br/>
+<table class="container main-content feature">
+  <tr>
+    <td>
+
+
+      <table class="row">
+        <tr>
+
+          <td class="wrapper header last">
+            <table class="twelve columns">
+              <tr>
+                <td class="header__collapse">
+                  <div class="text-pad">
+
+                    <br/>
+                    <h1 class="h3 title-margin"><%= t('reengagement.title', user: tagify("user") ) %></h1>
+                    <%= markdown t('reengagement.body', complete_registration_link: "/login-link") %>
+
+                  </div>
+                <td class="expander"></td>
+              </tr>
+
+            </table>
+          </td>
+        </tr>
+      </table>
+
+      <%= partial "partials/blocks/discounts_six", locals: { discount_count: 4 } %> 
+      <%= partial "partials/blocks/brand_list" %>  
+
+
+      <table class="row">
+        <tr>
+
+          <td class="wrapper header last">
+            <table class="twelve columns">
+              <tr>
+                <td class="header__collapse">
+                  <div class="text-pad">
+
+                    <%= markdown t('reengagement.footer', login_link: "/login-link", email_support: "email@email.com") %>
+
+                  </div>
+                <td class="expander"></td>
+              </tr>
+
+            </table>
+          </td>
+        </tr>
+      </table>
+
+      <br/><br/>
+    </td>
+  </tr>
+
+  
+</table>
+<%= partial "partials/global/footer" %>

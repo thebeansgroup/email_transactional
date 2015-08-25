@@ -1,0 +1,39 @@
+---
+facebook_href: "https://www.facebook.com/studentbeans"
+twitter_href: "https://twitter.com/studentbeans"
+---
+
+<style>
+  body, .body {
+    background-image: url("<%= tagify('header_bg') %>");
+  }
+</style>
+
+<%= partial "partials/global/header", locals: { header_logo: tagify('header_logo') } %>  
+
+<br/>
+<%= partial "partials/blocks/top/completed_verification_publisher_top" %>  
+<br/>
+
+<table class="container main-content">
+  <tr>
+    <td>
+      <br/>
+      <br/>
+      <h2 class="txt-center"><%= t('completed_verification_publisher.welcome') %></h2>
+      <img src="<%= image_url('publisher_stb_logo_black.png') %>" class="center" />
+      <br/>
+      <%= partial "partials/blocks/top_text", locals: { page_name: "completed_verification_publisher" } %>
+      <%= partial "partials/blocks/discounts_six" %>  
+      <%= partial "partials/blocks/brand_list" %>  
+      <%= partial "partials/blocks/bottom_text", locals: { page_name: "completed_verification_publisher" } %>
+    </td>
+  </tr>
+</table>
+
+<%= partial "partials/blocks/app_ad" %>
+<br/>
+<br/>
+<%= partial "partials/blocks/social_ad" %>
+
+<%= partial "partials/global/footer" %>

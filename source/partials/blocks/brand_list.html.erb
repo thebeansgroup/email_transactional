@@ -1,0 +1,14 @@
+<table class="row">
+  <tr>
+    <td>
+      <table class="block-grid four-up">
+        <tr>
+          <% 4.times do |n| %><td>
+            <a href="<%= tagify("company_link_#{ n+1 }") %>" class="brand-logo"><img src="<%= (environment == :development) ? "http://placehold.it/200x200?text=#{tagify("company_image_#{ n+1 }")}" : tagify("company_image_#{ n+1 }") %>" width="90" height="90" alt="<%= tagify("company_name_#{ n+1 }") %>" ></a>
+          </td><% end %>
+        </tr>
+      </table>
+
+    </td>
+  </tr>
+</table>

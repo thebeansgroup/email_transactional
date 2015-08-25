@@ -1,0 +1,29 @@
+<table class="row">
+<% count = 0 %>
+<% ( defined?(discount_count) ? discount_count/2 : 3 ).times do |row| %>
+  <tr>
+    <% 2.times do |n| %>
+      <td class="wrapper <%= n == 1 ? "last" : "" %>">
+        <table class="six columns">
+          <tr>
+            <td class="<%= n == 0 ? "left" : "right" %>-text-pad">
+
+                <!-- Deal block  --><% count = count + 1 %>
+                <a href="#link"><img width="270" height="152" src="<%= (environment == :development) ? "http://placehold.it/640x360?text=#{tagify("dis_image_#{ count }")}" : tagify("dis_image_#{ count }") %>" class="center"></a>
+                <div class="discount">
+                  <a href="#link">
+                    <h3 class="discount__title"><%= tagify("dis_company_#{ count }") %></h3>
+                    <p class="discount__company"><%= t('verification.discount.company', company: tagify("dis_company_#{ count }") ) %></p>
+                  </a>
+                </div>
+                <!-- / Deal block  -->
+
+            </td>
+            <td class="expander"></td>
+          </tr>
+        </table>
+      </td>
+    <% end %>
+  </tr>
+<% end %>
+</table>

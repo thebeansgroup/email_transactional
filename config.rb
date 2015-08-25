@@ -6,7 +6,7 @@ page "/partials/*", layout: false
 
 configure :development do
   activate :livereload
-  activate :i18n
+  activate :i18n,:langs => ["en-GB"]
 end
 
 # CONSTANTS
@@ -22,11 +22,34 @@ helpers do
   def tagify(name)
     TMPL_OPEN_TAG + "%= " + name + " %" + TMPL_CLOSE_TAG.html_safe
   end
+
+  def markdown(text)
+    Kramdown::Document.new(text).to_html
+  end
+
+  def twitter_href
+    "https://twitter.com/studentbeans"
+  end
+
+  def facebook_href
+    "https://www.facebook.com/studentbeans"
+  end
+
+  def appstore_href
+    ""
+  end
+
+  def googleplay_href
+    ""
+  end
+
 end
 
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
+set :markdown
+
 
 
 # ====================================================

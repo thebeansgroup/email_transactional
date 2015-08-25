@@ -2,7 +2,21 @@
   * Global styles and helpers
   */
 
+.inline-banner {
+  background-color: #EEF1ED;
+}
+
+.inline-banner.bordered {
+  border: 2px solid #DADADA;
+  border-top-style: none;
+}
+
 .inline-banner__image {
   display: inline;
   float: none;
+}
+
+.inline-banner--striped {
+  background-repeat: repeat;
+  h1, h2, h3, h4, h5, h6, p { color: #fff; }
 }

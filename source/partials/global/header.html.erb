@@ -10,7 +10,7 @@
               <table class="twelve columns">
                 <tr>
                   <td class="ten sub-columns">
-                    <img src="<%= image_url('header__sb-logo.png') %>?v=000002">
+                    <img src="<%=  defined?(header_logo) ?  header_logo : image_url('header__sb-logo.png') %>?v=000002">
                   </td>
                   <td class="one sub-columns last">
                     <div class="text-right">
