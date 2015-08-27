@@ -77,9 +77,8 @@ def parse(doc)
     el.attributes["align"].remove
   end
   html_str = html.to_html
-  puts html_str
-  html_str = html_str.gsub(TMPL_OPEN_TAG, '<% ')
-  html_str = html_str.gsub( ERB::Util.url_encode(TMPL_OPEN_TAG), '<% ')
+  html_str = html_str.gsub(TMPL_OPEN_TAG, '<%= ')
+  html_str = html_str.gsub( ERB::Util.url_encode(TMPL_OPEN_TAG), '<%= ')
   html_str = html_str.gsub(TMPL_CLOSE_TAG, ' %>')
   html_str = html_str.gsub( ERB::Util.url_encode(TMPL_CLOSE_TAG), ' %>')
   html_str
@@ -121,7 +120,7 @@ class InlineCSS < Middleman::Extension
         # else
         premailer = Premailer.new(source_file, verbose: true, remove_classes: false, adapter: 'nokogiri')
         # end
-        destination_file = source_file.gsub('.html', '--inline-css.html')
+        destination_file = source_file.gsub('.html', '--inline.html')
         destination_txt_file = source_file.gsub('.html', '.txt')
 
         puts "Inlining file: #{source_file} to #{destination_file}"
