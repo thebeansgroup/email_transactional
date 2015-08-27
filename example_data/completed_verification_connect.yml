@@ -1,0 +1,46 @@
+---
+user: "Adam T"
+discount_link: ""
+discount_name: "Some discount"
+
+dis_image_1: "http://placehold.it/640x360"
+dis_offer_1: "20% off"
+dis_company_1: "My Company"
+
+dis_image_2: "http://placehold.it/640x360"
+dis_offer_2: "20% off"
+dis_company_2: "My Company"
+
+dis_image_3: "http://placehold.it/640x360"
+dis_offer_3: "20% off"
+dis_company_3: "My Company"
+
+dis_image_4: "http://placehold.it/640x360"
+dis_offer_4: "20% off"
+dis_company_4: "My Company"
+
+dis_image_5: "http://placehold.it/640x360"
+dis_offer_5: "20% off"
+dis_company_5: "My Company"
+
+dis_image_6: "http://placehold.it/640x360"
+dis_offer_6: "20% off"
+dis_company_6: "My Company"
+
+company_link_1: "/the-link"
+company_name_1: "/company"
+company_image_1: "http://placehold.it/200x200"
+
+company_link_2: "/the-link"
+company_name_2: "/company"
+company_image_2: "http://placehold.it/200x200"
+
+company_link_3: "/the-link"
+company_name_3: "/company"
+company_image_3: "http://placehold.it/200x200"
+
+company_link_4: "/the-link"
+company_name_4: "/company"
+company_image_4: "http://placehold.it/200x200"
+
+bottom_link: "renew"
