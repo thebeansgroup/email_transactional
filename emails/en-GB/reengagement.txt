@@ -9,13 +9,13 @@ Hey [[[user]]], you're missing out big time!
 You haven’t verified as a student yet! This
 means you are missing out on all the exclusive student discounts.
 
-Complete your registration ( /login-link ) and access discounts
-from local and nationwide brands…
+Complete your registration ( %5B%5B%5Blogin_link%5D%5D%5D ) and
+access discounts from local and nationwide brands…
 
 ( #link )
 
-[[[dis_company_1]]]
--------------------
+[[[dis_offer_1]]]
+-----------------
 
 at [[[dis_company_1]]]
 
@@ -23,8 +23,8 @@ at [[[dis_company_1]]]
 
 ( #link )
 
-[[[dis_company_2]]]
--------------------
+[[[dis_offer_2]]]
+-----------------
 
 at [[[dis_company_2]]]
 
@@ -32,8 +32,8 @@ at [[[dis_company_2]]]
 
 ( #link )
 
-[[[dis_company_3]]]
--------------------
+[[[dis_offer_3]]]
+-----------------
 
 at [[[dis_company_3]]]
 
@@ -41,8 +41,8 @@ at [[[dis_company_3]]]
 
 ( #link )
 
-[[[dis_company_4]]]
--------------------
+[[[dis_offer_4]]]
+-----------------
 
 at [[[dis_company_4]]]
 
@@ -60,11 +60,13 @@ at [[[dis_company_4]]]
 [[[company_name_4]]] (
 %5B%5B%5Bcompany_link_4%5D%5D%5D )
 
-All you need to do is Login ( /login-link )
-to your account and verify your student status.
+All you need to do is Login (
+%5B%5B%5Blogin_link%5D%5D%5D ) to your account and verify your
+student status.
 
-Having problems? Shoot us an email ( email@email.com ) and we
-will be happy to help.
+Having problems? Shoot us an email (
+%5B%5B%5Bemail_support_link%5D%5D%5D ) and we will be happy to
+help.
 
 All the best,
 

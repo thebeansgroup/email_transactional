@@ -9,11 +9,12 @@ Hey [[[user]]],
 You haven’t verified as a student yet! This
 means you are missing out on all the exclusive student discounts.
 
-Are you having problems? Shoot us an email ( email@email.com )
-and we will be happy to help.
+Are you having problems? Shoot us an email (
+%5B%5B%5Bemail_support_link%5D%5D%5D ) and we will be happy to
+help.
 
-If you don’t need us, just Login ( /login-link ) to your account
-to complete your verification.
+If you don’t need us, just Login ( %5B%5B%5Blogin_link%5D%5D%5D )
+to your account to complete your verification.
 
 All the best,
 

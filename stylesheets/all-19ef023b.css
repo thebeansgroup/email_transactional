@@ -1105,7 +1105,7 @@ body.outlook p {
 /* line 7, /Users/ad/src/email_transactional/source/stylesheets/_global.css.scss */
 body, .body {
   background-color: #EFF0EB;
-  background-image: url("http://cdn.ymaservices.com/email_transactional/background.jpg?v=0000002");
+  background-image: url("http://cdn.ymaservices.com/email_transactional/background.jpg?v=0000004");
   background-repeat: repeat-x; }
 
 /* line 13, /Users/ad/src/email_transactional/source/stylesheets/_global.css.scss */
@@ -1116,50 +1116,56 @@ body, .body {
 /* line 18, /Users/ad/src/email_transactional/source/stylesheets/_global.css.scss */
 .main-content.feature {
   background-color: #fff;
-  background-image: url("http://cdn.ymaservices.com/email_transactional/content__foot-bg.jpg?v=0000001");
-  background-repeat: repeat-x;
-  background-position: bottom left;
   border-top-style: none;
   border-bottom-style: none;
   padding-top: 0px;
   padding-bottom: 30px; }
+  /* line 25, /Users/ad/src/email_transactional/source/stylesheets/_global.css.scss */
+  .main-content.feature .feature__footer {
+    background-image: url("http://cdn.ymaservices.com/email_transactional/content__foot-bg.jpg?v=0000003");
+    background-repeat: repeat-x;
+    background-position: top left; }
+  /* line 31, /Users/ad/src/email_transactional/source/stylesheets/_global.css.scss */
+  .main-content.feature .feature__footer__column {
+    width: 30px;
+    padding: 0; }
 
-/* line 30, /Users/ad/src/email_transactional/source/stylesheets/_global.css.scss */
+/* line 38, /Users/ad/src/email_transactional/source/stylesheets/_global.css.scss */
 .main-content.feature-image {
   border-top-style: none;
   border-bottom-style: none; }
 
-/* line 35, /Users/ad/src/email_transactional/source/stylesheets/_global.css.scss */
+/* line 43, /Users/ad/src/email_transactional/source/stylesheets/_global.css.scss */
 .footer-content {
   padding: 0 100px; }
 
 @media only screen and (max-width: 600px) {
-  /* line 41, /Users/ad/src/email_transactional/source/stylesheets/_global.css.scss */
+  /* line 49, /Users/ad/src/email_transactional/source/stylesheets/_global.css.scss */
   table[class="body"] .footer-content {
     padding: 0; } }
 /**
   * Text helper
   */
-/* line 52, /Users/ad/src/email_transactional/source/stylesheets/_global.css.scss */
+/* line 60, /Users/ad/src/email_transactional/source/stylesheets/_global.css.scss */
 .txt-right {
   text-align: right; }
 
-/* line 53, /Users/ad/src/email_transactional/source/stylesheets/_global.css.scss */
+/* line 61, /Users/ad/src/email_transactional/source/stylesheets/_global.css.scss */
 .txt-left {
   text-align: left; }
 
-/* line 54, /Users/ad/src/email_transactional/source/stylesheets/_global.css.scss */
+/* line 62, /Users/ad/src/email_transactional/source/stylesheets/_global.css.scss */
 .txt-center {
   text-align: center; }
 
 /**
   * Links
   */
-/* line 61, /Users/ad/src/email_transactional/source/stylesheets/_global.css.scss */
+/* line 69, /Users/ad/src/email_transactional/source/stylesheets/_global.css.scss */
 a.strong {
   font-weight: bold; }
 
-/* line 65, /Users/ad/src/email_transactional/source/stylesheets/_global.css.scss */
+/* line 73, /Users/ad/src/email_transactional/source/stylesheets/_global.css.scss */
 a.neutral {
   font-weight: bold;
   color: #777; }

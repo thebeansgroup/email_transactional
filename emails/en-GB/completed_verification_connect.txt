@@ -20,8 +20,8 @@ Let me introduce you to some of our favourites…
 
 ( #link )
 
-[[[dis_company_1]]]
--------------------
+[[[dis_offer_1]]]
+-----------------
 
 at [[[dis_company_1]]]
 
@@ -29,8 +29,8 @@ at [[[dis_company_1]]]
 
 ( #link )
 
-[[[dis_company_2]]]
--------------------
+[[[dis_offer_2]]]
+-----------------
 
 at [[[dis_company_2]]]
 
@@ -38,8 +38,8 @@ at [[[dis_company_2]]]
 
 ( #link )
 
-[[[dis_company_3]]]
--------------------
+[[[dis_offer_3]]]
+-----------------
 
 at [[[dis_company_3]]]
 
@@ -47,8 +47,8 @@ at [[[dis_company_3]]]
 
 ( #link )
 
-[[[dis_company_4]]]
--------------------
+[[[dis_offer_4]]]
+-----------------
 
 at [[[dis_company_4]]]
 
@@ -56,8 +56,8 @@ at [[[dis_company_4]]]
 
 ( #link )
 
-[[[dis_company_5]]]
--------------------
+[[[dis_offer_5]]]
+-----------------
 
 at [[[dis_company_5]]]
 
@@ -65,8 +65,8 @@ at [[[dis_company_5]]]
 
 ( #link )
 
-[[[dis_company_6]]]
--------------------
+[[[dis_offer_6]]]
+-----------------
 
 at [[[dis_company_6]]]
 
@@ -90,7 +90,7 @@ updated by following us on Facebook ( http://facebook.com ) or
 Twitter ( http://twitter.com ). Hungry for more?
 
 Browse our discounts (
-%5B%5B%5B%=%20renew_link%20%%5D%5D%5D )
+%5B%5B%5Bbottom_link%5D%5D%5D )
 
 Save time & money by redeeming offers in our
 app

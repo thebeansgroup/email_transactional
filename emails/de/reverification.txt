@@ -14,7 +14,7 @@ Studentstatus verlängern (
 %5B%5B%5Brenew_link%5D%5D%5D )
 
 Aufgeschmissen? Wende dich an unseren
-Kundenservice. ( http://studentbeans.helpscoutdocs.com/ )
+Kundenservice. ( %5B%5B%5Bsupport_link%5D%5D%5D )
 
 Diese Nachricht wurde von Student Beans
 gesendet. Du hast diese E-Mail bekommen, weil du eine bestehende
