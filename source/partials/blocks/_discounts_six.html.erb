@@ -9,10 +9,10 @@
             <td class="<%= n == 0 ? "left" : "right" %>-text-pad">
 
                 <!-- Deal block  --><% count = count + 1 %>
-                <a href="#link"><img width="270" height="152" src="<%= (environment == :development) ? "http://placehold.it/640x360?text=#{tagify("dis_image_#{ count }")}" : tagify("dis_image_#{ count }") %>" class="center"></a>
+                <a href="#link"><img width="250" height="141" src="<%= (environment == :development) ? "http://placehold.it/640x360?text=#{tagify("dis_image_#{ count }")}" : tagify("dis_image_#{ count }") %>" class="center"></a>
                 <div class="discount">
                   <a href="#link">
-                    <h3 class="discount__title"><%= tagify("dis_company_#{ count }") %></h3>
+                    <h3 class="discount__title"><%= tagify("dis_offer_#{ count }") %></h3>
                     <p class="discount__company"><%= t('verification.discount.company', company: tagify("dis_company_#{ count }") ) %></p>
                   </a>
                 </div>

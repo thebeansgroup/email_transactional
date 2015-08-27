@@ -1,33 +1,28 @@
 <table class="container main-content feature">
-
   <tr>
     <td>
+
       <table class="row">
         <tr>
-
           <td class="wrapper header alert last">
             <table class="twelve columns">
               <tr>
                 <td class="header__collapse">
                   <div class="text-pad">
                     <br/></br>
-
                     <h2 class="txt-center title-margin"><%= t('completed_verification_connect.title', user: tagify("user") ) %></h2>
                     <p class="txt-center"><%= t('completed_verification_connect.body') %></p>
                     <p class="txt-center"><a href="<%= tagify('discount_link') %>"><%= t('completed_verification_connect.discount_name', discount_name: tagify('discount_name') ) %></a></p>
-
-                    <br/></br>
-
                   </div>
                 <td class="expander"></td>
               </tr>
-
             </table>
           </td>
         </tr>
       </table>
+
+      <%= partial 'partials/blocks/feature-footer' %>
+
     </td>
   </tr>
-
-
 </table>

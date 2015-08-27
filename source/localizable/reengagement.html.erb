@@ -21,7 +21,7 @@ twitter_href: "https://twitter.com/studentbeans"
 
                     <br/>
                     <h1 class="h3 title-margin"><%= t('reengagement.title', user: tagify("user") ) %></h1>
-                    <%= markdown t('reengagement.body', complete_registration_link: "/login-link") %>
+                    <%= markdown t('reengagement.body', complete_registration_link: tagify("login_link") ) %>
 
                   </div>
                 <td class="expander"></td>
@@ -45,7 +45,7 @@ twitter_href: "https://twitter.com/studentbeans"
                 <td class="header__collapse">
                   <div class="text-pad">
 
-                    <%= markdown t('reengagement.footer', login_link: "/login-link", email_support: "email@email.com") %>
+                    <%= markdown t('reengagement.footer', login_link: tagify("login_link"), email_support: tagify('email_support_link') ) %>
 
                   </div>
                 <td class="expander"></td>
@@ -57,6 +57,8 @@ twitter_href: "https://twitter.com/studentbeans"
       </table>
 
       <br/><br/>
+      <%= partial 'partials/blocks/feature-footer' %>
+
     </td>
   </tr>
 

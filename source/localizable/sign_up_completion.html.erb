@@ -6,33 +6,31 @@ twitter_href: "https://twitter.com/studentbeans"
 <%= partial "partials/global/header" %>  
 <br/>
 <table class="container main-content feature">
-
   <tr>
     <td>
+
       <table class="row">
         <tr>
-
           <td class="wrapper header alert last">
             <table class="twelve columns">
               <tr>
                 <td class="header__collapse">
                   <div class="text-pad">
                     <br/>
-
                     <h1 class="h3 title-margin"><%= t('sign_up_completion.title', user: tagify("user") ) %></h1>
-                    <%= markdown t('sign_up_completion.body', login_link: "/login-link", email_support: "email@email.com") %>
-
+                    <%= markdown t('sign_up_completion.body', login_link: tagify('login_link') , email_support: tagify('email_support_link') ) %>
                     <br/><br/>
                   </div>
                 <td class="expander"></td>
               </tr>
-
             </table>
           </td>
         </tr>
       </table>
+
+      <%= partial 'partials/blocks/feature-footer' %>
+
     </td>
   </tr>
-
 </table>
 <%= partial "partials/global/footer" %>

@@ -68,7 +68,7 @@ twitter_href: "https://twitter.com/studentbeans"
                 <td class="header__collapse">
                   <div class="text-pad">
 
-                    <p class="txt-center"><strong><%= t('reverification.problems.text') %></strong> <a href="http://studentbeans.helpscoutdocs.com/"><%= t('reverification.problems.link.text') %></a></p>
+                    <p class="txt-center"><strong><%= t('reverification.problems.text') %></strong> <a href="<%= tagify('support_link')  %>"><%= t('reverification.problems.link.text') %></a></p>
 
                     <br/><br/>
                   </div>
@@ -79,6 +79,8 @@ twitter_href: "https://twitter.com/studentbeans"
           </td>
         </tr>
       </table>
+      <%= partial 'partials/blocks/feature-footer' %>
+
     </td>
   </tr>
 
