@@ -59,6 +59,9 @@ set :markdown
 require 'premailer'  
 require 'nokogiri'
 
+EMAIL_PRV_OPEN_TAG = "[EMV FIELD]"
+EMAIL_PRV_CLOSE_TAG = "[EMV /FIELD]"
+
 def parse(doc)
   html = Nokogiri::HTML  doc
   head  = html.search("head")
@@ -77,10 +80,10 @@ def parse(doc)
     el.attributes["align"].remove
   end
   html_str = html.to_html
-  html_str = html_str.gsub(TMPL_OPEN_TAG, '<%= ')
-  html_str = html_str.gsub( ERB::Util.url_encode(TMPL_OPEN_TAG), '<%= ')
-  html_str = html_str.gsub(TMPL_CLOSE_TAG, ' %>')
-  html_str = html_str.gsub( ERB::Util.url_encode(TMPL_CLOSE_TAG), ' %>')
+  html_str = html_str.gsub(TMPL_OPEN_TAG, EMAIL_PRV_OPEN_TAG)
+  html_str = html_str.gsub( ERB::Util.url_encode(TMPL_OPEN_TAG), EMAIL_PRV_OPEN_TAG)
+  html_str = html_str.gsub(TMPL_CLOSE_TAG, EMAIL_PRV_CLOSE_TAG)
+  html_str = html_str.gsub( ERB::Util.url_encode(TMPL_CLOSE_TAG), EMAIL_PRV_CLOSE_TAG)
   html_str
 end
 
