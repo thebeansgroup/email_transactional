@@ -59,8 +59,8 @@ set :markdown
 require 'premailer'  
 require 'nokogiri'
 
-EMAIL_PRV_OPEN_TAG = "[EMV FIELD]"
-EMAIL_PRV_CLOSE_TAG = "[EMV /FIELD]"
+EMAIL_PRV_OPEN_TAG = "[EMV DYN]"
+EMAIL_PRV_CLOSE_TAG = "[EMV /DYN]"
 
 def parse(doc)
   html = Nokogiri::HTML  doc
