@@ -5,7 +5,7 @@ en-GB:
     privacy:
       important: "Privacy is important to us."
       policy: "View our privacy policy"
-    reason: 
+    reason:
       default: "This message was sent by Student Beans. You are receiving this email because you have an existing relationship with Student Beans."
   app_ad:
     description: "Save time & money by **redeeming offers in our app**"
@@ -35,6 +35,15 @@ en-GB:
     body: "Just follow the link below when you are ready to use the discount"
     discount_name: "%{discount_name} &#8594;"
     welcome: "Welcome to"
+    top_description:
+      line_1: "You now have access to over 10,000 discounts and deals that are exclusive to students!"
+      line_2: "Let me introduce you to some of our favourites…"
+    email_description: "We'll email you every tuesday with the best student discounts and deals of the week. Alternatively, keep updated by following us on %{facebook} or %{twitter}. Hungry for more?"
+    footer_button: "Browse our discounts"
+  instore_redemption_link:
+    title: "Hey %{firstname}, Your discount is ready…"
+    body: "Just open this link on your mobile phone when you are ready to use the discount"
+    discount_name: "%{discount_name} &#8594;"
     top_description:
       line_1: "You now have access to over 10,000 discounts and deals that are exclusive to students!"
       line_2: "Let me introduce you to some of our favourites…"
@@ -78,4 +87,3 @@ en-GB:
       All the best,
 
       The Bean Team
-

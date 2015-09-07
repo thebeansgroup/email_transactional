@@ -20,6 +20,9 @@ b = binding
 hash.each do |key, value|
   b.local_variable_set( key.to_sym, value)
 end
+html = File.read( './build/emails/en-GB/' + file + '--inline.html' )
+html = html.gsub('[EMV DYN]','<%= ')
+html = html.gsub('[EMV /DYN]',' %>')
+erb = ERB.new(html)
 
-erb = ERB.new(File.read( './build/emails/en-GB/' + file + '--inline.html' ))
-File.open( "email.html", 'w+') {|f| f.write( erb.result(b) ) } 
+File.open( "email.html", 'w+') {|f| f.write( erb.result(b) ) }

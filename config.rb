@@ -56,7 +56,7 @@ set :markdown
 # Build Helpers
 # ====================================================
 
-require 'premailer'  
+require 'premailer'
 require 'nokogiri'
 
 EMAIL_PRV_OPEN_TAG = "[EMV DYN]"
@@ -87,8 +87,19 @@ def parse(doc)
   html_str
 end
 
+def parseText(doc)
+  text_str = doc
+  text_str = text_str.gsub(TMPL_OPEN_TAG, EMAIL_PRV_OPEN_TAG)
+  text_str = text_str.gsub( ERB::Util.url_encode(TMPL_OPEN_TAG), EMAIL_PRV_OPEN_TAG)
+  text_str = text_str.gsub(TMPL_CLOSE_TAG, EMAIL_PRV_CLOSE_TAG)
+  text_str = text_str.gsub( ERB::Util.url_encode(TMPL_CLOSE_TAG), EMAIL_PRV_CLOSE_TAG)
+  text_str = text_str.gsub("( https://www.facebook.com/studentbeans )","")
+  text_str = text_str.gsub("( https://twitter.com/studentbeans )","")
+  text_str
+end
+
 def directoryBuilder
-  html = "<html><body><ul>"; 
+  html = "<html><body><ul>";
   Dir.glob(build_dir + "/emails/*/" ).each do |folder|
     html += "<li><a href='#{folder.sub('build/', '')}'>#{folder.sub('build/emails', '')}</a></li>"
 
@@ -112,11 +123,11 @@ def directoryBuilder
   end
 end
 
-class InlineCSS < Middleman::Extension  
+class InlineCSS < Middleman::Extension
   def initialize(app, options_hash={}, &block)
     super
     app.after_build do |builder|
-      
+
       Dir.glob(build_dir + File::SEPARATOR + '**/*.html').each do |source_file|
         # if source_file.start_with? 'build/partials'
         # premailer = Premailer.new(source_file, verbose: true, css: 'http://localhost:4567/stylesheets/all.css', remove_classes: false, adapter: 'nokogiri')
@@ -130,7 +141,7 @@ class InlineCSS < Middleman::Extension
 
         # unless source_file.start_with? 'build/partials'
           File.open(destination_txt_file, "w") do |content|
-            content.puts  premailer.to_plain_text
+            content.puts  parseText(premailer.to_plain_text)
           end
 
           File.open(destination_file, "w") do |content|
@@ -144,9 +155,9 @@ class InlineCSS < Middleman::Extension
       directoryBuilder
 
     end
-    
+
   end
-end  
+end
 ::Middleman::Extensions.register(:inline_css, InlineCSS)
 
 # ====================================================

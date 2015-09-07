@@ -1,0 +1,25 @@
+<table class="container main-content feature">
+  <tr>
+    <td>
+
+      <table class="row">
+        <tr>
+          <td class="wrapper header alert last">
+            <table class="twelve columns">
+              <tr>
+                <td class="header__collapse">
+                  <div class="text-pad">
+                    <br/></br>
+                    <h2 class="txt-center title-margin"><%= t('instore_redemption_link.title', firstname: tagify("firstname") ) %></h2>
+                    <p class="txt-center"><%= t('instore_redemption_link.body') %></p>
+                    <p class="txt-center"><a href="<%= tagify('discount_link') %>"><%= t('instore_redemption_link.discount_name', discount_name: tagify('discount_name') ) %></a></p>
+                  </div>
+                <td class="expander"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
