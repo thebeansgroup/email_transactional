@@ -2,23 +2,21 @@
 
 
 
-***************
-Hey [EMV DYN]user[EMV /DYN],
-***************
+--------------------------------------------
+Hey [EMV DYN]firstname[EMV /DYN], Your discount is ready…
+--------------------------------------------
 
-You haven’t verified as a student yet! This
-means you are missing out on all the exclusive student discounts.
+Just open this link on your mobile phone when
+you are ready to use the discount
 
-Are you having problems? Shoot us an email (
-[EMV DYN]email_support_link[EMV /DYN] ) and we will be happy to
-help.
+[EMV DYN]discount_name[EMV /DYN] → (
+[EMV DYN]discount_link[EMV /DYN] )
 
-If you don’t need us, just Login ( [EMV DYN]login_link[EMV /DYN] )
-to your account to complete your verification.
+Save time & money by redeeming offers in our
+app
 
-All the best,
-
-The Bean Team
+( )
+( )
 
 This message was sent by Student Beans. You
 are receiving this email because you have an existing

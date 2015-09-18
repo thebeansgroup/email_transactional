@@ -1,71 +1,71 @@
-( https://www.facebook.com/studentbeans )
 
-( https://twitter.com/studentbeans )
+
+
 
 ********************************************
-Hey [[[user]]], you're missing out big time!
+Hey [EMV DYN]user[EMV /DYN], you're missing out big time!
 ********************************************
 
 You haven’t verified as a student yet! This
 means you are missing out on all the exclusive student discounts.
 
-Complete your registration ( %5B%5B%5Blogin_link%5D%5D%5D ) and
+Complete your registration ( [EMV DYN]login_link[EMV /DYN] ) and
 access discounts from local and nationwide brands…
 
 ( #link )
 
-[[[dis_offer_1]]]
+[EMV DYN]dis_offer_1[EMV /DYN]
 -----------------
 
-at [[[dis_company_1]]]
+at [EMV DYN]dis_company_1[EMV /DYN]
 
 ( #link )
 
 ( #link )
 
-[[[dis_offer_2]]]
+[EMV DYN]dis_offer_2[EMV /DYN]
 -----------------
 
-at [[[dis_company_2]]]
+at [EMV DYN]dis_company_2[EMV /DYN]
 
 ( #link )
 
 ( #link )
 
-[[[dis_offer_3]]]
+[EMV DYN]dis_offer_3[EMV /DYN]
 -----------------
 
-at [[[dis_company_3]]]
+at [EMV DYN]dis_company_3[EMV /DYN]
 
 ( #link )
 
 ( #link )
 
-[[[dis_offer_4]]]
+[EMV DYN]dis_offer_4[EMV /DYN]
 -----------------
 
-at [[[dis_company_4]]]
+at [EMV DYN]dis_company_4[EMV /DYN]
 
 ( #link )
 
-[[[company_name_1]]] (
-%5B%5B%5Bcompany_link_1%5D%5D%5D )
+[EMV DYN]company_name_1[EMV /DYN] (
+[EMV DYN]company_link_1[EMV /DYN] )
 
-[[[company_name_2]]] (
-%5B%5B%5Bcompany_link_2%5D%5D%5D )
+[EMV DYN]company_name_2[EMV /DYN] (
+[EMV DYN]company_link_2[EMV /DYN] )
 
-[[[company_name_3]]] (
-%5B%5B%5Bcompany_link_3%5D%5D%5D )
+[EMV DYN]company_name_3[EMV /DYN] (
+[EMV DYN]company_link_3[EMV /DYN] )
 
-[[[company_name_4]]] (
-%5B%5B%5Bcompany_link_4%5D%5D%5D )
+[EMV DYN]company_name_4[EMV /DYN] (
+[EMV DYN]company_link_4[EMV /DYN] )
 
 All you need to do is Login (
-%5B%5B%5Blogin_link%5D%5D%5D ) to your account and verify your
+[EMV DYN]login_link[EMV /DYN] ) to your account and verify your
 student status.
 
 Having problems? Shoot us an email (
-%5B%5B%5Bemail_support_link%5D%5D%5D ) and we will be happy to
+[EMV DYN]email_support_link[EMV /DYN] ) and we will be happy to
 help.
 
 All the best,
@@ -79,9 +79,9 @@ Wir nehmen den Schutz personenbezogener Daten
 sehr ernst. Informieren Sie sich über unsere
 Datenschutzbestimmungen ( https://www.studentbeans.com/info/privacy )
 
-( https://www.facebook.com/studentbeans )
 
-( https://twitter.com/studentbeans )
+
+
 
 Registered Office: 1 Vincent Square, London, SW1
 2PN | Registered as a company in England and Wales, number:

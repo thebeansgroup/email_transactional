@@ -1,17 +1,17 @@
-( https://www.facebook.com/studentbeans )
 
-( https://twitter.com/studentbeans )
+
+
 
 -----------------------------------------------------------------
-Hey [[[user]]], Welcome to Student Beans. Your Topman discount is
+Hey [EMV DYN]user[EMV /DYN], Welcome to Student Beans. Your Topman discount is
 ready…
 -----------------------------------------------------------------
 
 Just follow the link below when you are ready
 to use the discount
 
-[[[discount_name]]] → (
-%5B%5B%5Bdiscount_link%5D%5D%5D )
+[EMV DYN]discount_name[EMV /DYN] → (
+[EMV DYN]discount_link[EMV /DYN] )
 
 You now have access to over 10,000 discounts and
 deals that are exclusive to students!
@@ -20,69 +20,69 @@ Let me introduce you to some of our favourites…
 
 ( #link )
 
-[[[dis_offer_1]]]
+[EMV DYN]dis_offer_1[EMV /DYN]
 -----------------
 
-at [[[dis_company_1]]]
+at [EMV DYN]dis_company_1[EMV /DYN]
 
 ( #link )
 
 ( #link )
 
-[[[dis_offer_2]]]
+[EMV DYN]dis_offer_2[EMV /DYN]
 -----------------
 
-at [[[dis_company_2]]]
+at [EMV DYN]dis_company_2[EMV /DYN]
 
 ( #link )
 
 ( #link )
 
-[[[dis_offer_3]]]
+[EMV DYN]dis_offer_3[EMV /DYN]
 -----------------
 
-at [[[dis_company_3]]]
+at [EMV DYN]dis_company_3[EMV /DYN]
 
 ( #link )
 
 ( #link )
 
-[[[dis_offer_4]]]
+[EMV DYN]dis_offer_4[EMV /DYN]
 -----------------
 
-at [[[dis_company_4]]]
+at [EMV DYN]dis_company_4[EMV /DYN]
 
 ( #link )
 
 ( #link )
 
-[[[dis_offer_5]]]
+[EMV DYN]dis_offer_5[EMV /DYN]
 -----------------
 
-at [[[dis_company_5]]]
+at [EMV DYN]dis_company_5[EMV /DYN]
 
 ( #link )
 
 ( #link )
 
-[[[dis_offer_6]]]
+[EMV DYN]dis_offer_6[EMV /DYN]
 -----------------
 
-at [[[dis_company_6]]]
+at [EMV DYN]dis_company_6[EMV /DYN]
 
 ( #link )
 
-[[[company_name_1]]] (
-%5B%5B%5Bcompany_link_1%5D%5D%5D )
+[EMV DYN]company_name_1[EMV /DYN] (
+[EMV DYN]company_link_1[EMV /DYN] )
 
-[[[company_name_2]]] (
-%5B%5B%5Bcompany_link_2%5D%5D%5D )
+[EMV DYN]company_name_2[EMV /DYN] (
+[EMV DYN]company_link_2[EMV /DYN] )
 
-[[[company_name_3]]] (
-%5B%5B%5Bcompany_link_3%5D%5D%5D )
+[EMV DYN]company_name_3[EMV /DYN] (
+[EMV DYN]company_link_3[EMV /DYN] )
 
-[[[company_name_4]]] (
-%5B%5B%5Bcompany_link_4%5D%5D%5D )
+[EMV DYN]company_name_4[EMV /DYN] (
+[EMV DYN]company_link_4[EMV /DYN] )
 
 We'll email you every tuesday with the best
 student discounts and deals of the week. Alternatively, keep
@@ -90,7 +90,7 @@ updated by following us on Facebook ( http://facebook.com ) or
 Twitter ( http://twitter.com ). Hungry for more?
 
 Browse our discounts (
-%5B%5B%5Bbottom_link%5D%5D%5D )
+[EMV DYN]bottom_link[EMV /DYN] )
 
 Save time & money by redeeming offers in our
 app
@@ -104,9 +104,9 @@ BE THE FIRST TO HEAR ABOUT NEW DEALS
 Follow us on facebook or twitter so
 you don't miss out on any of our exclusive deals discounts.
 
-FACEBOOK ( https://www.facebook.com/studentbeans )
+FACEBOOK 
 
-TWITTER ( https://twitter.com/studentbeans )
+TWITTER 
 
 Diese Nachricht wurde von Student Beans
 gesendet. Du hast diese E-Mail bekommen, weil du eine bestehende
@@ -115,9 +115,9 @@ Wir nehmen den Schutz personenbezogener Daten
 sehr ernst. Informieren Sie sich über unsere
 Datenschutzbestimmungen ( https://www.studentbeans.com/info/privacy )
 
-( https://www.facebook.com/studentbeans )
 
-( https://twitter.com/studentbeans )
+
+
 
 Registered Office: 1 Vincent Square, London, SW1
 2PN | Registered as a company in England and Wales, number:

@@ -2,23 +2,22 @@
 
 
 
-***************
-Hey [EMV DYN]user[EMV /DYN],
-***************
+-----------------------------------------------------
+translation missing: de.instore_redemption_link.title
+-----------------------------------------------------
 
-You haven’t verified as a student yet! This
-means you are missing out on all the exclusive student discounts.
+translation missing:
+de.instore_redemption_link.body
 
-Are you having problems? Shoot us an email (
-[EMV DYN]email_support_link[EMV /DYN] ) and we will be happy to
-help.
+translation missing:
+de.instore_redemption_link.discount_name (
+[EMV DYN]discount_link[EMV /DYN] )
 
-If you don’t need us, just Login ( [EMV DYN]login_link[EMV /DYN] )
-to your account to complete your verification.
+Save time & money by redeeming offers in our
+app
 
-All the best,
-
-The Bean Team
+( )
+( )
 
 Diese Nachricht wurde von Student Beans
 gesendet. Du hast diese E-Mail bekommen, weil du eine bestehende

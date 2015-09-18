@@ -1,6 +1,6 @@
-( https://www.facebook.com/studentbeans )
 
-( https://twitter.com/studentbeans )
+
+
 
 Clicks-and-mortar bricks-and-clicks convergence B2C
 ---------------------------------------------------
@@ -27,8 +27,8 @@ translation missing:
 en.footer.privacy.important translation missing:
 en.footer.privacy.policy ( https://www.studentbeans.com/info/privacy )
 
-( https://www.facebook.com/studentbeans )
 
-( https://twitter.com/studentbeans )
+
+
 
 translation missing: en.footer.office
