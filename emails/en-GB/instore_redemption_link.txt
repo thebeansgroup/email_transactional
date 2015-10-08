@@ -12,12 +12,6 @@ you are ready to use the discount
 [EMV DYN]discount_name[EMV /DYN] → (
 [EMV DYN]discount_link[EMV /DYN] )
 
-Save time & money by redeeming offers in our
-app
-
-( )
-( )
-
 This message was sent by Student Beans. You
 are receiving this email because you have an existing
 relationship with Student Beans.

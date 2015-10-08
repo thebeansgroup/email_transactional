@@ -13,12 +13,6 @@ translation missing:
 de.instore_redemption_link.discount_name (
 [EMV DYN]discount_link[EMV /DYN] )
 
-Save time & money by redeeming offers in our
-app
-
-( )
-( )
-
 Diese Nachricht wurde von Student Beans
 gesendet. Du hast diese E-Mail bekommen, weil du eine bestehende
 Beziehung mit Student Beans hast.
