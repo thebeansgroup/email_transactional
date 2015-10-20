@@ -49,6 +49,15 @@ en-GB:
       line_2: "Let me introduce you to some of our favourites…"
     email_description: "We'll email you every tuesday with the best student discounts and deals of the week. Alternatively, keep updated by following us on %{facebook} or %{twitter}. Hungry for more?"
     footer_button: "Browse our discounts"
+  connect_instore_redemption_link:
+    title: "Your %{discount_company} discount is ready…"
+    body: "Just open this link on your mobile phone when you are ready to use the discount"
+    discount_name: "%{discount_name} &#8594;"
+    top_description:
+      line_1: "You now have access to over 10,000 discounts and deals that are exclusive to students!"
+      line_2: "Let me introduce you to some of our favourites…"
+    email_description: "We'll email you every tuesday with the best student discounts and deals of the week. Alternatively, keep updated by following us on %{facebook} or %{twitter}. Hungry for more?"
+    footer_button: "Browse our discounts"
   verification:
     discount:
       company: "at %{company}"
