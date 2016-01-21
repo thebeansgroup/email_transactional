@@ -1,11 +1,7 @@
-GIT
-  remote: git://github.com/thebeansgroup/premailer.git
-  revision: 1177668cfd2aee2434a2dda1cc7fdbfbf98f81a8
-  branch: feature/nokogiri-url-removal
+PATH
+  remote: .
   specs:
-    premailer (1.8.5)
-      css_parser (>= 1.3.6)
-      htmlentities (>= 4.0.0)
+    email_transactional (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -16,7 +12,11 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
-    addressable (2.3.8)
+    addressable (2.4.0)
+    awesome_print (1.6.1)
+    binding_of_caller (0.7.2)
+      debug_inspector (>= 0.0.1)
+    byebug (8.2.1)
     celluloid (0.16.0)
       timers (~> 4.0.0)
     chunky_png (1.3.4)
@@ -37,9 +37,10 @@ GEM
       sass (>= 3.3.0, < 3.5)
     compass-import-once (1.0.5)
       sass (>= 3.2, < 3.5)
-    css_parser (1.3.6)
+    css_parser (1.3.7)
       addressable
     dalli (2.7.4)
+    debug_inspector (0.0.2)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -119,16 +120,26 @@ GEM
       tilt (~> 1.4.1)
     padrino-support (0.12.5)
       activesupport (>= 3.1)
+    premailer (1.8.6)
+      css_parser (>= 1.3.6)
+      htmlentities (>= 4.0.0)
     pry (0.10.3)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    pry-byebug (3.3.0)
+      byebug (~> 8.0)
+      pry (~> 0.10)
+    pry-stack_explorer (0.4.9.2)
+      binding_of_caller (>= 0.7)
+      pry (>= 0.9.11)
     ptools (1.3.2)
     rack (1.6.0)
     rack-livereload (0.3.15)
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
+    rake (10.5.0)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
@@ -151,23 +162,31 @@ GEM
       hitimes
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    tzinfo-data (1.2015.7)
+      tzinfo (>= 1.0.0)
     uber (0.0.13)
     uglifier (2.7.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    wdm (0.1.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  awesome_print
+  bundler (~> 1.5)
   dalli
+  email_transactional!
   hpricot
   middleman (~> 3.3.7)
   middleman-deploy (~> 1.0)
   middleman-livereload (~> 3.1.0)
   middleman-minify-html
   nokogiri
-  premailer!
-  pry
+  premailer (~> 1.8.5)
+  pry-byebug
+  pry-stack_explorer
+  rake
   tzinfo-data
   wdm (~> 0.1.0)
