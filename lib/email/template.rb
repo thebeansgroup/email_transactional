@@ -1,7 +1,3 @@
-# move these to gemspec
-require 'ERB'
-require 'yaml'
-
 class Email::Template
   def initialize(html)
     @html = html

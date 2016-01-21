@@ -33,6 +33,6 @@ class Email::Store
   private
 
   def build_key(name, locale)
-    "#{name}-#{locale}"
+    Email::Key.new(name, locale).build
   end
 end
