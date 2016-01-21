@@ -18,3 +18,5 @@ gem "premailer", github: "thebeansgroup/premailer", branch: "feature/nokogiri-ur
 gem "hpricot"
 gem "nokogiri"
 gem 'middleman-minify-html'
+gem 'pry'
+gem 'dalli'
