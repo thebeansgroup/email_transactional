@@ -7,7 +7,6 @@ module Email::Transactional
   def self.rebuild
     Email::Middleman.build
     Email::Reader.default.read_all do |name, locale, html|
-      puts "#{name} #{locale}"
       Email::Store.instance.store_email(name, locale, html)
     end
   end
