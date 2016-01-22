@@ -1,4 +1,4 @@
-class Email::Key
+class EmailTransactional::Key
   def initialize(name, locale)
     @name = name
     @locale = locale

@@ -1,7 +1,4 @@
-# move this require in gemspec
-require 'dalli'
-
-class Email::Store
+class EmailTransactional::Store
   MEMCACHED_NAMESPACE = 'email_store'
 
   def self.server=(server)
@@ -33,6 +30,6 @@ class Email::Store
   private
 
   def build_key(name, locale)
-    Email::Key.new(name, locale).build
+    EmailTransactional::Key.new(name, locale).build
   end
 end

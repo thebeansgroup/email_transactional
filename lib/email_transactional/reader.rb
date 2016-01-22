@@ -1,4 +1,4 @@
-class Email::Reader
+class EmailTransactional::Reader
   EMAIL_REGEX = /(.*)--inline.html/
   PATH_TO_EMAILS = '/emails'
 

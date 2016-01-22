@@ -1,10 +1,10 @@
 # coding: utf-8
 $:.push File.expand_path("../lib", __FILE__)
-require 'email/version'
+require 'email_transactional/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "email_transactional"
-  spec.version       = Email::VERSION
+  spec.version       = EmailTransactional::VERSION
   spec.authors       = ["zduci"]
   spec.email         = ["ra.busuioc@gmail.com"]
   spec.summary       = "Compiles email templates and provides an API to store/retrieve them"

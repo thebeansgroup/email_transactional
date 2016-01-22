@@ -1,4 +1,4 @@
-class Email::Template
+class EmailTransactional::Template
   def initialize(html)
     @html = html
     @erb = ERB.new(html)
