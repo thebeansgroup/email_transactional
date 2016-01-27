@@ -2,7 +2,7 @@
 require 'dalli'
 
 class Email::Store
-  MEMCACHED_NAMESPACE = 'email_store'
+  MEMCACHED_NAMESPACE = 'email_store'.freeze
 
   def self.server=(server)
     @server = server
