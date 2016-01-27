@@ -1,5 +1,7 @@
-module Email::Middleman
-  def self.build
-    `bundle exec middleman build`
+module Email
+  module Middleman
+    def self.build
+      `bundle exec middleman build`
+    end
   end
 end
