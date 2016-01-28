@@ -6,7 +6,7 @@ page '/partials/*', layout: false
 
 configure :development do
   activate :livereload
-  activate :i18n,:langs => ['en-GB']
+  activate :i18n, langs: ['en-GB']
 end
 
 # CONSTANTS
@@ -165,7 +165,7 @@ end
 # ====================================================
 
 configure :build do
-  activate :i18n, :path => 'emails/:locale/', :mount_at_root => false
+  activate :i18n, path: 'emails/:locale/', mount_at_root: false
   activate :inline_css
   # Enable cache buster
   activate :asset_hash
