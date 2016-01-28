@@ -5,9 +5,7 @@ module Email
   class Store
     MEMCACHED_NAMESPACE = 'email_store'.freeze
 
-    def self.server=(server)
-      @server = server
-    end
+    attr_writer :server
 
     def self.instance
       @instance ||= new(@server)
