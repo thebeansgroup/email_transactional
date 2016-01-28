@@ -16,7 +16,7 @@ TMPL_CLOSE_TAG = ']]]'
 # Methods defined in the helpers block are available in templates
 helpers do
   def image_url(_source)
-    'http://cdn.ymaservices.com/email_transactional/#{source}'
+    "http://cdn.ymaservices.com/email_transactional/#{source}"
   end
 
   def tagify(name)
@@ -144,7 +144,7 @@ class InlineCSS < Middleman::Extension
         destination_file = source_file.gsub('.html', '--inline.html')
         destination_txt_file = source_file.gsub('.html', '.txt')
 
-        puts 'Inlining file: #{source_file} to #{destination_file}'
+        puts "Inlining file: #{source_file} to #{destination_file}"
 
         # unless source_file.start_with? 'build/partials'
         File.open(destination_txt_file, 'w') do |content|
