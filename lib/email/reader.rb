@@ -3,7 +3,6 @@ module Email
     EMAIL_REGEX = /(.*)--inline.html/
     PATH_TO_EMAILS = '/emails'.freeze
 
-    # this will need to change, when used as a gem the local dir will be different
     def self.default
       new('./build')
     end
