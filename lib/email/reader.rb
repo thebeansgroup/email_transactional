@@ -15,7 +15,7 @@ module Email
       locales.each do |locale_path|
         Dir["./#{locale_path}/*.html"].each do |file_path|
           filename = File.basename(file_path)
-          if is_email?(filename)
+          if email?(filename)
             name = extract_name(filename)
             locale = extract_locale(locale_path)
             html = File.read(file_path)
@@ -37,7 +37,7 @@ module Email
       EMAIL_REGEX.match(filename)
     end
 
-    def is_email?(filename)
+    def email?(filename)
       !match_email(filename).nil?
     end
 
