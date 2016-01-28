@@ -14,8 +14,6 @@ module Email
     end
 
     def initialize(server)
-      options = {
-      }
       @dalli = Dalli::Client.new(
         server,
         namespace: MEMCACHED_NAMESPACE,
