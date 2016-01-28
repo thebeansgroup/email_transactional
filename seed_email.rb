@@ -18,11 +18,11 @@ hash = YAML.load_file('./example_data/' + file + '.yml')
 
 b = binding
 hash.each do |key, value|
-  b.local_variable_set( key.to_sym, value)
+  b.local_variable_set(key.to_sym, value)
 end
-html = File.read( './build/emails/en-GB/' + file + '--inline.html' )
-html = html.gsub('[EMV DYN]','<%= ')
-html = html.gsub('[EMV /DYN]',' %>')
+html = File.read('./build/emails/en-GB/' + file + '--inline.html')
+html = html.gsub('[EMV DYN]', '<%= ')
+html = html.gsub('[EMV /DYN]', ' %>')
 erb = ERB.new(html)
 
-File.open( 'email.html', 'w+') {|f| f.write( erb.result(b) ) }
+File.open('email.html', 'w+') { |f| f.write(erb.result(b)) }
