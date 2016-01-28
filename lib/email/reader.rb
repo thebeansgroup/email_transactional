@@ -15,12 +15,11 @@ module Email
       locales.each do |locale_path|
         Dir["./#{locale_path}/*.html"].each do |file_path|
           filename = File.basename(file_path)
-          if email?(filename)
-            name = extract_name(filename)
-            locale = extract_locale(locale_path)
-            html = File.read(file_path)
-            yield name, locale, html
-          end
+          next unless email?(filename)
+          name = extract_name(filename)
+          locale = extract_locale(locale_path)
+          html = File.read(file_path)
+          yield name, locale, html
         end
       end
     end
