@@ -1,35 +1,36 @@
-class EmailTransactional::Store
-  MEMCACHED_NAMESPACE = 'email_store'
+# move this require in gemspec
+require 'dalli'
 
-  def self.server=(server)
-    @server = server
-  end
+module Email
+  class Store
+    MEMCACHED_NAMESPACE = 'email_store'.freeze
 
-  def self.instance
-    @instance ||= new(@server)
-  end
+    attr_writer :server
 
-  def initialize(server)
-    options = {
-    }
-    @dalli = Dalli::Client.new(
-      server,
-      namespace: MEMCACHED_NAMESPACE,
-      compress: true
-    )
-  end
+    def self.instance
+      @instance ||= new(@server)
+    end
 
-  def store_email(name, locale, html)
-    @dalli.set(build_key(name, locale), html)
-  end
+    def initialize(server)
+      @dalli = Dalli::Client.new(
+        server,
+        namespace: MEMCACHED_NAMESPACE,
+        compress: true
+      )
+    end
 
-  def get_email(name, locale)
-    @dalli.get(build_key(name, locale))
-  end
+    def store_email(name, locale, html)
+      @dalli.set(build_key(name, locale), html)
+    end
 
-  private
+    def get_email(name, locale)
+      @dalli.get(build_key(name, locale))
+    end
 
-  def build_key(name, locale)
-    EmailTransactional::Key.new(name, locale).build
+    private
+
+    def build_key(name, locale)
+      EmailTransactional::Key.new(name, locale).build
+    end
   end
 end

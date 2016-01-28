@@ -1,8 +1,6 @@
-
 require 'ERB'
 require 'yaml'
 require 'dalli'
-
 
 require_relative './email_transactional/version'
 require_relative './email_transactional/key'
