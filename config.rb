@@ -2,21 +2,21 @@
 # Development
 # ====================================================
 
-page "/partials/*", layout: false
+page '/partials/*', layout: false
 
 configure :development do
   activate :livereload
-  activate :i18n,:langs => ["en-GB"]
+  activate :i18n,:langs => ['en-GB']
 end
 
 # CONSTANTS
-TMPL_OPEN_TAG  = "[[["
-TMPL_CLOSE_TAG = "]]]"
+TMPL_OPEN_TAG  = '[[['
+TMPL_CLOSE_TAG = ']]]'
 
 # Methods defined in the helpers block are available in templates
 helpers do
   def image_url(source)
-    "http://cdn.ymaservices.com/email_transactional/#{source}"
+    'http://cdn.ymaservices.com/email_transactional/#{source}'
   end
 
   def tagify(name)
@@ -28,19 +28,19 @@ helpers do
   end
 
   def twitter_href
-    "https://twitter.com/studentbeans"
+    'https://twitter.com/studentbeans'
   end
 
   def facebook_href
-    "https://www.facebook.com/studentbeans"
+    'https://www.facebook.com/studentbeans'
   end
 
   def appstore_href
-    ""
+    ''
   end
 
   def googleplay_href
-    ""
+    ''
   end
 
 end
@@ -59,25 +59,25 @@ set :markdown
 require 'premailer'
 require 'nokogiri'
 
-EMAIL_PRV_OPEN_TAG = "[EMV DYN]"
-EMAIL_PRV_CLOSE_TAG = "[EMV /DYN]"
+EMAIL_PRV_OPEN_TAG = '[EMV DYN]'
+EMAIL_PRV_CLOSE_TAG = '[EMV /DYN]'
 
 def parse(doc)
   html = Nokogiri::HTML  doc
-  head  = html.search("head")
+  head  = html.search('head')
   puts head
-  html.search("style").each do |el|
+  html.search('style').each do |el|
     head.children.last.add_previous_sibling el
     # el.remove
   end
-  html.search("img").each do |el|
+  html.search('img').each do |el|
     alt = el.get_attribute('alt')
     if !alt
       el.set_attribute('alt', '')
     end
   end
-  html.search("[align='none']").each do |el|
-    el.attributes["align"].remove
+  html.search('[align='none']').each do |el|
+    el.attributes['align'].remove
   end
   html_str = html.to_html
   html_str = html_str.gsub(TMPL_OPEN_TAG, EMAIL_PRV_OPEN_TAG)
@@ -93,32 +93,32 @@ def parseText(doc)
   text_str = text_str.gsub( ERB::Util.url_encode(TMPL_OPEN_TAG), EMAIL_PRV_OPEN_TAG)
   text_str = text_str.gsub(TMPL_CLOSE_TAG, EMAIL_PRV_CLOSE_TAG)
   text_str = text_str.gsub( ERB::Util.url_encode(TMPL_CLOSE_TAG), EMAIL_PRV_CLOSE_TAG)
-  text_str = text_str.gsub("( https://www.facebook.com/studentbeans )","")
-  text_str = text_str.gsub("( https://twitter.com/studentbeans )","")
+  text_str = text_str.gsub('( https://www.facebook.com/studentbeans )','')
+  text_str = text_str.gsub('( https://twitter.com/studentbeans )','')
   text_str
 end
 
 def directoryBuilder
-  html = "<html><body><ul>";
-  Dir.glob(build_dir + "/emails/*/" ).each do |folder|
-    html += "<li><a href='#{folder.sub('build/', '')}'>#{folder.sub('build/emails', '')}</a></li>"
+  html = '<html><body><ul>';
+  Dir.glob(build_dir + '/emails/*/' ).each do |folder|
+    html += '<li><a href='#{folder.sub('build/', '')}'>#{folder.sub('build/emails', '')}</a></li>'
 
     # sub
-    subhtml = "<html><body><ul>"
-    Dir.glob(folder + "/*.html" ).each do |file|
+    subhtml = '<html><body><ul>'
+    Dir.glob(folder + '/*.html' ).each do |file|
       relPath = file.split('/')[-1]
-      subhtml += "<li><a href='#{relPath}'>#{relPath}</a></li>"
+      subhtml += '<li><a href='#{relPath}'>#{relPath}</a></li>'
     end
-    subhtml += "</ul></body></html>"
-    puts folder + "index.html"
-    File.open( folder + "index.html"  , "w+") do |content|
+    subhtml += '</ul></body></html>'
+    puts folder + 'index.html'
+    File.open( folder + 'index.html'  , 'w+') do |content|
       content.puts subhtml
     end
     # /sub
 
   end
-  html += "</ul></body></html>"
-  File.open( "build/index.html"  , "w+") do |content|
+  html += '</ul></body></html>'
+  File.open( 'build/index.html'  , 'w+') do |content|
     content.puts html
   end
 end
@@ -137,14 +137,14 @@ class InlineCSS < Middleman::Extension
         destination_file = source_file.gsub('.html', '--inline.html')
         destination_txt_file = source_file.gsub('.html', '.txt')
 
-        puts "Inlining file: #{source_file} to #{destination_file}"
+        puts 'Inlining file: #{source_file} to #{destination_file}'
 
         # unless source_file.start_with? 'build/partials'
-          File.open(destination_txt_file, "w") do |content|
+          File.open(destination_txt_file, 'w') do |content|
             content.puts  parseText(premailer.to_plain_text)
           end
 
-          File.open(destination_file, "w") do |content|
+          File.open(destination_file, 'w') do |content|
             content.puts  parse(premailer.to_inline_css)
           end
         # end
@@ -165,7 +165,7 @@ end
 # ====================================================
 
 configure :build do
-  activate :i18n, :path => "emails/:locale/", :mount_at_root => false
+  activate :i18n, :path => 'emails/:locale/', :mount_at_root => false
   activate :inline_css
   # Enable cache buster
   activate :asset_hash

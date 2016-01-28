@@ -25,4 +25,4 @@ html = html.gsub('[EMV DYN]','<%= ')
 html = html.gsub('[EMV /DYN]',' %>')
 erb = ERB.new(html)
 
-File.open( "email.html", 'w+') {|f| f.write( erb.result(b) ) }
+File.open( 'email.html', 'w+') {|f| f.write( erb.result(b) ) }
