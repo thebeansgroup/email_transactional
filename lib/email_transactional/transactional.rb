@@ -6,7 +6,7 @@ module EmailTransactional
     end
 
     def self.rebuild
-      EmailTransactional::Middleman.build
+      EmailTransactional::Pipeline.run
       EmailTransactional::Reader.default.read_all do |name, locale, html|
         EmailTransactional::Store.instance.store_email(name, locale, html)
       end
