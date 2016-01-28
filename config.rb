@@ -15,7 +15,7 @@ TMPL_CLOSE_TAG = ']]]'
 
 # Methods defined in the helpers block are available in templates
 helpers do
-  def image_url(source)
+  def image_url(_source)
     'http://cdn.ymaservices.com/email_transactional/#{source}'
   end
 
@@ -42,15 +42,12 @@ helpers do
   def googleplay_href
     ''
   end
-
 end
 
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
 set :markdown
-
-
 
 # ====================================================
 # Build Helpers
@@ -63,16 +60,16 @@ EMAIL_PRV_OPEN_TAG = '[EMV DYN]'
 EMAIL_PRV_CLOSE_TAG = '[EMV /DYN]'
 
 def parse(doc)
-  html = Nokogiri::HTML  doc
-  head  = html.search('head')
+  html = Nokogiri::HTML(doc)
+  head = html.search('head')
   puts head
   html.search('style').each do |el|
-    head.children.last.add_previous_sibling el
+    head.children.last.add_previous_sibling(el)
     # el.remove
   end
   html.search('img').each do |el|
     alt = el.get_attribute('alt')
-    if !alt
+    unless alt
       el.set_attribute('alt', '')
     end
   end
@@ -81,58 +78,68 @@ def parse(doc)
   end
   html_str = html.to_html
   html_str = html_str.gsub(TMPL_OPEN_TAG, EMAIL_PRV_OPEN_TAG)
-  html_str = html_str.gsub( ERB::Util.url_encode(TMPL_OPEN_TAG), EMAIL_PRV_OPEN_TAG)
+  html_str = html_str.gsub(ERB::Util.url_encode(TMPL_OPEN_TAG),
+                           EMAIL_PRV_OPEN_TAG)
   html_str = html_str.gsub(TMPL_CLOSE_TAG, EMAIL_PRV_CLOSE_TAG)
-  html_str = html_str.gsub( ERB::Util.url_encode(TMPL_CLOSE_TAG), EMAIL_PRV_CLOSE_TAG)
+  html_str = html_str.gsub(ERB::Util.url_encode(TMPL_CLOSE_TAG),
+                           EMAIL_PRV_CLOSE_TAG)
   html_str
 end
 
-def parseText(doc)
+def parse_text(doc)
   text_str = doc
   text_str = text_str.gsub(TMPL_OPEN_TAG, EMAIL_PRV_OPEN_TAG)
-  text_str = text_str.gsub( ERB::Util.url_encode(TMPL_OPEN_TAG), EMAIL_PRV_OPEN_TAG)
+  text_str = text_str.gsub(ERB::Util.url_encode(TMPL_OPEN_TAG),
+                           EMAIL_PRV_OPEN_TAG)
   text_str = text_str.gsub(TMPL_CLOSE_TAG, EMAIL_PRV_CLOSE_TAG)
-  text_str = text_str.gsub( ERB::Util.url_encode(TMPL_CLOSE_TAG), EMAIL_PRV_CLOSE_TAG)
-  text_str = text_str.gsub('( https://www.facebook.com/studentbeans )','')
-  text_str = text_str.gsub('( https://twitter.com/studentbeans )','')
+  text_str = text_str.gsub(ERB::Util.url_encode(TMPL_CLOSE_TAG),
+                           EMAIL_PRV_CLOSE_TAG)
+  text_str = text_str.gsub('( https://www.facebook.com/studentbeans )', '')
+  text_str = text_str.gsub('( https://twitter.com/studentbeans )', '')
   text_str
 end
 
-def directoryBuilder
-  html = '<html><body><ul>';
-  Dir.glob(build_dir + '/emails/*/' ).each do |folder|
-    html += '<li><a href='#{folder.sub('build/', '')}'>#{folder.sub('build/emails', '')}</a></li>'
-
+def directory_builder
+  html = '<html><body><ul>'
+  Dir.glob(build_dir + '/emails/*/').each do |folder|
+    html += '<li><a href='
+    # {folder.sub('build/', '')}'>#{folder.sub('build/emails', '')}</a></li>'
     # sub
     subhtml = '<html><body><ul>'
-    Dir.glob(folder + '/*.html' ).each do |file|
-      relPath = file.split('/')[-1]
-      subhtml += '<li><a href='#{relPath}'>#{relPath}</a></li>'
+    Dir.glob(folder + '/*.html').each do |file|
+      # relPath = file.split('/')[-1]
+      subhtml += '<li><a href=' # {relPath}'>#{relPath}</a></li>'
     end
     subhtml += '</ul></body></html>'
     puts folder + 'index.html'
-    File.open( folder + 'index.html'  , 'w+') do |content|
-      content.puts subhtml
+    File.open(folder + 'index.html', 'w+') do |content|
+      content.puts(subhtml)
     end
     # /sub
-
   end
   html += '</ul></body></html>'
-  File.open( 'build/index.html'  , 'w+') do |content|
-    content.puts html
+  File.open('build/index.html', 'w+') do |content|
+    content.puts(html)
   end
 end
 
 class InlineCSS < Middleman::Extension
-  def initialize(app, options_hash={}, &block)
+  def initialize(app, options_hash = {}, &block)
     super
     app.after_build do |builder|
-
       Dir.glob(build_dir + File::SEPARATOR + '**/*.html').each do |source_file|
         # if source_file.start_with? 'build/partials'
-        # premailer = Premailer.new(source_file, verbose: true, css: 'http://localhost:4567/stylesheets/all.css', remove_classes: false, adapter: 'nokogiri')
+        # premailer = Premailer.new(source_file,
+        # verbose: true, css: 'http://localhost:4567/stylesheets/all.css',
+        # remove_classes: false,
+        # adapter: 'nokogiri')
         # else
-        premailer = Premailer.new(source_file, verbose: true, remove_classes: false, adapter: 'nokogiri')
+        premailer = Premailer.new(
+          source_file,
+          verbose: true,
+          remove_classes: false,
+          adapter: 'nokogiri'
+        )
         # end
         destination_file = source_file.gsub('.html', '--inline.html')
         destination_txt_file = source_file.gsub('.html', '.txt')
@@ -140,22 +147,20 @@ class InlineCSS < Middleman::Extension
         puts 'Inlining file: #{source_file} to #{destination_file}'
 
         # unless source_file.start_with? 'build/partials'
-          File.open(destination_txt_file, 'w') do |content|
-            content.puts  parseText(premailer.to_plain_text)
-          end
+        File.open(destination_txt_file, 'w') do |content|
+          content.puts(parse_text(premailer.to_plain_text))
+        end
 
-          File.open(destination_file, 'w') do |content|
-            content.puts  parse(premailer.to_inline_css)
-          end
+        File.open(destination_file, 'w') do |content|
+          content.puts(parse(premailer.to_inline_css))
+        end
         # end
 
-        File.delete( Dir.getwd + File::SEPARATOR + source_file)
+        File.delete(Dir.getwd + File::SEPARATOR + source_file)
       end
 
-      directoryBuilder
-
+      directory_builder
     end
-
   end
 end
 ::Middleman::Extensions.register(:inline_css, InlineCSS)
