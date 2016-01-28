@@ -76,7 +76,7 @@ def parse(doc)
       el.set_attribute('alt', '')
     end
   end
-  html.search('[align='none']').each do |el|
+  html.search("[align='none']").each do |el|
     el.attributes['align'].remove
   end
   html_str = html.to_html
