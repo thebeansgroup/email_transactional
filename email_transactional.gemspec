@@ -27,21 +27,21 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'awesome_print'
   spec.add_development_dependency 'rake'
 
-  spec.add_development_dependency 'middleman', '~>3.3.7'
-  spec.add_development_dependency 'middleman-deploy', '~> 1.0'
+  spec.add_runtime_dependency 'middleman', '~>3.3.7'
+  spec.add_runtime_dependency 'middleman-deploy', '~> 1.0'
 
   # Live-reloading plugin
-  spec.add_development_dependency 'middleman-livereload', '~> 3.1.0'
+  spec.add_runtime_dependency 'middleman-livereload', '~> 3.1.0'
 
   # For faster file watcher updates on Windows:
-  spec.add_development_dependency 'wdm', '~> 0.1.0'
+  spec.add_runtime_dependency 'wdm', '~> 0.1.0'
 
   # Windows does not come with time zone data
-  spec.add_development_dependency 'tzinfo-data'
+  spec.add_runtime_dependency 'tzinfo-data'
 
-  spec.add_development_dependency 'premailer', '~> 1.8.5'
-  spec.add_development_dependency 'hpricot'
-  spec.add_development_dependency 'nokogiri'
-  spec.add_development_dependency 'middleman-minify-html'
-  spec.add_development_dependency 'dalli'
+  spec.add_runtime_dependency 'premailer', '~> 1.8.5'
+  spec.add_runtime_dependency 'hpricot'
+  spec.add_runtime_dependency 'nokogiri'
+  spec.add_runtime_dependency 'middleman-minify-html'
+  spec.add_runtime_dependency 'dalli'
 end
