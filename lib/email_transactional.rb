@@ -10,6 +10,7 @@ require_relative './email_transactional/template'
 require_relative './email_transactional/reader'
 require_relative './email_transactional/transactional'
 require_relative './email_transactional/locales'
+require_relative './email_transactional/source'
 
 module EmailTransactional
 end
