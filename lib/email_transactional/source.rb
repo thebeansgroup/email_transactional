@@ -3,7 +3,7 @@ module EmailTransactional
     SOURCE_PATH = '../../../source/localizable/'
     EXTENSION = '.html.erb'
 
-    def self.read(name = nil,  locale = nil, &block)
+    def self.emails(name = nil,  locale = nil, &block)
       locales = get_locales(locale)
       if name
         single_email(name, locales, block)
