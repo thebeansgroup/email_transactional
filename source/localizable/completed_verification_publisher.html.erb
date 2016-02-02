@@ -9,10 +9,10 @@ twitter_href: "https://twitter.com/studentbeans"
   }
 </style>
 
-<%= partial "partials/global/header", locals: { header_logo: tagify('header_logo') } %>  
+<%= render partial: "partials/global/header", locals: { header_logo: tagify('header_logo') } %>
 
 <br/>
-<%= partial "partials/blocks/top/completed_verification_publisher_top" %>  
+<%= render partial: "partials/blocks/top/completed_verification_publisher_top" %>
 <br/>
 
 <table class="container main-content">
@@ -23,17 +23,17 @@ twitter_href: "https://twitter.com/studentbeans"
       <h2 class="txt-center"><%= t('completed_verification_publisher.welcome') %></h2>
       <img src="<%= image_url('publisher_stb_logo_black.png') %>" class="center" />
       <br/>
-      <%= partial "partials/blocks/top_text", locals: { page_name: "completed_verification_publisher" } %>
-      <%= partial "partials/blocks/discounts_six" %>  
-      <%= partial "partials/blocks/brand_list" %>  
-      <%= partial "partials/blocks/bottom_text", locals: { page_name: "completed_verification_publisher" } %>
+      <%= render partial: "partials/blocks/top_text", locals: { page_name: "completed_verification_publisher" } %>
+      <%= render partial: "partials/blocks/discounts_six" %>
+      <%= render partial: "partials/blocks/brand_list" %>
+      <%= render partial: "partials/blocks/bottom_text", locals: { page_name: "completed_verification_publisher" } %>
     </td>
   </tr>
 </table>
 
-<%# <%= partial "partials/blocks/app_ad" %>
+<%# <%= render partial: "partials/blocks/app_ad" %>
 <br/>
 <br/>
-<%= partial "partials/blocks/social_ad" %>
+<%= render partial: "partials/blocks/social_ad" %>
 
-<%= partial "partials/global/footer" %>
+<%= render partial: "partials/global/footer" %>

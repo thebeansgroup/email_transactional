@@ -3,27 +3,27 @@ facebook_href: "https://www.facebook.com/studentbeans"
 twitter_href: "https://twitter.com/studentbeans"
 ---
 
-<%= partial "partials/global/header" %>  
+<%= render partial: "partials/global/header" %>
 
 <br/>
-<%= partial "partials/blocks/top/completed_verification_connect_top" %>  
+<%= render partial: "partials/blocks/top/completed_verification_connect_top" %>
 <br/>
 
 <table class="container main-content">
   <tr>
     <td>
       <br/>
-      <%= partial "partials/blocks/top_text", locals: { page_name: "completed_verification_connect" } %>
-      <%= partial "partials/blocks/discounts_six" %>  
-      <%= partial "partials/blocks/brand_list" %>  
-      <%= partial "partials/blocks/bottom_text", locals: { page_name: "completed_verification_connect" } %>
+      <%= render partial: "partials/blocks/top_text", locals: { page_name: "completed_verification_connect" } %>
+      <%= render partial: "partials/blocks/discounts_six" %>
+      <%= render partial: "partials/blocks/brand_list" %>
+      <%= render partial: "partials/blocks/bottom_text", locals: { page_name: "completed_verification_connect" } %>
     </td>
   </tr>
 </table>
 
-<%# <%= partial "partials/blocks/app_ad" %>
+<%# <%= render partial: "partials/blocks/app_ad" %>
 <br/>
 <br/>
-<%= partial "partials/blocks/social_ad" %>
+<%= render partial: "partials/blocks/social_ad" %>
 
-<%= partial "partials/global/footer" %>
+<%= render partial: "partials/global/footer" %>
