@@ -8,6 +8,13 @@ module EmailTransactional
       new(YAML.load_file(File.expand_path(GLOBALS_PATH, __FILE__)))
     end
 
+    def self.helper
+      globals = read
+      helper = Module.new
+      helper.send(:define_method, :globals, Proc.new { globals })
+      helper
+    end
+
     def initialize(hash)
       @hash = hash
     end
