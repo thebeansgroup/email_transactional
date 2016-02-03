@@ -1,7 +1,4 @@
-# move this require in gemspec
-require 'dalli'
-
-module Email
+module EmailTransactional
   class Store
     MEMCACHED_NAMESPACE = 'email_store'.freeze
 

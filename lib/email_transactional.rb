@@ -4,6 +4,7 @@ require 'dalli'
 require 'kramdown'
 require 'action_view'
 require 'pathname'
+require 'dalli'
 
 require_relative './email_transactional/version'
 require_relative './email_transactional/globals'
