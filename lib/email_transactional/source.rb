@@ -1,7 +1,8 @@
 module EmailTransactional
   class Source
     SOURCE_PATH = '../../../source/'
-    EMAILS_PATH = SOURCE_PATH + 'localizable/'
+    LOCALIZABLE_DIR = 'localizable/'
+    EMAILS_PATH = SOURCE_PATH + LOCALIZABLE_DIR
     LAYOUTS_PATH = SOURCE_PATH + 'layouts/'
     EMAILS_EXTENSION = '.html.erb'
     LAYOUTS_EXTENSION = '.erb'
@@ -16,19 +17,16 @@ module EmailTransactional
       end
     end
 
-    def self.layout
-      relative_path = LAYOUTS_PATH + DEFAULT_LAYOUT + LAYOUTS_EXTENSION
-      path = File.expand_path(relative_path, __FILE__)
-      read_file(path)
+    def self.path
+      Pathname.new(File.expand_path(SOURCE_PATH, __FILE__))
     end
 
     private
 
     def self.single_email(name, locales, block)
       path = File.expand_path(EMAILS_PATH + name + EMAILS_EXTENSION, __FILE__)
-      html = read_file(path)
       locales.each do |locale|
-        block.call(EmailTransactional::Email.new(name, locale, html))
+        block.call(EmailTransactional::Email.new(name, template(name), locale))
       end
     end
 
@@ -36,17 +34,12 @@ module EmailTransactional
       path = File.expand_path(EMAILS_PATH, __FILE__)
       names = Dir.glob(path + '/*' + EMAILS_EXTENSION).map do |file|
         locales.each do |locale|
-          block.call(EmailTransactional::Email.new(
-            File.basename(file, EMAILS_EXTENSION),
-            locale,
-            read_file(file)
-          ))
+          name = File.basename(file, EMAILS_EXTENSION)
+          block.call(
+            EmailTransactional::Email.new(name, template(name), locale)
+          )
         end
       end
-    end
-
-    def self.read_file(path)
-      File.read(path)
     end
 
     def self.get_locales(locale)
@@ -55,6 +48,10 @@ module EmailTransactional
       else
         EmailTransactional::Locales.all
       end
+    end
+
+    def self.template(name)
+      LOCALIZABLE_DIR + name + EMAILS_EXTENSION
     end
   end
 end

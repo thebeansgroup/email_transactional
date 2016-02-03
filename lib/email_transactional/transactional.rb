@@ -5,11 +5,9 @@ module EmailTransactional
       EmailTransactional::Template.new(html)
     end
 
-    def self.rebuild
-      EmailTransactional::Pipeline.run
-      EmailTransactional::Reader.default.read_all do |name, locale, html|
-        EmailTransactional::Store.instance.store_email(name, locale, html)
-      end
+    def self.rebuild(template = nil, locale = nil)
+      pipeline = EmailTransactional::Pipeline.in(Config.environment)
+      pipeline.run(template, locale)
     end
   end
 end

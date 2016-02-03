@@ -37,4 +37,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'hpricot'
   spec.add_runtime_dependency 'nokogiri'
   spec.add_runtime_dependency 'dalli'
+
+  spec.add_runtime_dependency 'actionview'
+  spec.add_runtime_dependency 'kramdown'
 end
