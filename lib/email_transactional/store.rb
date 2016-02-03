@@ -19,18 +19,18 @@ module Email
       )
     end
 
-    def store_email(name, locale, html)
-      @dalli.set(build_key(name, locale), html)
+    def store_email(email)
+      @dalli.set(email.key, email.html)
+    end
+
+    def store_all(emails)
+      emails.each do |email|
+        store_email(email)
+      end
     end
 
     def get_email(name, locale)
-      @dalli.get(build_key(name, locale))
-    end
-
-    private
-
-    def build_key(name, locale)
-      EmailTransactional::Key.new(name, locale).build
+      @dalli.get(EmailTransactional::Email.new(name, nil, locale).key)
     end
   end
 end
