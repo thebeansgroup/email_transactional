@@ -1,4 +1,4 @@
-module Email
+module EmailTransactional
   class Key
     def initialize(name, locale)
       @name = name
