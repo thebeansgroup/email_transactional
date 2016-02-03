@@ -1,7 +1,7 @@
 module EmailTransactional
   class Transactional
     def self.get(name, locale)
-      html = EmailTransactional::Store.instance.get_email(name, locale)
+      html = EmailTransactional::MemcachedStore.instance.get_email(name, locale)
       EmailTransactional::Template.new(html)
     end
 

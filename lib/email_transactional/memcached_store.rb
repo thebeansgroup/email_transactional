@@ -1,5 +1,5 @@
 module EmailTransactional
-  class Store
+  class MemcachedStore
     MEMCACHED_NAMESPACE = 'email_store'.freeze
 
     attr_writer :server
