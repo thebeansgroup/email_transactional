@@ -2,8 +2,6 @@ module EmailTransactional
   class MemcachedStore
     MEMCACHED_NAMESPACE = 'email_store'.freeze
 
-    attr_writer :server
-
     def self.instance
       @instance ||= new(@server)
     end
