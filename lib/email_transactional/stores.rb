@@ -4,3 +4,4 @@ module EmailTransactional
 end
 
 require_relative './stores/memcached'
+require_relative './stores/disk'

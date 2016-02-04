@@ -3,7 +3,7 @@ module EmailTransactional
 
     def self.in(_environment)
       # return basic pipeline for now
-      store = EmailTransactional::Stores::Memcached.instance
+      store = EmailTransactional::Stores::Disk.instance
       new([EmailTransactional::Stages::ActionView.new,
            EmailTransactional::Stages::Store.new(store)])
 
