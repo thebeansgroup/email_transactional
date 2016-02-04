@@ -20,7 +20,7 @@ module EmailTransactional
       end
 
       def get_email(name, locale)
-        @dalli.get(EmailTransactional::Email.new(name, nil, locale).key)
+        @dalli.get(EmailTransactional::Email.new(name, nil, locale, nil).key)
       end
     end
   end

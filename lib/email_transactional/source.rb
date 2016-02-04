@@ -26,7 +26,14 @@ module EmailTransactional
     def self.single_email(name, locales, block)
       path = File.expand_path(EMAILS_PATH + name + EMAILS_EXTENSION, __FILE__)
       locales.each do |locale|
-        block.call(EmailTransactional::Email.new(name, template(name), locale))
+        block.call(
+          EmailTransactional::Email.new(
+            name,
+            template(name),
+            locale,
+            default_layout
+          )
+        )
       end
     end
 
@@ -36,7 +43,12 @@ module EmailTransactional
         locales.each do |locale|
           name = File.basename(file, EMAILS_EXTENSION)
           block.call(
-            EmailTransactional::Email.new(name, template(name), locale)
+            EmailTransactional::Email.new(
+              name,
+              template(name),
+              locale,
+              default_layout
+            )
           )
         end
       end
@@ -52,6 +64,11 @@ module EmailTransactional
 
     def self.template(name)
       LOCALIZABLE_DIR + name + EMAILS_EXTENSION
+    end
+
+    def self.default_layout
+      relative_path = LAYOUTS_PATH + DEFAULT_LAYOUT + LAYOUTS_EXTENSION
+      File.expand_path(relative_path, __FILE__)
     end
   end
 end

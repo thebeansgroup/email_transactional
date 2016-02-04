@@ -25,6 +25,7 @@ module EmailTransactional
           email.name, # TODO: change to inline?
           email.template, # --inline
           email.locale,
+          email.layout,
           html,
           text
         )

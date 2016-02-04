@@ -1,11 +1,12 @@
 module EmailTransactional
   class Email
-    attr_reader :name, :template, :locale, :html, :text
+    attr_reader :name, :template, :locale, :layout, :html, :text
 
-    def initialize(name, template, locale, html = nil, text = nil)
+    def initialize(name, template, locale, layout, html = nil, text = nil)
       @name = name
       @template = template
       @locale = locale
+      @layout = layout
       @html = html
       @text = text
     end
