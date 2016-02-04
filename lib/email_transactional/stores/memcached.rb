@@ -4,7 +4,7 @@ module EmailTransactional
       MEMCACHED_NAMESPACE = 'email_store'.freeze
 
       def self.instance
-        @instance ||= new(@server)
+        @instance ||= new(EmailTransactional::Config.memcached_server)
       end
 
       def initialize(server)

@@ -4,6 +4,7 @@ module EmailTransactional
 
     class << self
       attr_writer :environment
+      attr_accessor :memcached_server
 
       def environment
         (@environment || DEFAULT_ENVIRONMENT).to_sym
