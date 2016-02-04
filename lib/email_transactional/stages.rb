@@ -4,4 +4,4 @@ module EmailTransactional
 end
 
 require_relative './stages/action_view'
-require_relative './stages/store_in_memcached'
+require_relative './stages/store'
