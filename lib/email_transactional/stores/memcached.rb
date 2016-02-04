@@ -19,12 +19,6 @@ module EmailTransactional
         @dalli.set(email.key, email.html)
       end
 
-      def store_all(emails)
-        emails.each do |email|
-          store_email(email)
-        end
-      end
-
       def get_email(name, locale)
         @dalli.get(EmailTransactional::Email.new(name, nil, locale).key)
       end
