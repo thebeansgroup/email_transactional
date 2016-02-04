@@ -3,10 +3,13 @@ module EmailTransactional
     LOCALE_PATH = '../../../locales'
 
     def self.all
-      path = File.expand_path(LOCALE_PATH, __FILE__)
       Dir.glob("#{path}/*.yml").map do |file|
         File.basename(file, '.yml')
       end
+    end
+
+    def self.path
+      File.expand_path(LOCALE_PATH, __FILE__)
     end
   end
 end

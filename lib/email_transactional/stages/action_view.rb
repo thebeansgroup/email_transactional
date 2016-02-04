@@ -13,6 +13,7 @@ module EmailTransactional
       end
 
       def run(email)
+        I18n.locale = email.locale
         html = @action_view.render(template: email.template)
         EmailTransactional::Email.new(
           email.name,

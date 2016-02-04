@@ -22,3 +22,5 @@ require_relative './email_transactional/email'
 require_relative './email_transactional/locales'
 require_relative './email_transactional/source'
 require_relative './email_transactional/pipeline'
+
+I18n.load_path << Dir[EmailTransactional::Locales.path + '/*.yml']
