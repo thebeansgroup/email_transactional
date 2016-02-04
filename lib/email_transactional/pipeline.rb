@@ -2,9 +2,10 @@ module EmailTransactional
   class Pipeline
 
     def self.in(_environment)
-      # return basic pipeline for now
+      # TODO: check environment
       store = EmailTransactional::Stores::Disk.instance
       new([EmailTransactional::Stages::ActionView.new,
+           EmailTransactional::Stages::InlineCSS.new,
            EmailTransactional::Stages::Store.new(store)])
 
     end

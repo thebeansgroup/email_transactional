@@ -5,6 +5,7 @@ require 'kramdown'
 require 'action_view'
 require 'pathname'
 require 'dalli'
+require 'premailer'
 
 module EmailTransactional
 end
