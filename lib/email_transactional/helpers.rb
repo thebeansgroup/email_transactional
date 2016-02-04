@@ -12,7 +12,7 @@ module EmailTransactional
     end
 
     def markdown(text)
-      Kramdown::Document.new(text).to_html
+      Kramdown::Document.new(text).to_html.html_safe
     end
 
     def t(key, options = {})
