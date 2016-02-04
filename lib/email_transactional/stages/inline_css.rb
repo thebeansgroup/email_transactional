@@ -15,12 +15,8 @@ module EmailTransactional
           adapter: 'nokogiri',
           with_html_string: true
         )
-        # TODO: do something with text
         text = parse_text(premailer.to_plain_text)
-        require 'pry'
-        #binding.pry
         html = parse(premailer.to_inline_css)
-        #binding.pry
         EmailTransactional::Email.new(
           email.name, # TODO: change to inline?
           email.template, # --inline
