@@ -15,6 +15,7 @@ module EmailTransactional
     end
 
     def run(name = nil, locale = nil)
+     # EmailTransactional::Sass.compile
       EmailTransactional::Source.emails(name, locale) do |email|
         @stages.each do |stage|
           email = stage.run(email)
