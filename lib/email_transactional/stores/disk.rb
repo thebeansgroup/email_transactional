@@ -5,7 +5,8 @@ module EmailTransactional
 
       BUILD_PATH = '../../../../build/'
       EMAILS_PATH = BUILD_PATH + 'emails/'
-      EXTENSION = '.html'
+      HTML_EXTENSION = '.html'
+      TXT_EXTENSION = '.txt'
 
       def store_email(email)
         create_locale_dir(email)
@@ -24,11 +25,12 @@ module EmailTransactional
       end
 
       def write(email)
-        File.write(path(email), email.html)
+        File.write(path(email, HTML_EXTENSION), email.html)
+        File.write(path(email, TXT_EXTENSION), email.text)
       end
 
-      def path(email)
-        locale_path(email) + '/' + email.name + EXTENSION
+      def path(email, extension)
+        locale_path(email) + '/' + email.name + extension
       end
     end
   end
