@@ -17,10 +17,16 @@ module EmailTransactional
 
       def store_email(email)
         @dalli.set(email.key, email.html)
+        @dalli.set(email.key_txt, email.text)
       end
 
       def get_email(name, locale)
         @dalli.get(EmailTransactional::Email.new(name, nil, locale, nil).key)
+      end
+
+      def get_email_text(name, locale)
+        key = EmailTransactional::Email.new(name, nil, locale, nil).key_txt
+        @dalli.get(key)
       end
     end
   end

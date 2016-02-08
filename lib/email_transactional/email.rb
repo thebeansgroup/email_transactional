@@ -14,5 +14,9 @@ module EmailTransactional
     def key
       "#{@name}-#{@locale}"
     end
+
+    def key_txt
+      "#{@name}-#{@locale}-txt"
+    end
   end
 end
