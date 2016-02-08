@@ -1,6 +1,6 @@
 module EmailTransactional
   class Globals
-    GLOBALS_PATH = '../../../source/globals.yml'
+    GLOBALS_PATH = '../../../source/globals.yml'.freeze
 
     class NoSuchGlobal < StandardError; end
 

@@ -1,7 +1,7 @@
 module EmailTransactional
   module Helpers
-    TMPL_OPEN_TAG  = '[[['
-    TMPL_CLOSE_TAG = ']]]'
+    TMPL_OPEN_TAG  = '[[['.freeze
+    TMPL_CLOSE_TAG = ']]]'.freeze
 
     def image_url(source)
       "http://cdn.ymaservices.com/email_transactional/#{source}"

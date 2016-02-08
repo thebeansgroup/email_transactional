@@ -3,10 +3,10 @@ module EmailTransactional
     class Disk
       include Singleton
 
-      BUILD_PATH = '../../../../build/'
-      EMAILS_PATH = BUILD_PATH + 'emails/'
-      HTML_EXTENSION = '.html'
-      TXT_EXTENSION = '.txt'
+      BUILD_PATH = '../../../../build/'.freeze
+      EMAILS_PATH = BUILD_PATH + 'emails/'.freeze
+      HTML_EXTENSION = '.html'.freeze
+      TXT_EXTENSION = '.txt'.freeze
 
       def store_email(email)
         create_locale_dir(email)

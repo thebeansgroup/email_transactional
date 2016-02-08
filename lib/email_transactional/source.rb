@@ -1,12 +1,12 @@
 module EmailTransactional
   class Source
-    SOURCE_PATH = '../../../source/'
-    LOCALIZABLE_DIR = 'localizable/'
+    SOURCE_PATH = '../../../source/'.freeze
+    LOCALIZABLE_DIR = 'localizable/'.freeze
     EMAILS_PATH = SOURCE_PATH + LOCALIZABLE_DIR
-    LAYOUTS_PATH = SOURCE_PATH + 'layouts/'
-    EMAILS_EXTENSION = '.html.erb'
-    LAYOUTS_EXTENSION = '.erb'
-    DEFAULT_LAYOUT = 'layout'
+    LAYOUTS_PATH = SOURCE_PATH + 'layouts/'.freeze
+    EMAILS_EXTENSION = '.html.erb'.freeze
+    LAYOUTS_EXTENSION = '.erb'.freeze
+    DEFAULT_LAYOUT = 'layout'.freeze
 
     def self.emails(name = nil,  locale = nil, &block)
       locales = get_locales(locale)

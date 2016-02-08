@@ -1,11 +1,11 @@
 module EmailTransactional
   module Stages
     class InlineCSS
-      TMPL_OPEN_TAG  = '[[['
-      TMPL_CLOSE_TAG = ']]]'
+      TMPL_OPEN_TAG  = '[[['.freeze
+      TMPL_CLOSE_TAG = ']]]'.freeze
 
-      EMAIL_PRV_OPEN_TAG = '[EMV DYN]'
-      EMAIL_PRV_CLOSE_TAG = '[EMV /DYN]'
+      EMAIL_PRV_OPEN_TAG = '[EMV DYN]'.freeze
+      EMAIL_PRV_CLOSE_TAG = '[EMV /DYN]'.freeze
 
       def run(email)
         premailer = Premailer.new(
