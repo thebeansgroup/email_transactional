@@ -3,24 +3,34 @@ module EmailTransactional
 
     def self.in(_environment)
       # TODO: check environment
-      store = EmailTransactional::Stores::Disk.instance
-      new([EmailTransactional::Stages::ActionView.new,
-           EmailTransactional::Stages::InlineCSS.new,
-           EmailTransactional::Stages::Store.new(store)])
-
+      store = EmailTransactional::Stores::Memcached.instance
+      builder = EmailTransactional::PipelineBuilder.new(
+        EmailTransactional::Stages::ActionView.new,
+        EmailTransactional::Stages::InlineCSS.new,
+        EmailTransactional::Stages::Store.new(store)
+      ).before do
+        EmailTransactional::Stylesheets.compile
+      end.after do
+        EmailTransactional::DirectoryIndex.build
+      end.build
     end
 
-    def initialize(stages)
+    def initialize(before,
+                   stages,
+                   after)
+      @before = before
       @stages = stages
+      @after = after
     end
 
     def run(name = nil, locale = nil)
-      EmailTransactional::Stylesheets.compile
+      @before.call
       EmailTransactional::Source.emails(name, locale) do |email|
         @stages.each do |stage|
           email = stage.run(email)
         end
       end
+      @after.call
     end
   end
 end
