@@ -11,6 +11,12 @@ engines:
     enabled: true
   rubocop:
     enabled: true
+    exclude_fingerprints:
+    - e23a165a8c5730c2af9760858cb52f75
+    - f33fafff36dbcec1383305f7fb224180
+    - 378018f17924598287f95bf863cf4391
+    - 47c2823c458b2a644050e8e578e5b693
+    - 600960911b29b8136f55add3512b019e
 
 ratings:
   paths:
