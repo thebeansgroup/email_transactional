@@ -29,7 +29,6 @@ module EmailTransactional
     end
 
     class << self
-
       private
 
       def development_pipeline
@@ -50,9 +49,9 @@ module EmailTransactional
       end
 
       def stages(store)
-        [ EmailTransactional::Stages::ActionView.new,
-          EmailTransactional::Stages::InlineCSS.new,
-          EmailTransactional::Stages::Store.new(store) ]
+        [EmailTransactional::Stages::ActionView.new,
+         EmailTransactional::Stages::InlineCSS.new,
+         EmailTransactional::Stages::Store.new(store)]
       end
     end
   end
