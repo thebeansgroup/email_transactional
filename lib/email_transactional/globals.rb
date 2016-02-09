@@ -22,7 +22,7 @@ module EmailTransactional
     private
 
     def method_missing(method)
-      @hash[method.to_s] || raise NoSuchGlobal
+      @hash[method.to_s] or raise NoSuchGlobal
     end
   end
 end
