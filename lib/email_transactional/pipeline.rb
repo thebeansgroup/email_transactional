@@ -1,0 +1,58 @@
+module EmailTransactional
+  class Pipeline
+
+    def self.in(environment)
+      if [:development, :test].include?(environment.to_sym)
+        development_pipeline
+      elsif environment.to_sym == :production
+        production_pipeline
+      else
+        raise 'Unknown environment'
+      end
+    end
+
+    def initialize(before,
+                   stages,
+                   after)
+      @before = before
+      @stages = stages
+      @after = after
+    end
+
+    def run(name = nil, locale = nil)
+      @before.call
+      EmailTransactional::Source.emails(name, locale) do |email|
+        @stages.each do |stage|
+          email = stage.run(email)
+        end
+      end
+      @after.call
+    end
+
+    private
+
+    def self.development_pipeline
+      store = EmailTransactional::Stores::Disk.instance
+      builder = EmailTransactional::PipelineBuilder.new(
+        EmailTransactional::Stages::ActionView.new,
+        EmailTransactional::Stages::InlineCSS.new,
+        EmailTransactional::Stages::Store.new(store)
+      ).before do
+        EmailTransactional::Stylesheets.compile
+      end.after do
+        EmailTransactional::DirectoryIndex.build
+      end.build
+    end
+
+    def self.production_pipeline
+      store = EmailTransactional::Stores::Memcached.instance
+      builder = EmailTransactional::PipelineBuilder.new(
+        EmailTransactional::Stages::ActionView.new,
+        EmailTransactional::Stages::InlineCSS.new,
+        EmailTransactional::Stages::Store.new(store)
+      ).before do
+        EmailTransactional::Stylesheets.compile
+      end.build
+    end
+  end
+end

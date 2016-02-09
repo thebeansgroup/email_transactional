@@ -27,12 +27,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'awesome_print'
   spec.add_development_dependency 'rake'
 
-  spec.add_runtime_dependency 'middleman', '~>3.3.7'
-  spec.add_runtime_dependency 'middleman-deploy', '~> 1.0'
-
-  # Live-reloading plugin
-  spec.add_runtime_dependency 'middleman-livereload', '~> 3.1.0'
-
   # For faster file watcher updates on Windows:
   spec.add_runtime_dependency 'wdm', '~> 0.1.0'
 
@@ -42,6 +36,8 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'premailer', '~> 1.8.5'
   spec.add_runtime_dependency 'hpricot'
   spec.add_runtime_dependency 'nokogiri'
-  spec.add_runtime_dependency 'middleman-minify-html'
   spec.add_runtime_dependency 'dalli'
+  spec.add_runtime_dependency 'actionview'
+  spec.add_runtime_dependency 'kramdown'
+  spec.add_runtime_dependency 'compass'
 end
