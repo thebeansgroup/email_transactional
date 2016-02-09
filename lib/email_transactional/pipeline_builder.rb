@@ -2,8 +2,8 @@ module EmailTransactional
   class PipelineBuilder
     def initialize(*stages)
       @stages = stages
-      @before = Proc.new {}
-      @after  = Proc.new {}
+      @before = proc {}
+      @after  = proc {}
     end
 
     def before(&block)

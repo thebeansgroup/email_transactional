@@ -3,16 +3,17 @@ module EmailTransactional
     def self.build
       html = '<html><body><ul>'
       Dir.glob('build/emails/*/').each do |folder|
-        html += "<li><a href='#{folder.sub('build/', '')}'>#{folder.sub('build/emails', '')}</a></li>"
+        html += "<li><a href='#{folder.sub('build/', '')}'>\
+                #{folder.sub('build/emails', '')}</a></li>"
 
         subhtml = '<html><body><ul>'
         Dir.glob(folder + '/*.html').each do |file|
-          relPath = file.split('/')[-1]
-          subhtml += "<li><a href='#{relPath}'>#{relPath}</a></li>"
+          rel_path = file.split('/')[-1]
+          subhtml += "<li><a href='#{rel_path}'>#{rel_path}</a></li>"
         end
         subhtml += '</ul></body></html>'
         puts folder + 'index.html'
-        File.open( folder + 'index.html', 'w+') do |content|
+        File.open(folder + 'index.html', 'w+') do |content|
           content.puts(subhtml)
         end
       end

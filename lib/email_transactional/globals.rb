@@ -11,7 +11,7 @@ module EmailTransactional
     def self.helper
       globals = read
       helper = Module.new
-      helper.send(:define_method, :globals, Proc.new { globals })
+      helper.send(:define_method, :globals, proc { globals })
       helper
     end
 
@@ -22,7 +22,7 @@ module EmailTransactional
     private
 
     def method_missing(method)
-      @hash[method.to_s] or raise NoSuchGlobal
+      @hash[method.to_s] || raise NoSuchGlobal
     end
   end
 end

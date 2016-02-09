@@ -13,7 +13,7 @@ module EmailTransactional
       def helper
         helper = Module.new
         env = environment
-        helper.send(:define_method, :environment, Proc.new { env })
+        helper.send(:define_method, :environment, proc { env })
         helper
       end
     end

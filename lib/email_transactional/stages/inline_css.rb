@@ -18,8 +18,8 @@ module EmailTransactional
         text = parse_text(premailer.to_plain_text)
         html = parse(premailer.to_inline_css)
         EmailTransactional::Email.new(
-          email.name, # TODO: change to inline?
-          email.template, # --inline
+          email.name,
+          email.template,
           email.locale,
           email.layout,
           html,

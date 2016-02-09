@@ -1,6 +1,5 @@
 module EmailTransactional
   class Pipeline
-
     def self.in(environment)
       if [:development, :test].include?(environment.to_sym)
         development_pipeline
@@ -33,26 +32,23 @@ module EmailTransactional
 
     def self.development_pipeline
       store = EmailTransactional::Stores::Disk.instance
-      builder = EmailTransactional::PipelineBuilder.new(
+      EmailTransactional::PipelineBuilder.new(
         EmailTransactional::Stages::ActionView.new,
         EmailTransactional::Stages::InlineCSS.new,
         EmailTransactional::Stages::Store.new(store)
-      ).before do
-        EmailTransactional::Stylesheets.compile
-      end.after do
-        EmailTransactional::DirectoryIndex.build
-      end.build
+      ).before { EmailTransactional::Stylesheets.compile }
+       .after { EmailTransactional::DirectoryIndex.build }
+       .build
     end
 
     def self.production_pipeline
       store = EmailTransactional::Stores::Memcached.instance
-      builder = EmailTransactional::PipelineBuilder.new(
+      EmailTransactional::PipelineBuilder.new(
         EmailTransactional::Stages::ActionView.new,
         EmailTransactional::Stages::InlineCSS.new,
         EmailTransactional::Stages::Store.new(store)
-      ).before do
-        EmailTransactional::Stylesheets.compile
-      end.build
+      ).before { EmailTransactional::Stylesheets.compile }
+       .build
     end
   end
 end
