@@ -34,23 +34,25 @@ module EmailTransactional
 
       def development_pipeline
         store = EmailTransactional::Stores::Disk.instance
-        EmailTransactional::PipelineBuilder.new(
-          EmailTransactional::Stages::ActionView.new,
-          EmailTransactional::Stages::InlineCSS.new,
-          EmailTransactional::Stages::Store.new(store)
-        ).before { EmailTransactional::Stylesheets.compile }
-         .after { EmailTransactional::DirectoryIndex.build }
-         .build
+        EmailTransactional::PipelineBuilder
+          .new(stages(store))
+          .before { EmailTransactional::Stylesheets.compile }
+          .after { EmailTransactional::DirectoryIndex.build }
+          .build
       end
 
       def production_pipeline
         store = EmailTransactional::Stores::Memcached.instance
-        EmailTransactional::PipelineBuilder.new(
-          EmailTransactional::Stages::ActionView.new,
+        EmailTransactional::PipelineBuilder
+          .new(stages(store))
+          .before { EmailTransactional::Stylesheets.compile }
+          .build
+      end
+
+      def stages(store)
+        [ EmailTransactional::Stages::ActionView.new,
           EmailTransactional::Stages::InlineCSS.new,
-          EmailTransactional::Stages::Store.new(store)
-        ).before { EmailTransactional::Stylesheets.compile }
-         .build
+          EmailTransactional::Stages::Store.new(store) ]
       end
     end
   end
