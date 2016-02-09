@@ -28,27 +28,30 @@ module EmailTransactional
       @after.call
     end
 
-    private
+    class << self
 
-    def self.development_pipeline
-      store = EmailTransactional::Stores::Disk.instance
-      EmailTransactional::PipelineBuilder.new(
-        EmailTransactional::Stages::ActionView.new,
-        EmailTransactional::Stages::InlineCSS.new,
-        EmailTransactional::Stages::Store.new(store)
-      ).before { EmailTransactional::Stylesheets.compile }
-       .after { EmailTransactional::DirectoryIndex.build }
-       .build
-    end
+      private
 
-    def self.production_pipeline
-      store = EmailTransactional::Stores::Memcached.instance
-      EmailTransactional::PipelineBuilder.new(
-        EmailTransactional::Stages::ActionView.new,
-        EmailTransactional::Stages::InlineCSS.new,
-        EmailTransactional::Stages::Store.new(store)
-      ).before { EmailTransactional::Stylesheets.compile }
-       .build
+      def development_pipeline
+        store = EmailTransactional::Stores::Disk.instance
+        EmailTransactional::PipelineBuilder.new(
+          EmailTransactional::Stages::ActionView.new,
+          EmailTransactional::Stages::InlineCSS.new,
+          EmailTransactional::Stages::Store.new(store)
+        ).before { EmailTransactional::Stylesheets.compile }
+         .after { EmailTransactional::DirectoryIndex.build }
+         .build
+      end
+
+      def production_pipeline
+        store = EmailTransactional::Stores::Memcached.instance
+        EmailTransactional::PipelineBuilder.new(
+          EmailTransactional::Stages::ActionView.new,
+          EmailTransactional::Stages::InlineCSS.new,
+          EmailTransactional::Stages::Store.new(store)
+        ).before { EmailTransactional::Stylesheets.compile }
+         .build
+      end
     end
   end
 end
