@@ -9,6 +9,7 @@ PATH
       kramdown
       nokogiri
       premailer (~> 1.8.5)
+      rack
       tzinfo-data
       wdm (~> 0.1.0)
 
@@ -79,6 +80,7 @@ GEM
     pry-stack_explorer (0.4.9.2)
       binding_of_caller (>= 0.7)
       pry (>= 0.9.11)
+    rack (1.6.4)
     rails-deprecated_sanitizer (1.0.3)
       activesupport (>= 4.2.0.alpha)
     rails-dom-testing (1.0.6)
