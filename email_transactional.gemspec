@@ -27,6 +27,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'awesome_print'
   spec.add_development_dependency 'rake'
   spec.add_development_dependency 'rack'
+  spec.add_development_dependency 'rubocop'
 
   # For faster file watcher updates on Windows:
   spec.add_runtime_dependency 'wdm', '~> 0.1.0'
