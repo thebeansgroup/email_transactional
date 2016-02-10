@@ -1,8 +1,8 @@
 use Rack::Static,
-  urls: ['/emails', '/images', '/js', '/css'],
-  root: 'build'
+    urls: ['/emails', '/images', '/js', '/css'],
+    root: 'build'
 
-run lambda { |env|
+run lambda { |_env|
   [
     200,
     {
