@@ -1,8 +1,12 @@
 AllCops:
   Exclude:
-    - "vendor/**/*"
-    - "db/schema.rb"
+    - "config.rb"
   UseCache: false
+Style/AndOr:
+  EnforcedStyle: conditionals
+  SupportedStyles:
+    - always
+    - conditionals
 Style/CollectionMethods:
   Description: Preferred collection methods.
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#map-find-select-reduce-size
@@ -17,7 +21,7 @@ Style/DotPosition:
   Description: Checks the position of the dot in multi-line method calls.
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#consistent-multi-line-chains
   Enabled: true
-  EnforcedStyle: trailing
+  EnforcedStyle: leading
   SupportedStyles:
   - leading
   - trailing

@@ -28,6 +28,7 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.4.0)
+    ast (2.2.0)
     awesome_print (1.6.1)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
@@ -66,6 +67,9 @@ GEM
     multi_json (1.11.2)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
+    parser (2.3.0.4)
+      ast (~> 2.2)
+    powerpack (0.1.1)
     premailer (1.8.6)
       css_parser (>= 1.3.6)
       htmlentities (>= 4.0.0)
@@ -79,6 +83,7 @@ GEM
     pry-stack_explorer (0.4.9.2)
       binding_of_caller (>= 0.7)
       pry (>= 0.9.11)
+    rack (1.6.4)
     rails-deprecated_sanitizer (1.0.3)
       activesupport (>= 4.2.0.alpha)
     rails-dom-testing (1.0.6)
@@ -87,10 +92,18 @@ GEM
       rails-deprecated_sanitizer (>= 1.0.1)
     rails-html-sanitizer (1.0.2)
       loofah (~> 2.0)
+    rainbow (2.1.0)
     rake (10.5.0)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
+    rubocop (0.37.1)
+      parser (>= 2.3.0.4, < 3.0)
+      powerpack (~> 0.1)
+      rainbow (>= 1.99.1, < 3.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (~> 0.3)
+    ruby-progressbar (1.7.5)
     sass (3.4.21)
     slop (3.6.0)
     thread_safe (0.3.5)
@@ -98,6 +111,7 @@ GEM
       thread_safe (~> 0.1)
     tzinfo-data (1.2015.7)
       tzinfo (>= 1.0.0)
+    unicode-display_width (0.3.1)
     wdm (0.1.1)
 
 PLATFORMS
@@ -109,4 +123,6 @@ DEPENDENCIES
   email_transactional!
   pry-byebug
   pry-stack_explorer
+  rack
   rake
+  rubocop

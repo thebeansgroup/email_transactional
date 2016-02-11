@@ -34,7 +34,7 @@ module EmailTransactional
       def development_pipeline
         store = EmailTransactional::Stores::Disk.instance
         EmailTransactional::PipelineBuilder
-          .new(stages(store))
+          .new(*stages(store))
           .before { EmailTransactional::Stylesheets.compile }
           .after { EmailTransactional::DirectoryIndex.build }
           .build
@@ -43,7 +43,7 @@ module EmailTransactional
       def production_pipeline
         store = EmailTransactional::Stores::Memcached.instance
         EmailTransactional::PipelineBuilder
-          .new(stages(store))
+          .new(*stages(store))
           .before { EmailTransactional::Stylesheets.compile }
           .build
       end
