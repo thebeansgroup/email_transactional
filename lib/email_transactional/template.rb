@@ -22,7 +22,7 @@ module EmailTransactional
     def normalized_params(params)
       normalized = {}
       params.each do |key, value|
-        if value.kind_of?(Array)
+        if value.is_a?(Array)
           normalized.merge!(normalize_array(key, value))
         else
           normalized[key] = value
@@ -34,7 +34,7 @@ module EmailTransactional
     def normalize_array(key, array)
       result = {}
       array.each_with_index do |element, index|
-        if element.kind_of?(Hash)
+        if element.is_a?(Hash)
           result.merge!(normalize_hash(key, element, index))
         else
           result["#{key}_#{index + 1}"] = element
