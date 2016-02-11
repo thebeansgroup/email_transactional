@@ -38,7 +38,8 @@ module EmailTransactional
       end
 
       def all_emails(locales, block)
-        Dir.glob(path + '/*' + EMAILS_EXTENSION).map do |file|
+        emails_path = File.expand_path(EMAILS_PATH, __FILE__)
+        Dir.glob(emails_path + '/*' + EMAILS_EXTENSION).map do |file|
           locales.each do |locale|
             name = File.basename(file, EMAILS_EXTENSION)
             block.call(
