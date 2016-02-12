@@ -3,7 +3,7 @@ module MailPipes
     def self.build
       html = '<html><body><ul>'
       Dir.glob('build/emails/*/').each do |folder|
-        html += "<li><a href='#{folder.sub('build/', '')}'>\
+        html += "<li><a href='#{folder.sub('build/', '')}index.html'>\
                 #{folder.sub('build/emails', '')}</a></li>"
 
         subhtml = '<html><body><ul>'
