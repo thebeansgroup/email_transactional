@@ -1,9 +1,9 @@
 module MailPipes
-  class Transactional
+  module Transactional
     def self.get(name, locale)
       store = MailPipes::Stores::Memcached.instance
       html = store.get_email(name, locale)
-      MailPipes::Template.new(html)
+      MailPipes::Transactional::Template.new(html)
     end
 
     def self.rebuild(template = nil, locale = nil)
@@ -12,3 +12,5 @@ module MailPipes
     end
   end
 end
+
+require_relative './transactional/template'
