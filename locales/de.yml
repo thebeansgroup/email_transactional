@@ -80,3 +80,26 @@ de:
 
       The Bean Team
 
+  reverification:
+    button:
+      text: Studentenstatus verlängern
+    problems:
+      text: "Are you having problems?"
+      link:
+        text: "Go to support"
+    one_month:
+      subject: "Erinnerung: Verlängern Sie Ihr Student Beans Konto."
+      body: "Wichtiger Hinweis: Ihr Studentenstatus bei Student Beans läuft in 1 Woche ab.
+      Kein Problem: Sie können ihn ganz einfach verlängern. Folgen Sie dazu dem nachstehenden Link, und im Handumdrehen können Sie alle Rabatte wieder wie gewohnt nutzen."
+    one_week:
+      subject: Verlängern Sie noch heute Ihr Student Beans Konto.
+      body: "Ihr Studentenstatus bei Student Beans läuft morgen ab.
+      Kein Problem: Sie können ihn ganz einfach verlängern. Folgen Sie dazu dem nachstehenden Link, und im Handumdrehen können Sie alle Rabatte wieder wie gewohnt nutzen."
+    tomorrow:
+      subject: Verlängern Sie noch heute Ihr Student Beans Konto.
+      body: "Ihr Studentenstatus bei Student Beans läuft morgen ab.
+      Kein Problem: Sie können ihn ganz einfach verlängern. Folgen Sie dazu dem nachstehenden Link, und im Handumdrehen können Sie alle Rabatte wieder wie gewohnt nutzen."
+    expired:
+      subject: Ihr Studentenstatus bei Student Beans ist abgelaufen. So können Sie ihn wieder aktivieren.
+      body: "Ihr Studentenstatus bei Student Beans ist abgelaufen.
+      Kein Problem: Sie können ihn ganz einfach erneut aktivieren. Folgen Sie dazu dem nachstehenden Link, und im Handumdrehen können Sie alle Rabatte wieder wie gewohnt nutzen."

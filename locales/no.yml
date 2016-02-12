@@ -1,0 +1,20 @@
+'no':
+  reverification:
+    button:
+      text: Renew Student Status
+    problems:
+      text: "Are you having problems?"
+      link:
+        text: "Go to support"
+    one_month:
+      subject: På tide å fornye din Student Beans-konto
+      body: Studentstatusen din for Student Beans utløper neste måned. Men ikke vær engstelig, det er veldig lett å reaktivere den. Bare følg lenken nedenfor, og så kan du raskt og greit nyte godt av alle rabattene igjen.
+    one_week:
+      subject: En påminnelse om å fornye Student Beans-kontoen din.
+      body: Pass på - studentstatusen din for Student Beans utløper om 1 uke. Men ikke være engstelig, det er veldig lett å reaktivere den. Bare følg lenken nedenfor, og så kan du raskt og greit nyte godt av alle rabattene igjen.
+    tomorrow:
+      subject: Forny Student Beans-kontoen din i dag.
+      body: Studentstatusen din for Student Beans utløper i morgen. Men ikke vær engstelig, det er veldig lett å reaktivere den. Bare følg lenken nedenfor, og så kan du raskt og greit nyte godt av alle rabattene igjen.
+    expired:
+      subject: Studentstatusen din for Student Beans har utløpt, slik kan du fornye den.
+      body: Studentstatusen din for Student Beans har utløpt. Men ikke vær engstelig, det er veldig lett å reaktivere den. Bare følg lenken nedenfor, og så kan du raskt og greit nyte godt av alle rabattene igjen.

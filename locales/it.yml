@@ -1,0 +1,24 @@
+it:
+  reverification:
+    button:
+      text: Rinnova Status Studente
+    problems:
+      text: "Are you having problems?"
+      link:
+        text: "Go to support"
+    one_month:
+      subject: È ora di rinnovare il tuo account Student Beans.
+      body: "Il tuo status studente con Student Beans scadrà il mese prossimo.
+      Non preoccuparti: puoi riattivarlo molto facilmente. Ti basterà fare clic sul link di seguito per continuare a godere da subito dei nostri sconti e vantaggi."
+    one_week:
+      subject: Un promemoria per il rinnovo del tuo account Student Beans.
+      body: Promemoria - Il tuo status studente con Student Beans scadrà entro una settimana.
+      Non preoccuparti: puoi riattivarlo molto facilmente. Ti basterà fare clic sul link di seguito per continuare a godere da subito dei nostri sconti e vantaggi. 
+    tomorrow:
+      subject: Rinnova il tuo account Student Beans oggi stesso.
+      body: Il tuo status studente con Student Beans scadrà domani.
+      Non preoccuparti: puoi riattivarlo molto facilmente. Ti basterà fare clic sul link di seguito per continuare a godere da subito dei nostri sconti e vantaggi. 
+    expired:
+      subject: Il tuo status studente con Student Beans è scaduto, ecco come rinnovarlo.
+      body: Il tuo status studente con Student Beans è scaduto.
+      Non preoccuparti: puoi riattivarlo molto facilmente. Ti basterà fare clic sul link di seguito per continuare a godere da subito dei nostri sconti e vantaggi. 

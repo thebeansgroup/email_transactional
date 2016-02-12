@@ -1,0 +1,20 @@
+pl:
+  reverification:
+    button:
+      text: Odśwież status studenta
+    problems:
+      text: "Are you having problems?"
+      link:
+        text: "Go to support"
+    one_month:
+      subject: Nadszedł czas, aby odnowić Twoje konto Student Beans.
+      body: Twój status studenta w Student Beans wygaśnie w przyszłym miesiącu, ale nie martw się, możesz reaktywować konto w bardzo łatwy sposób. Wystarczy, że klikniesz na poniższy link, aby nadal korzystać ze wszystkich zniżek.   
+    one_week:
+      subject: Przypomnienie o odświeżeniu konta Student Beans.
+      body: Uwaga - Twój status studenta wygaśnie za tydzień, ale nie martw się, możesz reaktywować konto w bardzo łatwy sposób. Wystarczy, że klikniesz na poniższy link, aby nadal korzystać ze wszystkich zniżek.   
+    tomorrow:
+      subject: Odśwież swoje konto Student Beans dzisiaj.
+      body: Twój status studenta w Student Beans wygaśnie jutro, ale nie martw się, możesz reaktywować konto w bardzo łatwy sposób. Wystarczy, że klikniesz na poniższy link, aby nadal korzystać ze wszystkich zniżek.   
+    expired:
+      subject: Twój status studenta w Student Beans wygasł. Poniżej znajdziesz informacje o tym, w jaki sposób możesz odnowić konto. 
+      body: Twój status studenta w Student Beans wygasł, ale nie martw się, możesz reaktywować konto w bardzo łatwy sposób. Wystarczy, że klikniesz na poniższy link, aby nadal korzystać ze wszystkich zniżek.

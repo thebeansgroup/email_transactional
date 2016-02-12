@@ -1,0 +1,20 @@
+fi:
+  reverification:
+    button:
+      text: Aktivoi opiskelijastatus uudelleen
+    problems:
+      text: "Are you having problems?"
+      link:
+        text: "Go to support"
+    one_month:
+      subject: Sinun pitää uusia Student Beans -tilisi.
+      body: Student Beans -tilisi vanhenee ensi kuussa. Ei huolta, voit aktivoida sen helposti uudestaan. Klikkaa alla olevaa linkkiä, niin tilisi aktivoituu ja saat alennukset taas heti käyttöösi.
+    one_week:
+      subject: Muistutus Student Beans -tilisi aktivoinnista.
+      body: Huomio. Student Beans -tilisi vanhenee viikon kuluttua. Ei huolta, voit aktivoida sen helposti uudestaan. Klikkaa alla olevaa linkkiä, niin tilisi aktivoituu ja saat alennukset taas heti käyttöösi.
+    tomorrow:
+      subject: Aktivoi Student Beans -tilisi tänään.
+      body: Huomio. Student Beans -tilisi vanhenee huomenna. Ei huolta, voit aktivoida sen helposti uudestaan. Klikkaa alla olevaa linkkiä, niin tilisi aktivoituu ja saat alennukset taas heti käyttöösi.
+    expired:
+      subject: Studen Beans -tilisi on vanhentunut. Näin saat sen aktivoitua.
+      body: Huomio. Student Beans -tilisi on vanhentunut. Ei huolta, voit aktivoida sen helposti uudestaan. Klikkaa alla olevaa linkkiä, niin tilisi aktivoituu ja saat alennukset taas heti käyttöösi.

@@ -1,0 +1,20 @@
+sl:
+  reverification:
+    button:
+      text: Obnovite status študenta
+    problems:
+      text: "Are you having problems?"
+      link:
+        text: "Go to support"
+    one_month:
+      subject: Čas je, da obnovite svoj račun na portalu Student Beans.
+      body: Vaš status študenta na portalu Student Beans bo potekel naslednji mesec. A ne skrbite, zelo enostavno ga lahko znova aktivirate. Sledite spodnji povezavi in kmalu boste spet nazaj na portalu, kjer boste seznanjeni z vsemi popusti.
+    one_week:
+      subject: Opomnik o obnovitvi vašega računa na portalu Student Beans.
+      body: "Pozor – vaš status študenta na portalu Student Beans bo potekel čez 1 teden. A ne skrbite, zelo enostavno ga lahko znova aktivirate. Sledite spodnji povezavi in kmalu boste spet nazaj na portalu, kjer boste seznanjeni z vsemi popusti."
+    tomorrow:
+      subject: Obnovite svoj račun na portalu Student Beans danes.
+      body: "Vaš status študenta na portalu Student Beans bo potekel jutri. A ne skrbite, zelo enostavno ga lahko znova aktivirate. Sledite spodnji povezavi in kmalu boste spet nazaj na portalu, kjer boste seznanjeni z vsemi popusti."
+    expired:
+      subject: Vaš status študenta na portalu Student Beans je potekel; tukaj so navodila za obnovitev.
+      body: "Vaš status študenta na portalu Student Beans je potekel. A ne skrbite, zelo enostavno ga lahko znova aktivirate. Sledite spodnji povezavi in kmalu boste spet nazaj na portalu, kjer boste seznanjeni z vsemi popusti."

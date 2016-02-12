@@ -1,0 +1,26 @@
+es:
+  reverification:
+    button:
+      text: Renovar tu estado en Student
+    problems:
+      text: "Are you having problems?"
+      link:
+        text: "Go to support"
+    one_month:
+      subject: Llegó la hora de renovar tu cuenta de Student Beans.
+      body: Tu estado con Student Beans caduca el mes que viene, pero no te preocupes porque reactivarlo es muy sencillo. Haz clic en el siguiente link y volverás a estar activo y con todos tus descuentos enseguida.
+    one_week:
+      subject: Recordatorio sobre la renovación de tu cuenta de Student Beans.
+      body: Atención, tu estado de estudiante en Student Beans caduca en una semana, pero no te preocupes porque reactivarlo es muy sencillo. Haz clic en el siguiente link y volverás a estar activo y con todos tus descuentos enseguida.
+    tomorrow:
+      subject: Renueva tu cuenta de Students Beans hoy.
+      body: "Tu estado de estudiante en Student Beans caduca mañana, 
+      pero no te preocupes porque reactivarlo es muy sencillo. Haz clic en el 
+      siguiente link y volverás a estar activo y con todos tus descuentos 
+      enseguida."
+    expired:
+      subject: Tu estado de estudiante en Student Beans ha caducado. Aquí te mostramos cómo renovarlo.
+      body: "Tu estado de estudiante en Student Beans ha caducado, 
+      pero no te preocupes porque reactivarlo es muy sencillo. Haz clic en el 
+      siguiente link y volverás a estar activo y con todos tus descuentos 
+      enseguida."

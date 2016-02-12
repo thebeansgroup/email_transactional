@@ -1,0 +1,24 @@
+fr:
+  reverification:
+    button:
+      text: Renouveler le statut d’étudiant
+    problems:
+      text: "Are you having problems?"
+      link:
+        text: "Go to support"
+    one_month:
+      subject: Il est temps de renouveler votre compte Student Beans
+      body: "Votre statut d’étudiant dans le cadre de Student Beans va expirer le mois prochain
+      Mais ne vous inquiétez pas, vous pouvez le réactiver très facilement. Il vous suffit de suivre le lien ci-dessous et vous pourrez profiter de toutes les réductions très rapidement."
+    one_week:
+      subject: Rappel concernant le renouvellement de votre compte Student Beans.
+      body: "Attention – votre statut d’étudiant auprès de Student Beans expire dans 1 semaine 
+      Mais ne vous inquiétez pas, vous pouvez le réactiver très facilement. Il vous suffit de suivre le lien ci-dessous et vous pourrez profiter de toutes les réductions très rapidement."
+    tomorrow:
+      subject: Renouvelez votre compte Student Beans aujourd’hui.
+      body: "Votre statut d’étudiant auprès de Student Beans expire demain 
+      Mais ne vous inquiétez pas, vous pouvez le réactiver très facilement. Il vous suffit de suivre le lien ci-dessous et vous pourrez profiter de toutes les réductions très rapidement."
+    expired:
+      subject: Votre statut d’étudiant auprès de Student Beans a expiré, voici comment le renouveler.
+      body: "Votre statut d’étudiant auprès de Student Beans a expiré 
+      Mais ne vous inquiétez pas, vous pouvez le réactiver très facilement. Il vous suffit de suivre le lien ci-dessous et vous pourrez profiter de toutes les réductions très rapidement."
