@@ -1,17 +1,17 @@
 # coding: utf-8
 $:.push File.expand_path('../lib', __FILE__)
-require 'email_transactional/version'
+require 'mail_pipes/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'email_transactional'
-  spec.version       = EmailTransactional::VERSION
+  spec.name          = 'mail_pipes'
+  spec.version       = MailPipes::VERSION
   spec.authors       = ['zduci']
   spec.email         = ['ra.busuioc@gmail.com']
   spec.summary       =
     'Compiles email templates and provides an API to store/retrieve them'
   spec.description   =
     'Compiles email templates and provides an API to store/retrieve them'
-  spec.homepage      = 'https://github.com/thebeansgroup/tx_queue'
+  spec.homepage      = 'https://github.com/thebeansgroup/mail_pipes'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($/)

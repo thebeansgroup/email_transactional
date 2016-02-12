@@ -1,4 +1,4 @@
-module EmailTransactional
+module MailPipes
   class Template
     def initialize(html)
       @html = html

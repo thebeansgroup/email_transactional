@@ -1,10 +1,10 @@
-module EmailTransactional
+module MailPipes
   module Stores
     class Memcached
       MEMCACHED_NAMESPACE = 'email_store'.freeze
 
       def self.instance
-        @instance ||= new(EmailTransactional::Config.memcached_server)
+        @instance ||= new(MailPipes::Config.memcached_server)
       end
 
       def initialize(server)
@@ -21,11 +21,11 @@ module EmailTransactional
       end
 
       def get_email(name, locale)
-        @dalli.get(EmailTransactional::Email.new(name, nil, locale, nil).key)
+        @dalli.get(MailPipes::Email.new(name, nil, locale, nil).key)
       end
 
       def get_email_text(name, locale)
-        key = EmailTransactional::Email.new(name, nil, locale, nil).key_txt
+        key = MailPipes::Email.new(name, nil, locale, nil).key_txt
         @dalli.get(key)
       end
     end

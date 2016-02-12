@@ -1,4 +1,4 @@
-module EmailTransactional
+module MailPipes
   module Stages
     class InlineCSS
       TMPL_OPEN_TAG  = '[[['.freeze
@@ -17,7 +17,7 @@ module EmailTransactional
         )
         text = parse_text(premailer.to_plain_text)
         html = parse(premailer.to_inline_css)
-        EmailTransactional::Email.new(
+        MailPipes::Email.new(
           email.name,
           email.template,
           email.locale,

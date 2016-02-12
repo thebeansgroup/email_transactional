@@ -1,4 +1,4 @@
-module EmailTransactional
+module MailPipes
   class PipelineBuilder
     def initialize(*stages)
       @stages = stages
@@ -17,7 +17,7 @@ module EmailTransactional
     end
 
     def build
-      EmailTransactional::Pipeline.new(@before, @stages, @after)
+      MailPipes::Pipeline.new(@before, @stages, @after)
     end
   end
 end

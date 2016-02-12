@@ -1,4 +1,4 @@
-module EmailTransactional
+module MailPipes
   class Source
     SOURCE_PATH = '../../../source/'.freeze
     LOCALIZABLE_DIR = 'localizable/'.freeze
@@ -27,7 +27,7 @@ module EmailTransactional
       def single_email(name, locales, block)
         locales.each do |locale|
           block.call(
-            EmailTransactional::Email.new(
+            MailPipes::Email.new(
               name,
               template(name),
               locale,
@@ -43,7 +43,7 @@ module EmailTransactional
           locales.each do |locale|
             name = File.basename(file, EMAILS_EXTENSION)
             block.call(
-              EmailTransactional::Email.new(
+              MailPipes::Email.new(
                 name,
                 template(name),
                 locale,
@@ -58,7 +58,7 @@ module EmailTransactional
         if locale
           [locale]
         else
-          EmailTransactional::Locales.all
+          MailPipes::Locales.all
         end
       end
 

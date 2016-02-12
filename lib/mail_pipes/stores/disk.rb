@@ -1,4 +1,4 @@
-module EmailTransactional
+module MailPipes
   module Stores
     class Disk
       include Singleton

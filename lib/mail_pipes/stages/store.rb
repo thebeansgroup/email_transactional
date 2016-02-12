@@ -1,4 +1,4 @@
-module EmailTransactional
+module MailPipes
   module Stages
     class Store
       def initialize(store)
