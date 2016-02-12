@@ -1,4 +1,4 @@
-module EmailTransactional
+module MailPipes
   class Pipeline
     def self.in(environment)
       if [:development, :test].include?(environment.to_sym)
@@ -20,7 +20,7 @@ module EmailTransactional
 
     def run(name = nil, locale = nil)
       @before.call
-      EmailTransactional::Source.emails(name, locale) do |email|
+      MailPipes::Source.emails(name, locale) do |email|
         @stages.each do |stage|
           email = stage.run(email)
         end
@@ -32,26 +32,26 @@ module EmailTransactional
       private
 
       def development_pipeline
-        store = EmailTransactional::Stores::Disk.instance
-        EmailTransactional::PipelineBuilder
+        store = MailPipes::Stores::Disk.instance
+        MailPipes::PipelineBuilder
           .new(*stages(store))
-          .before { EmailTransactional::Stylesheets.compile }
-          .after { EmailTransactional::DirectoryIndex.build }
+          .before { MailPipes::Stylesheets.compile }
+          .after { MailPipes::DirectoryIndex.build }
           .build
       end
 
       def production_pipeline
-        store = EmailTransactional::Stores::Memcached.instance
-        EmailTransactional::PipelineBuilder
+        store = MailPipes::Stores::Memcached.instance
+        MailPipes::PipelineBuilder
           .new(*stages(store))
-          .before { EmailTransactional::Stylesheets.compile }
+          .before { MailPipes::Stylesheets.compile }
           .build
       end
 
       def stages(store)
-        [EmailTransactional::Stages::ActionView.new,
-         EmailTransactional::Stages::InlineCSS.new,
-         EmailTransactional::Stages::Store.new(store)]
+        [MailPipes::Stages::ActionView.new,
+         MailPipes::Stages::InlineCSS.new,
+         MailPipes::Stages::Store.new(store)]
       end
     end
   end

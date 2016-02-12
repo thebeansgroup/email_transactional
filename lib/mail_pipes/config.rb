@@ -1,4 +1,4 @@
-module EmailTransactional
+module MailPipes
   class Config
     DEFAULT_ENVIRONMENT = :development
 

@@ -1,4 +1,4 @@
-module EmailTransactional
+module MailPipes
   class Email
     attr_reader :name, :template, :locale, :layout, :html, :text
 

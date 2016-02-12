@@ -1,4 +1,4 @@
-module EmailTransactional
+module MailPipes
   class Locales
     LOCALE_PATH = '../../../locales'.freeze
 

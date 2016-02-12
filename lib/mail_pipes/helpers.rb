@@ -1,4 +1,4 @@
-module EmailTransactional
+module MailPipes
   module Helpers
     TMPL_OPEN_TAG  = '[[['.freeze
     TMPL_CLOSE_TAG = ']]]'.freeze

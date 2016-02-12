@@ -1,14 +1,14 @@
-module EmailTransactional
+module MailPipes
   module Stages
     class ActionView
       include ::ActionView::Helpers::TagHelper
 
       def initialize
-        @action_view = ::ActionView::Base.new(EmailTransactional::Source.path)
+        @action_view = ::ActionView::Base.new(MailPipes::Source.path)
         @action_view.class_eval do
-          include EmailTransactional::Globals.helper
-          include EmailTransactional::Config.helper
-          include EmailTransactional::Helpers
+          include MailPipes::Globals.helper
+          include MailPipes::Config.helper
+          include MailPipes::Helpers
         end
       end
 
@@ -18,7 +18,7 @@ module EmailTransactional
         html = @action_view.render(layout: email.layout,
                                    template: email.template)
         I18n.locale = initial_locale
-        EmailTransactional::Email.new(
+        MailPipes::Email.new(
           email.name,
           email.template,
           email.locale,

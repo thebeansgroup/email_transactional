@@ -1,4 +1,4 @@
-module EmailTransactional
+module MailPipes
   class Globals
     GLOBALS_PATH = '../../../source/globals.yml'.freeze
 

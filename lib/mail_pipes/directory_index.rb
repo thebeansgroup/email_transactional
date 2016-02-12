@@ -1,4 +1,4 @@
-module EmailTransactional
+module MailPipes
   module DirectoryIndex
     def self.build
       html = '<html><body><ul>'
