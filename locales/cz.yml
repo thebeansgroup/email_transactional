@@ -1,0 +1,20 @@
+cz:
+  reverification:
+    button:
+      text: Obnovit studentský status
+    problems:
+      text: "Nějaký problém?"
+      link:
+        text: "Podívejte se na stránky podpory"
+    one_month:
+      subject: Je čas obnovit váš účet Student Beans.
+      body: "Příští měsíc vyprší váš studentský status se Student Beans. Ale nemějte obavy, velmi snadno ho můžete znovu aktivovat. Stačí kliknout na odkaz níže a okamžitě budete zpět a budete mít k dispozici všechny slevy."
+    one_week:
+      subject: Připomenutí obnovení vašeho účtu Student Beans.
+      body: "Pozor – za týden vyprší váš studentský status se Student Beans. Ale nemějte obavy, velmi snadno ho můžete znovu aktivovat. Stačí kliknout na odkaz níže a okamžitě budete zpět a budete mít k dispozici všechny slevy."
+    tomorrow:
+      subject: Obnovte si dnes svůj účet Student Beans.
+      body: "Zítra vyprší váš studentský status se Student Beans. Ale nemějte obavy, velmi snadno ho můžete znovu aktivovat. Stačí kliknout na odkaz níže a okamžitě budete zpět a budete mít k dispozici všechny slevy."
+    expired:
+      subject: Váš studentský status se Student Beans vypršel. Zde se dozvíte, jak ho obnovit.
+      body: "Váš studentský status se Student Beans vypršel. Ale nemějte obavy, velmi snadno ho můžete znovu aktivovat. Stačí kliknout na odkaz níže a okamžitě budete zpět a budete mít k dispozici všechny slevy."

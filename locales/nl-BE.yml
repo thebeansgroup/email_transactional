@@ -1,0 +1,20 @@
+nl-BE:
+  reverification:
+    button:
+      text: Vernieuw Studentenstatuut
+    problems:
+      text: "Ervaart u problemen?"
+      link:
+        text: "Bezoek de ondersteuningspagina's"
+    one_month:
+      subject: Het is tijd om je Student Beans account te vernieuwen.
+      body: Volgende maand loopt je studentenstatuut met Student Beans af. Geen paniek, je kunt dit heel makkelijk heractiveren. Klik gewoon op onderstaande link en krijg in een mum van tijd opnieuw toegang tot alle kortingen.
+    one_week:
+      subject: Reminder hernieuwing Student Beans account
+      body: Opgelet! Over een week loopt je studentenstatuut met Student Beans af. Geen paniek, je kunt dit heel makkelijk heractiveren. Klik gewoon op onderstaande link en krijg in een mum van tijd opnieuw toegang tot alle kortingen.
+    tomorrow:
+      subject: Vernieuw vandaag je Student Beans account.
+      body: Morgen loopt je studentenstatuut met Student Beans af. Geen paniek, je kunt dit heel makkelijk heractiveren. Klik gewoon op onderstaande link en krijg in een mum van tijd opnieuw toegang tot alle kortingen.
+    expired:
+      subject: Je studentenstatuut met Student Beans is afgelopen. Klik hier om te vernieuwen.
+      body: Je studentenstatuut met Student Beans is afgelopen. Geen paniek, je kunt dit heel makkelijk heractiveren. Klik gewoon op onderstaande link en krijg in een mum van tijd opnieuw toegang tot alle kortingen.
