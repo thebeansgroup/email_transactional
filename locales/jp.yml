@@ -3,9 +3,9 @@ jp:
     button:
       text: 学生身分証明の更新
     problems:
-      text: "Are you having problems?"
+      text: "問題が生じた場合"
       link:
-        text: "Go to support"
+        text: "サポートページを見る"
     one_month:
       subject: Student Beans アカウントの更新時期です。
       body: "Student Beans の学生身分証明が来月有効期限を迎えます。

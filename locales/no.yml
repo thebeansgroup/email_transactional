@@ -3,9 +3,9 @@
     button:
       text: Renew Student Status
     problems:
-      text: "Are you having problems?"
+      text: "Har du vanskeligheter?"
       link:
-        text: "Go to support"
+        text: "Besøk støttesidene"
     one_month:
       subject: På tide å fornye din Student Beans-konto
       body: Studentstatusen din for Student Beans utløper neste måned. Men ikke vær engstelig, det er veldig lett å reaktivere den. Bare følg lenken nedenfor, og så kan du raskt og greit nyte godt av alle rabattene igjen.

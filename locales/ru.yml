@@ -3,9 +3,9 @@ ru:
     button:
       text: Возобновить статус студента
     problems:
-      text: "Are you having problems?"
+      text: "Если возникли проблемы"
       link:
-        text: "Go to support"
+        text: "Посетите страницы поддержки"
     one_month:
       subject: Пора продлить действие вашей учетной записи Student Beans.
       body: "Действие вашего статуса студента в Student Beans истечет в следующем месяце.

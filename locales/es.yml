@@ -3,9 +3,9 @@ es:
     button:
       text: Renovar tu estado en Student
     problems:
-      text: "Are you having problems?"
+      text: "¿Tiene problemas?"
       link:
-        text: "Go to support"
+        text: "Visite las páginas de asistencia"
     one_month:
       subject: Llegó la hora de renovar tu cuenta de Student Beans.
       body: Tu estado con Student Beans caduca el mes que viene, pero no te preocupes porque reactivarlo es muy sencillo. Haz clic en el siguiente link y volverás a estar activo y con todos tus descuentos enseguida.

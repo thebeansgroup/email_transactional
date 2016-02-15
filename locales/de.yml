@@ -84,9 +84,9 @@ de:
     button:
       text: Studentenstatus verlängern
     problems:
-      text: "Are you having problems?"
+      text: Probleme?
       link:
-        text: "Go to support"
+        text: Zu den Supportseiten
     one_month:
       subject: "Erinnerung: Verlängern Sie Ihr Student Beans Konto."
       body: "Wichtiger Hinweis: Ihr Studentenstatus bei Student Beans läuft in 1 Woche ab.

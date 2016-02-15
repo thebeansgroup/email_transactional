@@ -3,9 +3,9 @@ se:
     button:
       text: Förnya Studentstatus
     problems:
-      text: "Are you having problems?"
+      text: "Upplever du några problem?"
       link:
-        text: "Go to support"
+        text: "Besök supportsidorna"
     one_month:
       subject: Dags att förnya ditt Student Beans-konto.
       body: "Din studentstatus hos Student Beans löper ut nästa månad. 

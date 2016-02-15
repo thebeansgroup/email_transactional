@@ -3,9 +3,9 @@ it:
     button:
       text: Rinnova Status Studente
     problems:
-      text: "Are you having problems?"
+      text: "Problemi?"
       link:
-        text: "Go to support"
+        text: "Visitare le pagine di aiuto"
     one_month:
       subject: È ora di rinnovare il tuo account Student Beans.
       body: "Il tuo status studente con Student Beans scadrà il mese prossimo.

@@ -3,9 +3,9 @@ hr:
     button:
       text: Obnovi studentski status
     problems:
-      text: "Are you having problems?"
+      text: "Imate poteškoća?"
       link:
-        text: "Go to support"
+        text: "Posjetite stranice za podršku"
     one_month:
       subject: Vrijeme je za obnavljanje računa Student Beans.
       body: "Vaš studentski status za Student Beans ističe sljedećeg mjeseca 

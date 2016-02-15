@@ -3,9 +3,9 @@ pl:
     button:
       text: Odśwież status studenta
     problems:
-      text: "Are you having problems?"
+      text: "Masz problemy?"
       link:
-        text: "Go to support"
+        text: "Odwiedź strony ze wsparciem"
     one_month:
       subject: Nadszedł czas, aby odnowić Twoje konto Student Beans.
       body: Twój status studenta w Student Beans wygaśnie w przyszłym miesiącu, ale nie martw się, możesz reaktywować konto w bardzo łatwy sposób. Wystarczy, że klikniesz na poniższy link, aby nadal korzystać ze wszystkich zniżek.   

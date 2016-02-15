@@ -3,9 +3,9 @@ sl:
     button:
       text: Obnovite status študenta
     problems:
-      text: "Are you having problems?"
+      text: "Imate težave?"
       link:
-        text: "Go to support"
+        text: "Obiščite spletne strani za podporo"
     one_month:
       subject: Čas je, da obnovite svoj račun na portalu Student Beans.
       body: Vaš status študenta na portalu Student Beans bo potekel naslednji mesec. A ne skrbite, zelo enostavno ga lahko znova aktivirate. Sledite spodnji povezavi in kmalu boste spet nazaj na portalu, kjer boste seznanjeni z vsemi popusti.

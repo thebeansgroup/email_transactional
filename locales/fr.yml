@@ -3,9 +3,9 @@ fr:
     button:
       text: Renouveler le statut d’étudiant
     problems:
-      text: "Are you having problems?"
+      text: "Vous avez des difficultés ?"
       link:
-        text: "Go to support"
+        text: "Consultez les pages d'aide"
     one_month:
       subject: Il est temps de renouveler votre compte Student Beans
       body: "Votre statut d’étudiant dans le cadre de Student Beans va expirer le mois prochain

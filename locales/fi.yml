@@ -3,9 +3,9 @@ fi:
     button:
       text: Aktivoi opiskelijastatus uudelleen
     problems:
-      text: "Are you having problems?"
+      text: "Onko ongelmia?"
       link:
-        text: "Go to support"
+        text: "Käy tukisivuilla"
     one_month:
       subject: Sinun pitää uusia Student Beans -tilisi.
       body: Student Beans -tilisi vanhenee ensi kuussa. Ei huolta, voit aktivoida sen helposti uudestaan. Klikkaa alla olevaa linkkiä, niin tilisi aktivoituu ja saat alennukset taas heti käyttöösi.
