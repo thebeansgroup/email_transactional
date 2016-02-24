@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     mail_pipes (0.1.0)
+      actionpack
       actionview
       compass
       dalli
@@ -15,6 +16,13 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
+    actionpack (4.2.1)
+      actionview (= 4.2.1)
+      activesupport (= 4.2.1)
+      rack (~> 1.6)
+      rack-test (~> 0.6.2)
+      rails-dom-testing (~> 1.0, >= 1.0.5)
+      rails-html-sanitizer (~> 1.0, >= 1.0.1)
     actionview (4.2.1)
       activesupport (= 4.2.1)
       builder (~> 3.1)
@@ -84,6 +92,8 @@ GEM
       binding_of_caller (>= 0.7)
       pry (>= 0.9.11)
     rack (1.6.4)
+    rack-test (0.6.3)
+      rack (>= 1.0)
     rails-deprecated_sanitizer (1.0.3)
       activesupport (>= 4.2.0.alpha)
     rails-dom-testing (1.0.6)
@@ -95,7 +105,7 @@ GEM
     rainbow (2.1.0)
     rake (10.5.0)
     rb-fsevent (0.9.7)
-    rb-inotify (0.9.5)
+    rb-inotify (0.9.7)
       ffi (>= 0.5.0)
     rubocop (0.37.1)
       parser (>= 2.3.0.4, < 3.0)
