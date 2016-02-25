@@ -3,7 +3,7 @@ module MailPipes
     def self.in(environment)
       if [:development, :test].include?(environment.to_sym)
         development_pipeline
-      elsif environment.to_sym == :production
+      elsif [:production, :staging].include?(environment.to_sym)
         production_pipeline
       else
         raise 'Unknown environment'
