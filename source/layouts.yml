@@ -1,1 +1,2 @@
 default: layout
+reset_password: simple_layout
