@@ -42,7 +42,7 @@ module MailPipes
           locales.each do |locale|
             name = File.basename(file, EMAILS_EXTENSION)
             index += 1
-            puts "Email #{index}/#{size*locales.size}"
+            puts "Email #{index}/#{size * locales.size}"
             block.call(
               MailPipes::Email.new(
                 name,

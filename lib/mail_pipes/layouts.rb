@@ -3,7 +3,7 @@ module MailPipes
     LAYOUTS_PATH = Source::SOURCE_PATH + 'layouts/'.freeze
     LAYOUTS_EXTENSION = '.erb'.freeze
     LAYOUTS_CONFIG = 'layouts.yml'.freeze
-    DEFAULT = 'default'
+    DEFAULT = 'default'.freeze
 
     def initialize(default, map)
       @default = default
