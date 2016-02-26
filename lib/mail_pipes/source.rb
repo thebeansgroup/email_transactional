@@ -3,10 +3,7 @@ module MailPipes
     SOURCE_PATH = '../../../source/'.freeze
     LOCALIZABLE_DIR = 'localizable/'.freeze
     EMAILS_PATH = SOURCE_PATH + LOCALIZABLE_DIR
-    LAYOUTS_PATH = SOURCE_PATH + 'layouts/'.freeze
     EMAILS_EXTENSION = '.html.erb'.freeze
-    LAYOUTS_EXTENSION = '.erb'.freeze
-    DEFAULT_LAYOUT = 'layout'.freeze
 
     class << self
       def emails(name = nil, locale = nil, &block)
@@ -31,7 +28,7 @@ module MailPipes
               name,
               template(name),
               locale,
-              default_layout
+              Layouts.instance.get(name)
             )
           )
         end
@@ -39,15 +36,19 @@ module MailPipes
 
       def all_emails(locales, block)
         emails_path = File.expand_path(EMAILS_PATH, __FILE__)
+        size = Dir.glob(emails_path + '/*' + EMAILS_EXTENSION).size
+        index = 0
         Dir.glob(emails_path + '/*' + EMAILS_EXTENSION).map do |file|
           locales.each do |locale|
             name = File.basename(file, EMAILS_EXTENSION)
+            index += 1
+            puts "Email #{index}/#{size*locales.size}"
             block.call(
               MailPipes::Email.new(
                 name,
                 template(name),
                 locale,
-                default_layout
+                Layouts.instance.get(name)
               )
             )
           end
@@ -64,11 +65,6 @@ module MailPipes
 
       def template(name)
         LOCALIZABLE_DIR + name + EMAILS_EXTENSION
-      end
-
-      def default_layout
-        relative_path = LAYOUTS_PATH + DEFAULT_LAYOUT + LAYOUTS_EXTENSION
-        File.expand_path(relative_path, __FILE__)
       end
     end
   end
