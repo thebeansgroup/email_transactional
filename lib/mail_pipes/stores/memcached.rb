@@ -22,7 +22,8 @@ module MailPipes
       end
 
       def get_email(name, locale)
-        @dalli.get(MailPipes::Email.new(name, nil, locale, nil).key)
+        @dalli.get(MailPipes::Email.new(name, nil, locale, nil).key) or
+          raise "Email #{name} #{locale} not found"
       end
 
       def get_email_text(name, locale)
