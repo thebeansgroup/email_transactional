@@ -1,4 +1,5 @@
 fr:
+    
   reverification:
     button:
       text: Renouveler le statut d’étudiant
@@ -22,3 +23,9 @@ fr:
       subject: Votre statut d’étudiant auprès de Student Beans a expiré, voici comment le renouveler.
       body: "Votre statut d’étudiant auprès de Student Beans a expiré 
       Mais ne vous inquiétez pas, vous pouvez le réactiver très facilement. Il vous suffit de suivre le lien ci-dessous et vous pourrez profiter de toutes les réductions très rapidement."
+  welcome:
+    subject: "Bienvenue chez Student Beans"
+    title: "Bonjour %{firstname},"
+    first_paragraph: "Merci de nous avoir rejoints – Votre participation a été pleinement vérifiée et vous faites à présent partie de l’équipe."
+    second_paragraph: "Cela signifie que vous pouvez commencer à faire des économies sur les vêtements, les produits technologiques, les voyages, les articles de papeterie, l’alimentation et bien plus encore grâce à votre compte Student Beans."
+    third_paragraph: "Lorsque vous faites vos achats sur vos sites préférés, regardez les ristournes qui sont offertes aux étudiants."

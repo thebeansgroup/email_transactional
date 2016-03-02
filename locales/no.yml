@@ -18,3 +18,10 @@
     expired:
       subject: Studentstatusen din for Student Beans har utløpt, slik kan du fornye den.
       body: Studentstatusen din for Student Beans har utløpt. Men ikke vær engstelig, det er veldig lett å reaktivere den. Bare følg lenken nedenfor, og så kan du raskt og greit nyte godt av alle rabattene igjen.
+  welcome:
+    subject: "Velkommen til Student Beans"
+    title: "Hei %{firstname},"
+    first_paragraph: "Takk for at du har tilsluttet deg oss – du er nå fullstendig bekreftet og helt med på teamet."
+    second_paragraph: "Dette betyr at du kan begynne å spare penger på klær, teknologi, reiser, skrivesaker, mat og mer, alt med Student Beans-kontoen din."
+    third_paragraph: "Se opp for våre studentrabatter når du handler på favorittsidene dine."
+     

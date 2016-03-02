@@ -22,3 +22,9 @@ de-AT:
       subject: Ihr Studentenstatus bei Student Beans ist abgelaufen. So können Sie ihn wieder aktivieren.
       body: Ihr Studentenstatus bei Student Beans ist abgelaufen.
       Kein Problem: Sie können ihn ganz einfach erneut aktivieren. Folgen Sie dazu dem nachstehenden Link, und im Handumdrehen können Sie alle Rabatte wieder wie gewohnt nutzen.
+  welcome:
+    subject: "Willkommen bei Student Beans"
+    title: "Hallo %{firstname},"
+    first_paragraph: "Vielen Dank für Ihre Anmeldung bei uns – Ihre Verifizierung ist nun abgeschlossen. Willkommen im Team."
+    second_paragraph: "Ab sofort können Sie Dank Ihres Student Beans Kontos bei Einkäufen von Bekleidung, Technik, Urlaub, Schreibwaren, Lebensmitteln und vielem mehr bares Geld sparen."
+    third_paragraph: "Halten Sie beim Shoppen in Ihren Lieblings-Onlineshops also Ausschau nach unseren Studentenrabatten."

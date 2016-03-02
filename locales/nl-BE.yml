@@ -18,3 +18,9 @@ nl-BE:
     expired:
       subject: Je studentenstatuut met Student Beans is afgelopen. Klik hier om te vernieuwen.
       body: Je studentenstatuut met Student Beans is afgelopen. Geen paniek, je kunt dit heel makkelijk heractiveren. Klik gewoon op onderstaande link en krijg in een mum van tijd opnieuw toegang tot alle kortingen.
+  welcome:
+    subject: "Welkom bij Student Beans"
+    title: "Hallo %{firstname},"
+    first_paragraph: "Welkom bij de club – Je bent nu volledig geverifieerd en een volwaardig lid van het team."
+    second_paragraph: "Dit betekent dat je kunt beginnen met sparen op kleren, technologie, reizen, schrijfgerief, voeding en nog veel meer, en dat allemaal met je Student Beans account."
+    third_paragraph: "Kijk uit voor onze studentenkortingen terwijl je shopt op je favoriete sites."

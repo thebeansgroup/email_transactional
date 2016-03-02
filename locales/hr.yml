@@ -22,3 +22,9 @@ hr:
       subject: Vaš studentski status za Student Beans je istekao, evo kako ćete ga obnoviti.
       body: "Vaš studentski status za Student Beans je istekao
       Ipak, ne brinite jer ga možete vrlo lako ponovno aktivirati. Samo pratite poveznicu u nastavku i za tren oka opet ćete biti aktivni i moći koristiti sve njihove popuste."
+  welcome:
+    subject: "Dobro došli u Student Beans"
+    title: "Pozdrav! %{firstname},"
+    first_paragraph: "Hvala što ste nam se pridružili – sada ste u potpunosti verificirani i punopravni ste član tima."
+    second_paragraph: "To znači da se možete početi odijevati, koristiti tehničke usluge, putovati, koristiti potrepštine, hraniti se i još puno toga s vašim studentskim računom Student Beans."
+    third_paragraph: "Potražite studentske popuste kada kupujete na omiljenim mjestima."
