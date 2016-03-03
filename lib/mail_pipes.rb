@@ -23,6 +23,7 @@ require_relative './mail_pipes/transactional'
 require_relative './mail_pipes/email'
 require_relative './mail_pipes/locales'
 require_relative './mail_pipes/source'
+require_relative './mail_pipes/layouts'
 require_relative './mail_pipes/pipeline'
 require_relative './mail_pipes/pipeline_builder'
 
