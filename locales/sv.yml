@@ -1,4 +1,4 @@
-se:
+sv:
   reverification:
     button:
       text: Förnya Studentstatus
@@ -22,3 +22,9 @@ se:
       subject: Din studentstatus hos Student Beans har löpt ut, så här kan du förnya den.
       body: "Din studentstatus hos Student Beans har löpt ut. 
       Men du behöver inte vara orolig, du kan återaktivera det mycket enkelt. Följ bara nedanstående länk så är du tillbaka igen och har tillgång till alla rabatter på nolltid."
+  welcome:
+    subject: "Välkommen till Student Beans"
+    title: "Hej %{firstname},"
+    first_paragraph: "Tack för att du registrerat dig hos oss – du är nu helt verifierad och till fullo del av teamet."
+    second_paragraph: "Det innebär att du kan börja spara in på kläder, teknik, resor, kontorsmaterial, mat och mycket mer, allt med ditt Student Beans-konto."
+    third_paragraph: "Håll ögonen öppna för våra studentrabatter när du handlar på dina favoritsajter."

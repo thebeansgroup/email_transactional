@@ -112,3 +112,9 @@ Don’t worry though, you can reactivate it really easily. Just follow the link 
 
   reset_password:
     subject: 'Reset password instructions'
+  welcome:
+    subject: "Welcome to Student Beans"
+    title: "Hello %{firstname},"
+    first_paragraph: "Thanks for joining us – you’re fully verified now and totally part of the team."
+    second_paragraph: "This means you can start saving on clothing, tech, travel, stationery, food and more, all with your Student Beans account."
+    third_paragraph: "Look out for our student discounts when shopping on your favourite sites."

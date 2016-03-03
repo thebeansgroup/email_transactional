@@ -18,3 +18,9 @@ sl:
     expired:
       subject: Vaš status študenta na portalu Student Beans je potekel; tukaj so navodila za obnovitev.
       body: "Vaš status študenta na portalu Student Beans je potekel. A ne skrbite, zelo enostavno ga lahko znova aktivirate. Sledite spodnji povezavi in kmalu boste spet nazaj na portalu, kjer boste seznanjeni z vsemi popusti."
+  welcome:
+    subject: "Dobrodošli na spletni strani Student Beans"
+    title: "Pozdravljeni %{firstname},"
+    first_paragraph: "Hvala, ker ste nam se pridružili. Vaš račun je bil dokončno preverjen – dobrodošli v naši skupnosti."
+    second_paragraph: "To pomeni, da zdaj lahko prihranite ob nakupu oblačil, tehnike, na potovanjih, v restavracijah in še kje – vse to z računom Student Beans."
+    third_paragraph: "Med nakupovanjem na priljubljenih spletiščih poiščite naše študentske popuste."

@@ -22,3 +22,9 @@ it:
       subject: Il tuo status studente con Student Beans è scaduto, ecco come rinnovarlo.
       body: Il tuo status studente con Student Beans è scaduto.
       Non preoccuparti: puoi riattivarlo molto facilmente. Ti basterà fare clic sul link di seguito per continuare a godere da subito dei nostri sconti e vantaggi. 
+  welcome:
+    subject: "Benvenuti a Student Beans"
+    title: "Ciao %{firstname},"
+    first_paragraph: "Grazie per la tua registrazione - la tua verifica è stata completata, e ora sei parte del team a tutti gli effetti."
+    second_paragraph: "Ciò significa che puoi iniziare a risparmiare su abbigliamento, hi-tech, viaggi, articoli da ufficio, alimentari e tanto altro, tutto grazie al tuo account Student Beans."
+    third_paragraph: "Cerca i nostri sconti studenti quando visiti i tuoi siti preferiti."

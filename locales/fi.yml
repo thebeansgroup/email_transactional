@@ -18,3 +18,9 @@ fi:
     expired:
       subject: Studen Beans -tilisi on vanhentunut. Näin saat sen aktivoitua.
       body: Huomio. Student Beans -tilisi on vanhentunut. Ei huolta, voit aktivoida sen helposti uudestaan. Klikkaa alla olevaa linkkiä, niin tilisi aktivoituu ja saat alennukset taas heti käyttöösi.
+  welcome:
+    subject: "Tervetuloa Student Beans -sivuille"
+    title: "Hei %{firstname},"
+    first_paragraph: "Kiitos, että liityit jäseneksi. Tilisi on nyt vahvistettu ja olet nyt osa tiimiämme."
+    second_paragraph: "Nyt voit säästää rahaa vaatteissa, tekniikassa, matkustamisessa, paperitarvikkeissa, ruuassa jne. Student Beansin avulla."
+    third_paragraph: "Saat opiskelija-alennuksia suosikkisivustoillasi."
