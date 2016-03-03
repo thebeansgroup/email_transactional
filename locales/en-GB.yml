@@ -109,3 +109,6 @@ Don’t worry though, you can reactivate it really easily. Just follow the link 
       subject: Your student status with Student Beans has expired, here's how to renew.
       body: "Your student status with Student Beans has expired
   Don’t worry though, you can reactivate it really easily. Just follow the link below and you’ll be back up and running with all them discounts in no time."
+
+  reset_password:
+    subject: 'Reset password instructions'

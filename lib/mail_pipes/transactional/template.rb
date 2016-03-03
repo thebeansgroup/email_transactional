@@ -1,8 +1,10 @@
 module MailPipes
   module Transactional
     class Template
-      def initialize(html)
-        @html = html
+      attr_reader :subject
+
+      def initialize(subject, html)
+        @subject = subject
         @erb = ERB.new(html)
       end
 

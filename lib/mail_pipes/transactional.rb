@@ -3,7 +3,8 @@ module MailPipes
     def self.get(name, locale)
       store = MailPipes::Stores::Memcached.instance
       html = store.get_email(name, locale)
-      MailPipes::Transactional::Template.new(html)
+      subject = store.get_subject(name, locale)
+      MailPipes::Transactional::Template.new(subject, html)
     end
 
     def self.rebuild(template = nil, locale = nil)
