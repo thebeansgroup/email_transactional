@@ -12,15 +12,6 @@ en-GB:
   social_ad:
     title: "Be the first to hear about new deals"
     description: "Follow us on facebook or twitter so you don't miss out on any of our exclusive deals discounts."
-  reverification:
-    title: "%{user}, Your student status is about to expire!"
-    body: "If you want to keep on saving, simply hit the buton below and we'll renew your student status giving you access to exclusive discounts for another year."
-    button:
-      text: "Renew Student Status"
-    problems:
-      text: "Are you having problems?"
-      link:
-        text: "Go to support"
   completed_verification_connect:
     title: "Hey %{user}, Welcome to Student Beans. Your Topman discount is ready…"
     body: "Just follow the link below when you are ready to use the discount"
@@ -96,3 +87,34 @@ en-GB:
       All the best,
 
       The Bean Team
+  reverification:
+    button:
+      text: "Renew Student Status"
+    problems:
+      text: "Are you having problems?"
+      link:
+        text: "Go to support"
+    one_month:
+      subject: Your student status with Student Beans will expire next month
+      body: "Don’t worry though, you can reactivate it really easily. Just follow the link below and you’ll be back up and running with all them discounts in no time."
+    one_week:
+      subject: A reminder about your Student Beans account renewal.
+      body: "Heads up – your student status with Student Beans expires in 1 week
+  Don’t worry though, you can reactivate it really easily. Just follow the link below and you’ll be back up and running with all them discounts in no time."
+    tomorrow:
+      subject: Renew your Student Beans account today.
+      body: "Your student status with Student Beans will expire tomorrow
+Don’t worry though, you can reactivate it really easily. Just follow the link below and you’ll be back up and running with all them discounts in no time."
+    expired:
+      subject: Your student status with Student Beans has expired, here's how to renew.
+      body: "Your student status with Student Beans has expired
+  Don’t worry though, you can reactivate it really easily. Just follow the link below and you’ll be back up and running with all them discounts in no time."
+
+  reset_password:
+    subject: 'Reset password instructions'
+  welcome:
+    subject: "Welcome to Student Beans"
+    title: "Hello %{firstname},"
+    first_paragraph: "Thanks for joining us – you’re fully verified now and totally part of the team."
+    second_paragraph: "This means you can start saving on clothing, tech, travel, stationery, food and more, all with your Student Beans account."
+    third_paragraph: "Look out for our student discounts when shopping on your favourite sites."

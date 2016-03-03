@@ -1,0 +1,26 @@
+nl-BE:
+  reverification:
+    button:
+      text: Vernieuw Studentenstatuut
+    problems:
+      text: "Ervaart u problemen?"
+      link:
+        text: "Bezoek de ondersteuningspagina's"
+    one_month:
+      subject: Het is tijd om je Student Beans account te vernieuwen.
+      body: Volgende maand loopt je studentenstatuut met Student Beans af. Geen paniek, je kunt dit heel makkelijk heractiveren. Klik gewoon op onderstaande link en krijg in een mum van tijd opnieuw toegang tot alle kortingen.
+    one_week:
+      subject: Reminder hernieuwing Student Beans account
+      body: Opgelet! Over een week loopt je studentenstatuut met Student Beans af. Geen paniek, je kunt dit heel makkelijk heractiveren. Klik gewoon op onderstaande link en krijg in een mum van tijd opnieuw toegang tot alle kortingen.
+    tomorrow:
+      subject: Vernieuw vandaag je Student Beans account.
+      body: Morgen loopt je studentenstatuut met Student Beans af. Geen paniek, je kunt dit heel makkelijk heractiveren. Klik gewoon op onderstaande link en krijg in een mum van tijd opnieuw toegang tot alle kortingen.
+    expired:
+      subject: Je studentenstatuut met Student Beans is afgelopen. Klik hier om te vernieuwen.
+      body: Je studentenstatuut met Student Beans is afgelopen. Geen paniek, je kunt dit heel makkelijk heractiveren. Klik gewoon op onderstaande link en krijg in een mum van tijd opnieuw toegang tot alle kortingen.
+  welcome:
+    subject: "Welkom bij Student Beans"
+    title: "Hallo %{firstname},"
+    first_paragraph: "Welkom bij de club – Je bent nu volledig geverifieerd en een volwaardig lid van het team."
+    second_paragraph: "Dit betekent dat je kunt beginnen met sparen op kleren, technologie, reizen, schrijfgerief, voeding en nog veel meer, en dat allemaal met je Student Beans account."
+    third_paragraph: "Kijk uit voor onze studentenkortingen terwijl je shopt op je favoriete sites."

@@ -1,9 +1,4 @@
----
-facebook_href: "https://www.facebook.com/studentbeans"
-twitter_href: "https://twitter.com/studentbeans"
----
-
-<%= partial "partials/global/header" %>  
+<%= render partial: "partials/global/header" %>
 <br/>
 <table class="container main-content feature">
   <tr>
@@ -32,8 +27,8 @@ twitter_href: "https://twitter.com/studentbeans"
         </tr>
       </table>
 
-      <%= partial "partials/blocks/discounts_six", locals: { discount_count: 4 } %> 
-      <%= partial "partials/blocks/brand_list" %>  
+      <%= render partial: "partials/blocks/discounts_six", locals: { discount_count: 4 } %>
+      <%= render partial: "partials/blocks/brand_list" %>
 
 
       <table class="row">
@@ -57,11 +52,11 @@ twitter_href: "https://twitter.com/studentbeans"
       </table>
 
       <br/><br/>
-      <%= partial 'partials/blocks/feature-footer' %>
+      <%= render partial: 'partials/blocks/feature_footer' %>
 
     </td>
   </tr>
 
   
 </table>
-<%= partial "partials/global/footer" %>
+<%= render partial: "partials/global/footer" %>

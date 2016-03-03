@@ -1,9 +1,4 @@
----
-facebook_href: "https://www.facebook.com/studentbeans"
-twitter_href: "https://twitter.com/studentbeans"
----
-
-<%= partial "partials/global/header" %>  
+<%= render partial: "partials/global/header" %>
 <br/>
 <table class="container main-content feature">
 
@@ -19,8 +14,8 @@ twitter_href: "https://twitter.com/studentbeans"
                   <div class="text-pad">
                     <br/></br>
 
-                    <h2 class="txt-center title-margin"><%= t('reverification.title', user: tagify("user") ) %></h2>
-                    <p class="txt-center"><%= t('reverification.body') %></p>
+                    <h2 class="txt-center title-margin"><%= t('reverification.one_week.subject', user: tagify("user") ) %></h2>
+                    <p class="txt-center"><%= t('reverification.one_week.body') %></p>
 
                   </div>
                 <td class="expander"></td>
@@ -79,10 +74,10 @@ twitter_href: "https://twitter.com/studentbeans"
           </td>
         </tr>
       </table>
-      <%= partial 'partials/blocks/feature-footer' %>
+      <%= render partial: 'partials/blocks/feature_footer' %>
 
     </td>
   </tr>
 
 </table>
-<%= partial "partials/global/footer" %>
+<%= render partial: "partials/global/footer" %>

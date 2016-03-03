@@ -1,0 +1,30 @@
+sv:
+  reverification:
+    button:
+      text: Förnya Studentstatus
+    problems:
+      text: "Upplever du några problem?"
+      link:
+        text: "Besök supportsidorna"
+    one_month:
+      subject: Dags att förnya ditt Student Beans-konto.
+      body: "Din studentstatus hos Student Beans löper ut nästa månad. 
+      Men du behöver inte vara orolig, du kan återaktivera det mycket enkelt. Följ bara nedanstående länk så är du tillbaka igen och har tillgång till alla rabatter på nolltid."
+    one_week:
+      subject: En påminnelse om förnyelse av ditt Student Beans-konto.
+      body: "Din studentstatus hos Student Beans löper ut om en vecka. 
+      Men du behöver inte vara orolig, du kan återaktivera det mycket enkelt. Följ bara nedanstående länk så är du tillbaka igen och har tillgång till alla rabatter på nolltid."
+    tomorrow:
+      subject: Förnya ditt Student Beans-konto idag.
+      body: "Din studentstatus hos Student Beans löper ut imorgon 
+      Men du behöver inte vara orolig, du kan återaktivera det mycket enkelt. Följ bara nedanstående länk så är du tillbaka igen och har tillgång till alla rabatter på nolltid."
+    expired:
+      subject: Din studentstatus hos Student Beans har löpt ut, så här kan du förnya den.
+      body: "Din studentstatus hos Student Beans har löpt ut. 
+      Men du behöver inte vara orolig, du kan återaktivera det mycket enkelt. Följ bara nedanstående länk så är du tillbaka igen och har tillgång till alla rabatter på nolltid."
+  welcome:
+    subject: "Välkommen till Student Beans"
+    title: "Hej %{firstname},"
+    first_paragraph: "Tack för att du registrerat dig hos oss – du är nu helt verifierad och till fullo del av teamet."
+    second_paragraph: "Det innebär att du kan börja spara in på kläder, teknik, resor, kontorsmaterial, mat och mycket mer, allt med ditt Student Beans-konto."
+    third_paragraph: "Håll ögonen öppna för våra studentrabatter när du handlar på dina favoritsajter."

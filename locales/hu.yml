@@ -1,0 +1,26 @@
+hu:
+  reverification:
+    button:
+      text: Hallgatói jogviszony megújítása
+    problems:
+      text: "Problémái vannak?"
+      link:
+        text: "Támogatási oldalak meglátogatása"
+    one_month:
+      subject: Elérkezett az idő a Student Beans fiókjának megújítására.
+      body: Hallgatói jogviszonya a Student Beans program esetében a jövő hónapban lejár. Aggodalomra azonban semmi ok, ugyanis nagyon egyszerűen újraaktiválhatja. Csak kövesse az alábbi hivatkozást, amelyen támogatást kap, és egy szempillantás alatt élvezheti az összes kedvezményt.
+    one_week:
+      subject: Emlékeztető a Student Beans fiókjának megújítására!
+      body: Figyelmeztetés – Hallgatói jogviszonya a Student Beans program esetében a 1 héten belül lejár. Aggodalomra azonban semmi ok, ugyanis nagyon egyszerűen újraaktiválhatja. Csak kövesse az alábbi hivatkozást, amelyen támogatást kap és egy szempillantás alatt élvezheti az összes kedvezményt.
+    tomorrow:
+      subject: Újítsa meg Student Beans fiókját még ma!
+      body: Hallgatói jogviszonya a Student Beans program esetében a holnapi napon lejár. Aggodalomra azonban semmi ok, ugyanis nagyon egyszerűen újraaktiválhatja. Csak kövesse az alábbi hivatkozást, amelyen támogatást kap és egy szempillantás alatt élvezheti az összes kedvezményt.
+    expired:
+      subject: Hallgatói jogviszonya a Student Beans program esetében lejárt, bemutatjuk, hogyan újíthatja meg.
+      body: Hallgatói jogviszonya a Student Beans program esetében lejárt. Aggodalomra azonban semmi ok, ugyanis nagyon egyszerűen újraaktiválhatja. Csak kövesse az alábbi hivatkozást, amelyen támogatást kap, és egy szempillantás alatt élvezheti az összes kedvezményt.
+  welcome:
+    subject: "Üdvözöl a Student Beans!"
+    title: "Üdvözöljük! %{firstname},"
+    first_paragraph: "Köszönjük, hogy csatlakozott hozzánk – az ellenőrzés sikerrel zárult és a csapat tagjává vált."
+    second_paragraph: "Ez azt jelenti, hogy Student Beans számlájával elkezdheti a megtakarítást a ruházati és műszaki cikkek, az utazás, papír-és írószer és az élelmiszerek terén."
+    third_paragraph: "Amikor a kedvenc weboldalain vásárol, figyeljen a diákkedvezményeinkre."

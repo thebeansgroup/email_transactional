@@ -1,0 +1,83 @@
+<%= render partial: "partials/global/header" %>
+<br/>
+<table class="container main-content feature">
+
+  <tr>
+    <td>
+      <table class="row">
+        <tr>
+
+          <td class="wrapper header alert last">
+            <table class="twelve columns">
+              <tr>
+                <td class="header__collapse">
+                  <div class="text-pad">
+                    <br/></br>
+
+                    <h2 class="txt-center title-margin"><%= t('reverification.one_month.subject', user: tagify("user") ) %></h2>
+                    <p class="txt-center"><%= t('reverification.one_month.body') %></p>
+
+                  </div>
+                <td class="expander"></td>
+              </tr>
+
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <tr >
+    <td class="wrapper offset-by-two">
+      <table class="eight columns" style="margin: 0;">
+        <tr>
+          <td class="">
+
+            <div class="text-pad">
+              <table class="button">
+                <tr>
+                  <td>
+                    <a href="<%= tagify('renew_link') %>"><%= t('reverification.button.text') %></a>
+                  </td>
+                </tr>
+              </table>
+              <br>
+            </div>
+
+          </td>
+          <td class="expander"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <table class="row">
+        <tr>
+
+          <td class="wrapper header alert last">
+            <table class="twelve columns">
+              <tr>
+                <td class="header__collapse">
+                  <div class="text-pad">
+
+                    <p class="txt-center"><strong><%= t('reverification.problems.text') %></strong> <a href="<%= tagify('support_link')  %>"><%= t('reverification.problems.link.text') %></a></p>
+
+                    <br/><br/>
+                  </div>
+                <td class="expander"></td>
+              </tr>
+
+            </table>
+          </td>
+        </tr>
+      </table>
+      <%= render partial: 'partials/blocks/feature_footer' %>
+
+    </td>
+  </tr>
+
+</table>
+<%= render partial: "partials/global/footer" %>
