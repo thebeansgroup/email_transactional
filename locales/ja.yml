@@ -28,3 +28,57 @@ ja:
     first_paragraph: "ご登録ありがとうございます。以上で確認・登録がすべて完了しました。"
     second_paragraph: "これより、Student Beans アカウントを利用して、洋服、テクノロジー製品、旅行、文房具、食品などを割引価格で購入することができます。"
     third_paragraph: "お気に入りのサイトでショッピングをする際はぜひ、当社の学生割引の情報をお探しください。"
+  nus_card:
+    subject: 'Student Beans - Your submission for manual verification has been rejected'
+    body: |
+      Hello,
+
+      Unfortunately we can't accept NUS cards as proof of student status.
+
+      Your pending verification has been wiped so you can now upload new proof.
+
+      Please log in to your account and upload a scan or photo of one of the following:
+
+      - Institution student card
+      - Acceptance letter
+      - Academic transcript
+
+      Documentation will only be accepted as proof of your student status if it contains your full name, your institution's name and a date that indicates your are currently enrolled as a student at the present time.
+
+      Unfortunately we can not accept student cards that are not issued by an academic institution.
+
+      Many thanks,
+
+      Student Beans
+  unaccepted_institute:
+    subject: 'Student Beans - Your submission for manual verification has been rejected'
+    body: |
+      Hello,
+
+      Unfortunately the image you sent us is unclear or is missing information.
+
+      Your pending verification has been wiped so you can now upload new proof.
+
+      Please log in to your account and upload a scan or photo of one of the following:
+
+      - Institution student card
+      - Acceptance letter
+      - Academic transcript
+
+      Documentation will only be accepted as proof of your student status if it contains your full name, your institution's name and a date that indicates your are currently enrolled as a student at the present time.
+
+      Unfortunately we can not accept student cards that are not issued by an academic institution.
+
+      Many thanks,
+
+      Student Beans
+  unclear_image:
+    subject: 'Student Beans - Your submission for manual verification has been rejected'
+    body: |
+      Hello,
+
+      Unfortunately we cannot verify your account as we don't work with the institution you attend.
+
+      Many thanks,
+
+      Student Beans
