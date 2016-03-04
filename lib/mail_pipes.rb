@@ -1,4 +1,4 @@
-require 'ERB'
+require 'erb'
 require 'yaml'
 require 'dalli'
 require 'kramdown'
