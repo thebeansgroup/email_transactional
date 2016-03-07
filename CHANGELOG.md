@@ -1,4 +1,4 @@
-## Next
+## 1.2.0
 - Added verified email type
 
 ## 1.1.0
