@@ -82,3 +82,13 @@ de-AT:
       Many thanks,
 
       Student Beans
+  verified:
+    subject: 'Welcome to Student Beans'
+    top_title: "Welcome to Student Beans"
+    top_description:
+      line_1: "Oh, hi there. Thanks for joining us - you’re fully verified now and totally part of the team. This means you can now access all those student discounts and deals on our site. Now, there’s over 10,000 of them, so to get you started, we’ve picked out some of our favourites."
+      line_2: ""
+    discount:
+      company: "at %{company}"
+    email_description: "We'll email you every tuesday with the best student discounts and deals of the week. Alternatively, keep updated by following us on %{facebook} or %{twitter}. Hungry for more?"
+    footer_button: "Browse our discounts"
