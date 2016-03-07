@@ -1,4 +1,5 @@
 ## Next
+- Added verified email type
 
 ## 1.1.0
 - Adding reject emails
