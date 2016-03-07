@@ -1,0 +1,38 @@
+<table class="row">
+  <tr>
+      <td class="wrapper last">
+        <table class="twelve columns">
+          <tr>
+            <td class="">
+              <div class="text-pad">
+                <p class="txt-center" align='center'><%= markdown t( page_name + '.email_description', twitter: "<a href='#{globals.twitter_href}'>Twitter</a>", facebook: "<a href='#{globals.facebook_href}'>Facebook</a>")  %></p>
+                <br/>
+
+                <table class="six columns">
+                  <tr>
+                    <td class="">
+
+                      <table class="button blue-button">
+                        <tr>
+                          <td>
+                            <a href="https://www.studentbeans.com/"><%= t( page_name + '.footer_button' )  %></a>
+                          </td>
+                        </tr>
+                        </tbody>
+                      </table>
+
+                    </td>
+                    <td class="expander"></td>
+                  </tr>
+                </table>
+
+                <br/>
+
+              </div>
+            </td>
+            <td class="expander"></td>
+          </tr>
+        </table>
+      </td>
+  </tr>
+</table>
