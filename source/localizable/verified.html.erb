@@ -1,0 +1,31 @@
+<%= render partial: "partials/global/header" %>
+<br/>
+
+<table class="container ">
+  <tr>
+    <td>
+      <br/>
+      <img width="580" height="200" src="<%= (environment == :development) ? "http://placehold.it/580x200?text=dis_image_hero_image" : "http://cdn.studentbeans.com/email_transactional/verified-hero_main.jpg" %>" class="center hide-for-small" />
+    </td>
+  </tr>
+</table>
+
+<table class="container main-content feature-image">
+  <tr>
+    <td>
+      <img width="50" height="25" src="<%= (environment == :development) ? "http://placehold.it/50x25?text=dis_image_hero_image_arrow" : "http://cdn.studentbeans.com/email_transactional/verified-hero_arrow.jpg" %>" class="center hide-for-small" />
+      <br/>
+      <%= render partial: "partials/blocks/top_text", locals: { page_name: "verified" } %>
+      <%= render partial: "partials/blocks/discounts_six" %>
+      <%= render partial: "partials/blocks/static_brand_list" %>
+      <%= render partial: "partials/blocks/static_bottom_text", locals: { page_name: "verified" } %>
+    </td>
+  </tr>
+</table>
+
+<%# <%= render partial: "partials/blocks/app_ad" %>
+<br/>
+<br/>
+<%= render partial: "partials/blocks/social_ad" %>
+
+<%= render partial: "partials/global/footer" %>
