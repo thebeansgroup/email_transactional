@@ -88,3 +88,16 @@ fi:
       company: "at %{company}"
     email_description: "We'll email you every tuesday with the best student discounts and deals of the week. Alternatively, keep updated by following us on %{facebook} or %{twitter}. Hungry for more?"
     footer_button: "Browse our discounts"
+  verification_link:
+    subject: 'Aktivoi Student Beans iD nyt!'
+    body: |
+      # Hei
+
+      Kiitos Student Beans iD rekisteröitymisestä
+
+      Tee varmentautuminen loppuun klikkaamalla alla olevaa linkkiä, niin ilmainen opiskelijakorttisi aktivoituu ja saat käyttöösi tuhansia opiskelija-alennuksia.
+
+      [%{verify_url}](%{verify_url})
+
+      Pidä hauskaa!
+      Bean Tiimi

@@ -88,3 +88,16 @@ sl:
       company: "at %{company}"
     email_description: "We'll email you every tuesday with the best student discounts and deals of the week. Alternatively, keep updated by following us on %{facebook} or %{twitter}. Hungry for more?"
     footer_button: "Browse our discounts"
+  verification_link:
+    subject: 'Aktivirajte svoj račun pri Student Beans iD zdaj!'
+    body: |
+      # Pozdravljeni
+
+      Za vašo registracijo pri Student Beans iD se vam zahvaljujemo.
+
+      Za aktivacijo svoje brezplačne digitalne študentske kartice in uporabo več tisoč študentskih popustov dokončajte postopek potrditve, tako da sledite spodnji povezavi.
+
+      [%{verify_url}](%{verify_url})
+
+      Uživajte v nakupih!
+      Ekipa spletnega mesta Bean
