@@ -98,3 +98,16 @@ hu:
       company: "at %{company}"
     email_description: "We'll email you every tuesday with the best student discounts and deals of the week. Alternatively, keep updated by following us on %{facebook} or %{twitter}. Hungry for more?"
     footer_button: "Browse our discounts"
+  verification_link:
+    subject: 'Most aktiválja Student Beans iD azonosítóját!'
+    body: |
+      # Üdvözöljük!
+
+      Köszönjük, hogy bejelentkezett a Student Beans iD programba.
+
+      Ingyenes digitális diákigazolványa aktiválásához és a több ezer hallgatói kedvezmény megszerzéséhez egyszerűen csak kattintson az alábbi linkre, és fejezze be a visszaigazolási eljárást.
+
+      [%{verify_url}](%{verify_url})
+
+      Élvezze!
+      A Bean csapat

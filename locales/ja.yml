@@ -92,3 +92,16 @@ ja:
       company: "at %{company}"
     email_description: "We'll email you every tuesday with the best student discounts and deals of the week. Alternatively, keep updated by following us on %{facebook} or %{twitter}. Hungry for more?"
     footer_button: "Browse our discounts"
+  verification_link:
+    subject: '今すぐ Student Beans iD を有効化してください！'
+    body: |
+      # こんにちは。
+
+      Student Beans iD にご登録いただきありがとうございます。
+
+      以下のリンクをクリックして確認プロセスを完了するだけで、無料のデジタル学生証を有効化し、様々な学生割引を受けることができます。
+
+      [%{verify_url}](%{verify_url})
+
+      お楽しみください！
+      Bean チーム

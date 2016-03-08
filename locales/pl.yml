@@ -88,3 +88,16 @@ pl:
       company: "at %{company}"
     email_description: "We'll email you every tuesday with the best student discounts and deals of the week. Alternatively, keep updated by following us on %{facebook} or %{twitter}. Hungry for more?"
     footer_button: "Browse our discounts"
+  verification_link:
+    subject: 'Aktywuj Student Beans iD teraz!'
+    body: |
+      # Witaj
+
+      Dziękujemy za zarejestrowanie się w Student Beans iD.
+
+      Aby aktywować swoją darmową cyfrową kartę studenta i odblokować tysiące rabatów studenckich, wystarczy przeprowadzić weryfikację, klikając na poniższy link.
+
+      [%{verify_url}](%{verify_url})
+
+      Miłej zabawy!
+      Zespół Bean

@@ -1,4 +1,6 @@
 ## Next
+- Added verification link emails
+- Added verified email type
 
 ## 1.2.0
 - Added verified email type

@@ -92,3 +92,16 @@ ru:
       company: "at %{company}"
     email_description: "We'll email you every tuesday with the best student discounts and deals of the week. Alternatively, keep updated by following us on %{facebook} or %{twitter}. Hungry for more?"
     footer_button: "Browse our discounts"
+  verification_link:
+    subject: 'Активируйте собственный идентификатор студенческой учетной записи Beans прямо сейчас!'
+    body: |
+      # Здравствуйте!
+
+      Благодарим Вас за регистрацию идентификатора студенческой учетной записи Beans.
+
+      Для активации Вашей бесплатной цифровой студенческой карточки и получения доступа к огромному количеству студенческих скидок Вам достаточно завершить процедуру подтверждения, перейдя по предлагаемой ниже ссылке.
+
+      [%{verify_url}](%{verify_url})
+
+      Наслаждайтесь преимуществами!
+      Команда Bean
