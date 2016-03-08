@@ -3,3 +3,4 @@ reset_password: simple_layout
 nus_card: simple_layout
 unclear_image: simple_layout
 unaccepted_institute: simple_layout
+verification_link: simple_layout

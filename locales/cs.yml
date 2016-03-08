@@ -88,3 +88,16 @@ cs:
       company: "at %{company}"
     email_description: "We'll email you every tuesday with the best student discounts and deals of the week. Alternatively, keep updated by following us on %{facebook} or %{twitter}. Hungry for more?"
     footer_button: "Browse our discounts"
+  verification_link:
+    subject: 'Aktivujte si aplikaci Student Beans iD!'
+    body: |
+      # Dobrý den
+
+      Děkujeme vám, že jste se registrovali v aplikaci Student Beans iD.
+
+      K aktivaci bezplatného digitálního průkazu studenta a k získání přístupu k tisícům studentských slev je třeba zadané údaje ještě ověřit kliknutím na odkaz dole.
+
+      [%{verify_url}](%{verify_url})
+
+      Užívejte si slev!
+      Tým aplikace Beans

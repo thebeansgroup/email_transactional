@@ -193,3 +193,16 @@ Don’t worry though, you can reactivate it really easily. Just follow the link 
       company: "at %{company}"
     email_description: "We'll email you every tuesday with the best student discounts and deals of the week. Alternatively, keep updated by following us on %{facebook} or %{twitter}. Hungry for more?"
     footer_button: "Browse our discounts"
+  verification_link:
+    subject: 'Activate your Student Beans iD now!'
+    body: |
+      # Hello
+
+      Thanks for signing up for a Student Beans iD.
+
+      To activate your free digital student card and unlock thousands of student discounts, just complete the verification process by clicking the link below.
+
+      [%{verify_url}](%{verify_url})
+
+      Enjoy!
+      The Bean Team

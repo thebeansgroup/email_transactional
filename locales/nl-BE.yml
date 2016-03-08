@@ -98,3 +98,16 @@ nl-BE:
       company: "at %{company}"
     email_description: "We'll email you every tuesday with the best student discounts and deals of the week. Alternatively, keep updated by following us on %{facebook} or %{twitter}. Hungry for more?"
     footer_button: "Browse our discounts"
+  verification_link:
+    subject: 'Activeer nu uw Student Beans iD!'
+    body: |
+      # Hallo
+
+      Bedankt voor uw inschrijving voor een Student Beans iD.
+
+      Activeer uw gratis digitale studentenkaart en krijg toegang tot duizenden studentenkortingen! Voltooi het bevestigingsproces door op onderstaande link te klikken.
+
+      [%{verify_url}](%{verify_url})
+
+      Veel winkelplezier!
+      Het Bean Team
