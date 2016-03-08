@@ -1,6 +1,11 @@
 ## Next
 - Added not_verified emails
+
+## 1.3.0
 - Added verification link emails
+- Added verified email type
+
+## 1.2.0
 - Added verified email type
 
 ## 1.1.0
