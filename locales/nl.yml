@@ -101,3 +101,37 @@ nl:
 
       Geniet ervan!
       Het Bean Team
+  not_verified_one:
+    subject: "Your %{brand_name} discount"
+    title: "Hi %{first_name},"
+    line_one: "Thanks for signing up to Student Beans to access the %{brand_name} student discount."
+    line_two: "We have sent your verification link to %{institution_email} but notice you have not yet clicked the link to verify your student status and unlock access to hundreds of exclusive student discounts."
+    line_three: "If you haven't seen the verification email we recommend you log in to your academic email and double check the spam folder."
+    line_four: "If there is a mistake with your academic email address above then you can update the address and resend the verification link here: %{verification_link}"
+    line_five: "If you need any further assistance you can contact our support team here: %{support_link}"
+    line_six: "Thanks,"
+    line_seven: "The Bean Team"
+  not_verified_two:
+    subject: 'Your %{brand_name} discount'
+    title: "Hi %{first_name},"
+    line_one: "Thanks for signing up to Student Beans to access the %{brand_name} student discount."
+    line_two: "We noticed that you have not yet verified your student status to unlock access to hundreds of exclusive student discounts."
+    line_three: "You can verify your student status in one of 2 easy ways:"
+    line_four: "1. log in to your institution portal"
+    line_five: "2. confirm your academic email address"
+    line_six: "Complete the process here: %{verification_link}"
+    line_seven: "If you need any further assistance you can contact our support team here: %{support_link}"
+    line_eight: "Thanks,"
+    line_nine: "The Bean Team"
+  not_verified_three:
+    subject: "Unlock exclusive student discounts"
+    title: "Hi %{first_name},"
+    line_one: "Thanks for signing up to Student Beans."
+    line_two: "You are one step away from unlocking access to hundreds of exclusive student discounts. Simply verify your student status to activate your Student Beans iD which can be used claim discounts from hundreds of brands online and on the high street."
+    line_three: "You can verify your student status in one of 2 easy ways:"
+    line_four: "1. log in to your institution portal"
+    line_five: "2. confirm your academic email address"
+    line_six: "Complete the process here: %{verification_link}:"
+    line_seven: "If you need any further assistance you can contact our support team here: %{support_link}"
+    line_eight: "Thanks,"
+    line_nine: "The Bean Team"
