@@ -1,0 +1,49 @@
+<%= render partial: "partials/global/header" %>
+<br>
+<table class="container main-content feature">
+  <tr>
+    <td>
+
+      <table>
+        <tr>
+          <td class="wrapper header alert last">
+            <table class="twelve columns">
+              <tr>
+                <td class="header__collapse">
+                  <div class="text-pad">
+                    <br>
+                    <h1 class="h3 title-margin"><%= t('not_verified_two.title', first_name: tagify('first_name')) %></h1>
+                    <p><%= t('not_verified_two.line_one', brand_name: tagify('brand_name')) %></p>
+
+                    <p><%= t('not_verified_two.line_two') %></p>
+
+                    <p><%= t('not_verified_two.line_three') %></p>
+
+                    <p><%= t('not_verified_two.line_four') %></p>
+
+                    <p><%= t('not_verified_two.line_five') %></p>
+
+                    <p><%= t('not_verified_two.line_six', verification_link: tagify('verification_link')) %></p>
+
+                    <p><%= t('not_verified_two.line_seven', support_link: tagify('support_link')) %></p>
+
+                    <p><%= t('not_verified_two.line_eight') %></p>
+
+                    <p><%= t('not_verified_two.line_nine') %></p>
+
+                    <br><br>
+                  </div>
+                </td>
+<td></td>
+              </tr>
+            </table>
+            </td>
+          </tr>
+        </table>
+
+      <%= render partial: 'partials/blocks/feature_footer' %>
+
+    </td>
+  </tr>
+</table>
+<%= render partial: "partials/global/footer" %>
