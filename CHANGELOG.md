@@ -1,4 +1,5 @@
 ## Next
+- Added not_verified emails
 - Added verification link emails
 - Added verified email type
 
