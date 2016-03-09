@@ -135,7 +135,7 @@ ru:
     line_three: "You can verify your student status in one of 2 easy ways:"
     line_four: "1. log in to your institution portal"
     line_five: "2. confirm your academic email address"
-    line_six: "Complete the process here: %{verification_link}:"
+    line_six: "Complete the process here: %{verification_link}"
     line_seven: "If you need any further assistance you can contact our support team here: %{support_link}"
     line_eight: "Thanks,"
     line_nine: "The Bean Team"
