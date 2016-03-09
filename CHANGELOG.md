@@ -1,4 +1,5 @@
 ## Next
+- Added not_verified emails
 
 ## 1.3.0
 - Added verification link emails
