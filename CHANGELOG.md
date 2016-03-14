@@ -1,3 +1,5 @@
+## Next
+
 ## 1.5.0
 - Adding en locale for emails
 
