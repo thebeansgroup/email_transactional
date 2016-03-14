@@ -1,4 +1,5 @@
-## Next
+## 1.5.0
+- Adding en locale for emails
 
 ## 1.4.0
 - Added not_verified emails
