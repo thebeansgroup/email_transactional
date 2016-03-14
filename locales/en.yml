@@ -1,0 +1,242 @@
+---
+en:
+  footer:
+    office: "Registered Office:1 Vincent Square, London, SW1 2PN | Registered as a company in England and Wales, number: 5486885 | VAT Registration Number: 873 0262 33. Copyright 2014 Student Beans all rights reserved."
+    privacy:
+      important: "Privacy is important to us."
+      policy: "View our privacy policy"
+    reason:
+      default: "This message was sent by Student Beans. You are receiving this email because you have an existing relationship with Student Beans."
+  app_ad:
+    description: "Save time & money by **redeeming offers in our app**"
+  social_ad:
+    title: "Be the first to hear about new deals"
+    description: "Follow us on facebook or twitter so you don't miss out on any of our exclusive deals discounts."
+  completed_verification_connect:
+    title: "Hey %{user}, Welcome to Student Beans. Your Topman discount is ready…"
+    body: "Just follow the link below when you are ready to use the discount"
+    discount_name: "%{discount_name} &#8594;"
+    top_description:
+      line_1: "You now have access to over 10,000 discounts and deals that are exclusive to students!"
+      line_2: "Let me introduce you to some of our favourites…"
+    email_description: "We'll email you every tuesday with the best student discounts and deals of the week. Alternatively, keep updated by following us on %{facebook} or %{twitter}. Hungry for more?"
+    footer_button: "Browse our discounts"
+  completed_verification_publisher:
+    title: "Your %{company_name} discount is ready…"
+    body: "Just follow the link below when you are ready to use the discount"
+    discount_name: "%{discount_name} &#8594;"
+    welcome: "Welcome to"
+    top_description:
+      line_1: "You now have access to over 10,000 discounts and deals that are exclusive to students!"
+      line_2: "Let me introduce you to some of our favourites…"
+    email_description: "We'll email you every tuesday with the best student discounts and deals of the week. Alternatively, keep updated by following us on %{facebook} or %{twitter}. Hungry for more?"
+    footer_button: "Browse our discounts"
+  instore_redemption_link:
+    title: "Hey %{firstname}, Your discount is ready…"
+    body: "Just open this link on your mobile phone when you are ready to use the discount"
+    discount_name: "%{discount_name} &#8594;"
+    top_description:
+      line_1: "You now have access to over 10,000 discounts and deals that are exclusive to students!"
+      line_2: "Let me introduce you to some of our favourites…"
+    email_description: "We'll email you every tuesday with the best student discounts and deals of the week. Alternatively, keep updated by following us on %{facebook} or %{twitter}. Hungry for more?"
+    footer_button: "Browse our discounts"
+  connect_instore_redemption_link:
+    title: "Your %{discount_company} discount is ready…"
+    body: "Just open this link on your mobile phone when you are ready to use the discount"
+    discount_name: "%{discount_name} &#8594;"
+    top_description:
+      line_1: "You now have access to over 10,000 discounts and deals that are exclusive to students!"
+      line_2: "Let me introduce you to some of our favourites…"
+    email_description: "We'll email you every tuesday with the best student discounts and deals of the week. Alternatively, keep updated by following us on %{facebook} or %{twitter}. Hungry for more?"
+    footer_button: "Browse our discounts"
+  verification:
+    discount:
+      company: "at %{company}"
+  completed_verification_stb:
+    subject: 'Welcome to Student Beans'
+    top_title: "Welcome to Student Beans"
+    top_description:
+      line_1: "Oh, hi there. Thanks for joining us - you’re fully verified now and totally part of the team. This means you can now access all those student discounts and deals on our site. Now, there’s over 10,000 of them, so to get you started, we’ve picked out some of our favourites."
+      line_2: ""
+    discount:
+      company: "at %{company}"
+    email_description: "We'll email you every tuesday with the best student discounts and deals of the week. Alternatively, keep updated by following us on %{facebook} or %{twitter}. Hungry for more?"
+    footer_button: "Browse our discounts"
+  sign_up_completion:
+    title: "Hey %{user},"
+    body: |
+      You haven't verified as a student yet! This means you are missing out on all the exclusive student discounts.
+
+      **Are you having problems?** [Shoot us an email](%{email_support}) and we will be happy to help.
+
+      If you don't need us, just [Login](%{login_link}) to your account to complete your verification.
+
+      All the best,
+
+      The Bean Team
+  reengagement:
+    title: "Hey %{user}, you're missing out big time!"
+    body: |
+      You haven't verified as a student yet! This means you are missing out on all the exclusive student discounts.
+
+      [Complete your registration](%{complete_registration_link}) and access discounts from local and nationwide brands…
+    footer: |
+      All you need to do is [Login](%{login_link}) to your account and verify your student status.
+
+      **Having problems?** [Shoot us an email](%{email_support}) and we will be happy to help.
+
+      All the best,
+
+      The Bean Team
+  reverification:
+    button:
+      text: "Renew Student Status"
+    problems:
+      text: "Are you having problems?"
+      link:
+        text: "Go to support"
+    one_month:
+      subject: Your student status with Student Beans will expire next month
+      body: "Don’t worry though, you can reactivate it really easily. Just follow the link below and you’ll be back up and running with all them discounts in no time."
+    one_week:
+      subject: A reminder about your Student Beans account renewal.
+      body: "Heads up – your student status with Student Beans expires in 1 week
+  Don’t worry though, you can reactivate it really easily. Just follow the link below and you’ll be back up and running with all them discounts in no time."
+    tomorrow:
+      subject: Renew your Student Beans account today.
+      body: "Your student status with Student Beans will expire tomorrow
+Don’t worry though, you can reactivate it really easily. Just follow the link below and you’ll be back up and running with all them discounts in no time."
+    expired:
+      subject: Your student status with Student Beans has expired, here's how to renew.
+      body: "Your student status with Student Beans has expired
+  Don’t worry though, you can reactivate it really easily. Just follow the link below and you’ll be back up and running with all them discounts in no time."
+
+  reset_password:
+    subject: 'Reset password instructions'
+  welcome:
+    subject: "Welcome to Student Beans"
+    title: "Hello %{firstname},"
+    first_paragraph: "Thanks for joining us – you’re fully verified now and totally part of the team."
+    second_paragraph: "This means you can start saving on clothing, tech, travel, stationery, food and more, all with your Student Beans account."
+    third_paragraph: "Look out for our student discounts when shopping on your favourite sites."
+  nus_card:
+    subject: 'Student Beans - Your submission for manual verification has been rejected'
+    body: |
+      Hello,
+
+      Unfortunately we can't accept NUS cards as proof of student status.
+
+      Your pending verification has been wiped so you can now upload new proof.
+
+      Please log in to your account and upload a scan or photo of one of the following:
+
+      - Institution student card
+      - Acceptance letter
+      - Academic transcript
+
+      Documentation will only be accepted as proof of your student status if it contains your full name, your institution's name and a date that indicates your are currently enrolled as a student at the present time.
+
+      Unfortunately we can not accept student cards that are not issued by an academic institution.
+
+      Many thanks,
+
+      Student Beans
+  unaccepted_institute:
+    subject: 'Student Beans - Your submission for manual verification has been rejected'
+    body: |
+      Hello,
+
+      Unfortunately the image you sent us is unclear or is missing information.
+
+      Your pending verification has been wiped so you can now upload new proof.
+
+      Please log in to your account and upload a scan or photo of one of the following:
+
+      - Institution student card
+      - Acceptance letter
+      - Academic transcript
+
+      Documentation will only be accepted as proof of your student status if it contains your full name, your institution's name and a date that indicates your are currently enrolled as a student at the present time.
+
+      Unfortunately we can not accept student cards that are not issued by an academic institution.
+
+      Many thanks,
+
+      Student Beans
+  unclear_image:
+    subject: 'Student Beans - Your submission for manual verification has been rejected'
+    body: |
+      Hello,
+
+      Unfortunately we cannot verify your account as we don't work with the institution you attend.
+
+      Many thanks,
+
+      Student Beans
+  verified:
+    subject: 'Welcome to Student Beans'
+    top_title: "Welcome to Student Beans"
+    top_description:
+      line_1: "Oh, hi there. Thanks for joining us - you’re fully verified now and totally part of the team. This means you can now access all those student discounts and deals on our site. Now, there’s over 10,000 of them, so to get you started, we’ve picked out some of our favourites."
+      line_2: ""
+    discount:
+      company: "at %{company}"
+    email_description: "We'll email you every tuesday with the best student discounts and deals of the week. Alternatively, keep updated by following us on %{facebook} or %{twitter}. Hungry for more?"
+    footer_button: "Browse our discounts"
+  verified:
+    subject: 'Welcome to Student Beans'
+    top_title: "Welcome to Student Beans"
+    top_description:
+      line_1: "Oh, hi there. Thanks for joining us - you’re fully verified now and totally part of the team. This means you can now access all those student discounts and deals on our site. Now, there’s over 10,000 of them, so to get you started, we’ve picked out some of our favourites."
+      line_2: ""
+    discount:
+      company: "at %{company}"
+    email_description: "We'll email you every tuesday with the best student discounts and deals of the week. Alternatively, keep updated by following us on %{facebook} or %{twitter}. Hungry for more?"
+    footer_button: "Browse our discounts"
+  verification_link:
+    subject: 'Activate your Student Beans iD now!'
+    body: |
+      # Hello
+
+      Thanks for signing up for a Student Beans iD.
+
+      To activate your free digital student card and unlock thousands of student discounts, just complete the verification process by clicking the link below.
+
+      [%{verify_url}](%{verify_url})
+
+      Enjoy!
+      The Bean Team
+  not_verified_one:
+    subject: "Your %{brand_name} discount"
+    title: "Hi %{first_name},"
+    line_one: "Thanks for signing up to Student Beans to access the %{brand_name} student discount."
+    line_two: "We have sent your verification link to %{institution_email} but notice you have not yet clicked the link to verify your student status and unlock access to hundreds of exclusive student discounts."
+    line_three: "If you haven't seen the verification email we recommend you log in to your academic email and double check the spam folder."
+    line_four: "If there is a mistake with your academic email address above then you can update the address and resend the verification link here: %{verification_link}"
+    line_five: "If you need any further assistance you can contact our support team here: %{support_link}"
+    line_six: "Thanks,"
+    line_seven: "The Bean Team"
+  not_verified_two:
+    subject: 'Your %{brand_name} discount'
+    title: "Hi %{first_name},"
+    line_one: "Thanks for signing up to Student Beans to access the %{brand_name} student discount."
+    line_two: "We noticed that you have not yet verified your student status to unlock access to hundreds of exclusive student discounts."
+    line_three: "You can verify your student status in one of 2 easy ways:"
+    line_four: "1. log in to your institution portal"
+    line_five: "2. confirm your academic email address"
+    line_six: "Complete the process here: %{verification_link}"
+    line_seven: "If you need any further assistance you can contact our support team here: %{support_link}"
+    line_eight: "Thanks,"
+    line_nine: "The Bean Team"
+  not_verified_three:
+    subject: "Unlock exclusive student discounts"
+    title: "Hi %{first_name},"
+    line_one: "Thanks for signing up to Student Beans."
+    line_two: "You are one step away from unlocking access to hundreds of exclusive student discounts. Simply verify your student status to activate your Student Beans iD which can be used claim discounts from hundreds of brands online and on the high street."
+    line_three: "You can verify your student status in one of 2 easy ways:"
+    line_four: "1. log in to your institution portal"
+    line_five: "2. confirm your academic email address"
+    line_six: "Complete the process here: %{verification_link}"
+    line_seven: "If you need any further assistance you can contact our support team here: %{support_link}"
+    line_eight: "Thanks,"
+    line_nine: "The Bean Team"
