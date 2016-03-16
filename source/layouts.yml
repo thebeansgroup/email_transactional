@@ -4,3 +4,11 @@ nus_card: simple_layout
 unclear_image: simple_layout
 unaccepted_institute: simple_layout
 verification_link: simple_layout
+confirmation_jobs: simple_layout
+reset_jobs: simple_layout
+unlock_jobs: simple_layout
+approval_jobs: simple_layout
+posting_jobs: simple_layout
+confirmation_editorial: simple_layout
+reset_editorial: simple_layout
+unlock_editorial: simple_layout
