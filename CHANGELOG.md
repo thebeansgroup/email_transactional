@@ -1,3 +1,7 @@
+# [1.6.0] - 2016-03-17
+- Added emails for job and editorial - [PR Link](https://github.com/thebeansgroup/mail_pipes/pull/73)
+## Next
+
 ## 1.5.0
 - Adding en locale for emails
 
