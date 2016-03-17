@@ -139,3 +139,259 @@ ja:
     line_seven: "If you need any further assistance you can contact our support team here: %{support_link}"
     line_eight: "Thanks,"
     line_nine: "The Bean Team"
+  unlock_jobs:
+    subject: 'Did you forget your password?'
+    body: |
+      ### Hello,
+
+      We've just locked your Student Beans Jobs account after a number of unsuccessful sign in attempts so that we can protect it from unauthorised access.
+
+      Don't worry though, it's really easy to recover access to your account.
+
+      Just click on this link:
+
+      %{unlock_url}
+
+      Have a great day,
+
+      Student Beans Jobs
+  reset_jobs:
+    subject: 'Reset password instructions'
+    body: |
+      # Hello,
+
+      We've just received a request to change your Student Beans Jobs password. If you follow the link below then you'll be able to choose a new one.
+
+      %{reset_password_url}
+
+      If you didn't request this (or have just realised you had Caps Lock on and don't want a new password), please ignore this email.
+
+      Your password won't change unless you access the link above and create a new one.
+
+      Thanks,
+
+      Student Beans Jobs
+  confirmation_jobs:
+    subject: 'Confirmation instructions'
+    body: |
+      # Hello,
+
+      Thanks for signing up to Student Beans Jobs. We feel like we just made a new friend!
+
+      Please click on this link so that we can get your account activated:
+
+      %{user_confirmation_url}
+
+      Once you've done that, you'll be asked to set a password which will enable you to go forth and start posting your jobs.
+
+      Look forward to reading all about your exciting roles!
+
+      Student Beans Jobs
+  approval_jobs:
+    subject: 'Your job is now live on Student Beans Jobs'
+    body: |
+      # Hi %{name},
+
+      Great news! Your job - %{job_title} - is now live.
+
+      You can check it out it here: %{job_url}
+
+      If you would like to post another job, please go right ahead %{new_job_url}
+
+      If you would like to change or remove your job, please contact jobs@business.studentbeans.com.
+
+      Many thanks,
+
+      Student Beans Jobs
+  posting_jobs:
+    subject: 'Job Received'
+    body: |
+      # Hello,
+
+      Thanks for using Student Beans Jobs.
+
+      We're just writing to let you know that your job listing has been received.
+
+      The price of your listing is £50+vat for 30 days on the site. To proceed with your listing, please make payment [here](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7F586HMAVPJ8W). Once we've received payment we'll be in touch within a couple of hours to let you know it's live.
+
+      If you would like to post another job please go right ahead %{new_job_url}.
+
+      Speak soon,
+
+      Student Beans Jobs
+  unlock_editorial:
+    subject: 'Did you forget your password?'
+    body: |
+      ### Hello,
+
+      We've just locked your Student Beans Editorial account after a number of unsuccessful sign in attempts so that we can protect it from unauthorised access.
+
+      Don't worry though, it's really easy to recover access to your account.
+
+      Just click on this link:
+
+      %{unlock_url}
+
+      Have a great day,
+
+      Student Beans Editorial
+  reset_editorial:
+    subject: 'Reset password instructions'
+    body: |
+      # Hello,
+
+      We've just received a request to change your Student Beans Editorial password. If you follow the link below then you'll be able to choose a new one.
+
+      %{reset_password_url}
+
+      If you didn't request this (or have just realised you had Caps Lock on and don't want a new password), please ignore this email.
+
+      Your password won't change unless you access the link above and create a new one.
+
+      Thanks,
+
+      Student Beans Editorial
+  confirmation_editorial:
+    subject: 'Confirmation instructions'
+    body: |
+      # Hello,
+
+      Thanks for signing up to Student Beans Editorial. We feel like we just made a new friend!
+
+      Please click on this link so that we can get your account activated:
+
+      %{user_confirmation_url}
+
+      Once you've done that, you'll be asked to set a password which will enable you to go forth and start writing your articles.
+
+      Look forward to reading all about your exciting roles!
+
+      Student Beans Editorial
+  unlock_jobs:
+    subject: 'Did you forget your password?'
+    body: |
+      ### Hello,
+
+      We've just locked your Student Beans Jobs account after a number of unsuccessful sign in attempts so that we can protect it from unauthorised access.
+
+      Don't worry though, it's really easy to recover access to your account.
+
+      Just click on this link:
+
+      %{unlock_url}
+
+      Have a great day,
+
+      Student Beans Jobs
+  reset_jobs:
+    subject: 'Reset password instructions'
+    body: |
+      # Hello,
+
+      We've just received a request to change your Student Beans Jobs password. If you follow the link below then you'll be able to choose a new one.
+
+      %{reset_password_url}
+
+      If you didn't request this (or have just realised you had Caps Lock on and don't want a new password), please ignore this email.
+
+      Your password won't change unless you access the link above and create a new one.
+
+      Thanks,
+
+      Student Beans Jobs
+  confirmation_jobs:
+    subject: 'Confirmation instructions'
+    body: |
+      # Hello,
+
+      Thanks for signing up to Student Beans Jobs. We feel like we just made a new friend!
+
+      Please click on this link so that we can get your account activated:
+
+      %{user_confirmation_url}
+
+      Once you've done that, you'll be asked to set a password which will enable you to go forth and start posting your jobs.
+
+      Look forward to reading all about your exciting roles!
+
+      Student Beans Jobs
+  approval_jobs:
+    subject: 'Your job is now live on Student Beans Jobs'
+    body: |
+      # Hi %{name},
+
+      Great news! Your job - %{job_title} - is now live.
+
+      You can check it out it here: %{job_url}
+
+      If you would like to post another job, please go right ahead %{new_job_url}
+
+      If you would like to change or remove your job, please contact jobs@business.studentbeans.com.
+
+      Many thanks,
+
+      Student Beans Jobs
+  posting_jobs:
+    subject: 'Job Received'
+    body: |
+      # Hello,
+
+      Thanks for using Student Beans Jobs.
+
+      We're just writing to let you know that your job listing has been received.
+
+      The price of your listing is £50+vat for 30 days on the site. To proceed with your listing, please make payment [here](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7F586HMAVPJ8W). Once we've received payment we'll be in touch within a couple of hours to let you know it's live.
+
+      If you would like to post another job please go right ahead %{new_job_url}.
+
+      Speak soon,
+
+      Student Beans Jobs
+  unlock_editorial:
+    subject: 'Did you forget your password?'
+    body: |
+      ### Hello,
+
+      We've just locked your Student Beans Editorial account after a number of unsuccessful sign in attempts so that we can protect it from unauthorised access.
+
+      Don't worry though, it's really easy to recover access to your account.
+
+      Just click on this link:
+
+      %{unlock_url}
+
+      Have a great day,
+
+      Student Beans Editorial
+  reset_editorial:
+    subject: 'Reset password instructions'
+    body: |
+      # Hello,
+
+      We've just received a request to change your Student Beans Editorial password. If you follow the link below then you'll be able to choose a new one.
+
+      %{reset_password_url}
+
+      If you didn't request this (or have just realised you had Caps Lock on and don't want a new password), please ignore this email.
+
+      Your password won't change unless you access the link above and create a new one.
+
+      Thanks,
+
+      Student Beans Editorial
+  confirmation_editorial:
+    subject: 'Confirmation instructions'
+    body: |
+      # Hello,
+
+      Thanks for signing up to Student Beans Editorial. We feel like we just made a new friend!
+
+      Please click on this link so that we can get your account activated:
+
+      %{user_confirmation_url}
+
+      Once you've done that, you'll be asked to set a password which will enable you to go forth and start writing your articles.
+
+      Look forward to reading all about your exciting roles!
+
+      Student Beans Editorial
