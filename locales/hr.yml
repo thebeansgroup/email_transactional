@@ -277,3 +277,7 @@ hr:
       Look forward to reading all about your exciting roles!
 
       Student Beans Editorial
+  instore_redemption:
+    subject: '%{discount_title} at %{company_title}'
+    title: 'Your %{company_title} discount is ready…'
+    first_paragraph: 'Just open this link on your mobile phone when you are ready to use the discount'

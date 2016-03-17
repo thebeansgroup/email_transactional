@@ -1,0 +1,34 @@
+<%= render partial: "partials/global/header" %>
+<br>
+<table class="container main-content feature">
+  <tr>
+    <td>
+
+      <table class="row">
+        <tr>
+          <td class="wrapper header alert last">
+            <table class="twelve columns">
+              <tr>
+                <td class="header__collapse">
+                  <div class="text-pad">
+                    <br>
+
+                    <h2 class="txt-center title-margin"><%= t('instore_redemption.title', company_title: tagify('company_title')) %></h2>
+                    <p><%= t('instore_redemption.first_paragraph') %></p>
+                    <p><a href="<%= tagify('discount_link') %>"><%= tagify('discount_title') %></a></p>
+
+                  </div>
+                </td>
+<td class="expander"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+      <%= render partial: 'partials/blocks/feature_footer' %>
+
+    </td>
+  </tr>
+</table>
+<%= render partial: "partials/global/footer" %>
