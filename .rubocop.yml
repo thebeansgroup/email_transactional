@@ -1,12 +1,10 @@
+inherit_from: .rubocop_todo.yml
+
 AllCops:
   Exclude:
     - "config.rb"
+    - "build/**/*"
   UseCache: false
-Style/AndOr:
-  EnforcedStyle: conditionals
-  SupportedStyles:
-    - always
-    - conditionals
 Style/CollectionMethods:
   Description: Preferred collection methods.
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#map-find-select-reduce-size
